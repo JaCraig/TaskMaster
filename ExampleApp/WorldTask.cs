@@ -7,7 +7,7 @@ namespace ExampleApp
     /// <summary>
     /// Basic hello world task
     /// </summary>
-    public class HelloWorldTask : ITask
+    public class WorldTask : ITask
     {
         /// <summary>
         /// Gets the frequencies.
@@ -19,12 +19,12 @@ namespace ExampleApp
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name => "Hello World";
+        public string Name => "World";
 
         /// <summary>
         /// Order to run it in (items with the same Priority value will be run in parallel)
         /// </summary>
-        public int Priority => 1;
+        public int Priority => 2;
 
         /// <summary>
         /// Gets or sets the data manager.
@@ -39,7 +39,7 @@ namespace ExampleApp
         /// <returns></returns>
         public bool Execute(DateTime lastRun)
         {
-            Console.WriteLine("Hello World");
+            Console.Write("World");
             return true;
         }
 

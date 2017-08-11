@@ -1,0 +1,5 @@
+syntax: glob
+ExampleApp/TaskMaster/*
+obj/*
+bin/*
+.vs/TaskMaster/v15/.suo

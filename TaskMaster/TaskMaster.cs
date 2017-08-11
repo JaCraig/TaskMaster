@@ -11,11 +11,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using BigBook;
 using Serilog;
 using System;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using TaskMaster.Interfaces;
 using TaskMaster.Triggers;
 
@@ -37,10 +37,10 @@ namespace TaskMaster
             if (DataManager == null)
                 DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
             Logger = Canister.Builder.Bootstrapper.Resolve<ILogger>() ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
-            Triggers = new Trigger[Tasks.Length];
-            for (int x = 0; x < Triggers.Length; ++x)
+            Triggers = new ListMapping<int, Trigger>();
+            foreach (var Task in Tasks)
             {
-                Triggers[x] = new Trigger(Tasks[x], Logger, DataManager, x);
+                Triggers.Add(Task.Priority, new Trigger(Task, Logger, DataManager));
             }
         }
 
@@ -56,7 +56,7 @@ namespace TaskMaster
         /// Gets the triggers.
         /// </summary>
         /// <value>The triggers.</value>
-        private Trigger[] Triggers { get; }
+        private ListMapping<int, Trigger> Triggers { get; }
 
         /// <summary>
         /// Runs the tasks.
@@ -66,16 +66,12 @@ namespace TaskMaster
         {
             try
             {
-                var Results = new bool[Triggers.Length];
-                var TriggersPrioritized = Triggers.GroupBy(x => x.Priority).OrderBy(x => x.Key).ToArray();
-                for (int x = 0; x < TriggersPrioritized.Length; ++x)
+                var Result = true;
+                foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {
-                    Parallel.ForEach(TriggersPrioritized[x], y =>
-                    {
-                        Results[y.Order] = y.Run();
-                    });
+                    Result &= Triggers[Priority].ForEachParallel(x => x.Run()).All(x => x);
                 }
-                return Results.All(x => x);
+                return Result;
             }
             catch (Exception e)
             {

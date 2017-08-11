@@ -31,15 +31,13 @@ namespace TaskMaster.Triggers
         /// <param name="task">The task.</param>
         /// <param name="logger">The logger.</param>
         /// <param name="dataManager">The data manager.</param>
-        /// <param name="order">Order to run in</param>
         /// <exception cref="ArgumentNullException">logger</exception>
-        public Trigger(ITask task, ILogger logger, IDataManager dataManager, int order)
+        public Trigger(ITask task, ILogger logger, IDataManager dataManager)
         {
             DataManager = dataManager ?? new DefaultDataManager(Canister.Builder.Bootstrapper.Resolve<SerialBox.SerialBox>());
             Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger() ?? throw new ArgumentNullException(nameof(logger));
             Frequencies = task.Frequencies ?? new IFrequency[] { new RunAlways() };
             Task = task;
-            Order = order;
             Priority = Task.Priority;
 
             Task.Initialize(DataManager);
@@ -63,11 +61,6 @@ namespace TaskMaster.Triggers
         /// </summary>
         /// <value>The last run.</value>
         public DateTime LastRun { get; private set; }
-
-        /// <summary>
-        /// Order to run in.
-        /// </summary>
-        public int Order { get; }
 
         /// <summary>
         /// Priority to run in.
