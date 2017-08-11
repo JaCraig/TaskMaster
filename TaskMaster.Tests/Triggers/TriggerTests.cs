@@ -12,7 +12,7 @@ namespace TaskMaster.Tests.Triggers
         [Fact]
         public void Creation()
         {
-            var TestObject = new Trigger(new TestTask(), null, null);
+            var TestObject = new Trigger(new TestTask(), null, null, 0);
             Assert.Equal(1, TestObject.Frequencies.Length);
             Assert.Equal(new DateTime(1, 1, 1), TestObject.LastRun);
             Assert.IsType<TestTask>(TestObject.Task);
@@ -21,7 +21,7 @@ namespace TaskMaster.Tests.Triggers
         [Fact]
         public void Run()
         {
-            var TestObject = new Trigger(new TestTask(), null, null);
+            var TestObject = new Trigger(new TestTask(), null, null, 0);
             Assert.True(TestObject.Run());
         }
 
@@ -30,6 +30,8 @@ namespace TaskMaster.Tests.Triggers
             public IFrequency[] Frequencies => new IFrequency[] { new RunAlways() };
 
             public string Name => "Test task";
+
+            public int Priority => 1;
 
             public bool Execute(DateTime lastRun)
             {

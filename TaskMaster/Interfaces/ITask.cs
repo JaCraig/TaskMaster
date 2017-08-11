@@ -33,6 +33,11 @@ namespace TaskMaster.Interfaces
         string Name { get; }
 
         /// <summary>
+        /// Order to run it in (items with the same Priority value will be run in parallel)
+        /// </summary>
+        int Priority { get; }
+
+        /// <summary>
         /// Executes this task
         /// </summary>
         /// <param name="lastRun">The last run date.</param>

@@ -40,7 +40,7 @@ namespace TaskMaster
             Triggers = new Trigger[Tasks.Length];
             for (int x = 0; x < Triggers.Length; ++x)
             {
-                Triggers[x] = new Trigger(Tasks[x], Logger, DataManager);
+                Triggers[x] = new Trigger(Tasks[x], Logger, DataManager, x);
             }
         }
 
@@ -67,10 +67,14 @@ namespace TaskMaster
             try
             {
                 var Results = new bool[Triggers.Length];
-                Parallel.For(0, Triggers.Length, new Action<int>(x =>
+                var TriggersPrioritized = Triggers.GroupBy(x => x.Priority).ToArray();
+                for (int x = 0; x < TriggersPrioritized.Length; ++x)
                 {
-                    Results[x] = Triggers[x].Run();
-                }));
+                    Parallel.ForEach(TriggersPrioritized[x], y =>
+                    {
+                        Results[y.Order] = y.Run();
+                    });
+                }
                 return Results.All(x => x);
             }
             catch (Exception e)

@@ -21,6 +21,8 @@ namespace ExampleApp
         /// <value>The name.</value>
         public string Name => "Hello World";
 
+        public int Priority => 1;
+
         /// <summary>
         /// Gets or sets the data manager.
         /// </summary>
