@@ -10,11 +10,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+
+using BigBook.Registration;
 using Canister.Interfaces;
-using System;
-using System.Collections.Generic;
+using FileCurator.Registration;
+using SerialBox.Registration;
 using System.Reflection;
-using System.Text;
 
 namespace TaskMaster.Registration
 {
@@ -28,9 +29,12 @@ namespace TaskMaster.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterSQLHelper(this IBootstrapper bootstrapper)
+        public static IBootstrapper RegisterTaskMaster(this IBootstrapper bootstrapper)
         {
-            return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly);
+            return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+                               .RegisterFileCurator()
+                               .RegisterSerialBox()
+                               .RegisterBigBookOfDataTypes();
         }
     }
 }
