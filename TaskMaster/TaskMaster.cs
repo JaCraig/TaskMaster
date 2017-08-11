@@ -34,9 +34,9 @@ namespace TaskMaster
             var Tasks = Canister.Builder.Bootstrapper.ResolveAll<ITask>().ToArray();
             var DataManagers = Canister.Builder.Bootstrapper.ResolveAll<IDataManager>();
             DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly != typeof(TaskMaster).GetTypeInfo().Assembly);
-            if (DataManager != null)
+            if (DataManager == null)
                 DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
-            Logger = Canister.Builder.Bootstrapper.Resolve<ILogger>();
+            Logger = Canister.Builder.Bootstrapper.Resolve<ILogger>() ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
             Triggers = new Trigger[Tasks.Length];
             for (int x = 0; x < Triggers.Length; ++x)
             {
