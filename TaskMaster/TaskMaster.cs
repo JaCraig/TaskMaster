@@ -67,7 +67,7 @@ namespace TaskMaster
             try
             {
                 var Results = new bool[Triggers.Length];
-                var TriggersPrioritized = Triggers.GroupBy(x => x.Priority).ToArray();
+                var TriggersPrioritized = Triggers.GroupBy(x => x.Priority).OrderBy(x => x.Key).ToArray();
                 for (int x = 0; x < TriggersPrioritized.Length; ++x)
                 {
                     Parallel.ForEach(TriggersPrioritized[x], y =>

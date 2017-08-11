@@ -21,6 +21,9 @@ namespace ExampleApp
         /// <value>The name.</value>
         public string Name => "Hello World";
 
+        /// <summary>
+        /// Order to run it in (items with the same Priority value will be run in parallel)
+        /// </summary>
         public int Priority => 1;
 
         /// <summary>
