@@ -3,3 +3,4 @@ ExampleApp/TaskMaster/*
 obj/*
 bin/*
 .vs/TaskMaster/v15/.suo
+ExampleApp/Log.txt
