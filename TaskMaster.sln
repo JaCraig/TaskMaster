@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskMaster", "TaskMaster\TaskMaster.csproj", "{7FAFB8AF-D65E-4F49-9447-53BF9CDAFB72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskMaster.Tests", "TaskMaster.Tests\TaskMaster.Tests.csproj", "{CBB64AC0-9ABA-4C1A-A012-19C643B14FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskMaster.Tests", "TaskMaster.Tests\TaskMaster.Tests.csproj", "{CBB64AC0-9ABA-4C1A-A012-19C643B14FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "ExampleApp\ExampleApp.csproj", "{22D5B043-149E-4452-827F-CF6229C985F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CBB64AC0-9ABA-4C1A-A012-19C643B14FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBB64AC0-9ABA-4C1A-A012-19C643B14FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBB64AC0-9ABA-4C1A-A012-19C643B14FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D5B043-149E-4452-827F-CF6229C985F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D5B043-149E-4452-827F-CF6229C985F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D5B043-149E-4452-827F-CF6229C985F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D5B043-149E-4452-827F-CF6229C985F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

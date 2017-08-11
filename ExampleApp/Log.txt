@@ -1,0 +1,4 @@
+2017-08-11 12:08:31.138 -04:00 [Information] Initializing task: Hello World
+2017-08-11 12:08:31.149 -04:00 [Information] Beginning task: Hello World
+2017-08-11 12:08:59.517 -04:00 [Information] Initializing task: Hello World
+2017-08-11 12:08:59.528 -04:00 [Information] Beginning task: Hello World
