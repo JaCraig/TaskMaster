@@ -11,32 +11,31 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using System;
 using TaskMaster.Interfaces;
 
 namespace TaskMaster.Frequency
 {
     /// <summary>
-    /// Runs a task yearly
+    /// Run hourly
     /// </summary>
     /// <seealso cref="IFrequency"/>
-    public class RunYearly : IFrequency
+    public class RunHourly : IFrequency
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RunYearly"/> class.
+        /// Initializes a new instance of the <see cref="RunHourly"/> class.
         /// </summary>
-        /// <param name="dayOfYear">The day of year.</param>
-        public RunYearly(int dayOfYear)
+        /// <param name="minuteToRun">The minute to run.</param>
+        public RunHourly(int minuteToRun = 0)
         {
-            DayOfYear = dayOfYear;
+            MinuteToRun = minuteToRun;
         }
 
         /// <summary>
-        /// Gets the day of month.
+        /// Gets or sets the minute to run.
         /// </summary>
-        /// <value>The day of month.</value>
-        public int DayOfYear { get; private set; }
+        /// <value>The minute to run.</value>
+        public int MinuteToRun { get; set; }
 
         /// <summary>
         /// Determines whether this instance can run based on the specified last run.
@@ -46,7 +45,7 @@ namespace TaskMaster.Frequency
         /// <returns>True if it can, false otherwise</returns>
         public bool CanRun(DateTime lastRun, DateTime currentTime)
         {
-            var RunAfterDate = currentTime.BeginningOf(TimeFrame.Year).AddDays(DayOfYear - 1);
+            var RunAfterDate = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, currentTime.Hour, MinuteToRun, 0);
             return lastRun < RunAfterDate && currentTime >= RunAfterDate;
         }
     }

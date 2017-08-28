@@ -15,6 +15,7 @@ namespace TaskMaster.Tests.Frequency
             Assert.False(TestObject.CanRun(new DateTime(2000, 1, 1), new DateTime(2000, 1, 1)));
             Assert.False(TestObject.CanRun(new DateTime(2000, 1, 1, 1, 2, 0), new DateTime(2000, 1, 1, 1, 2, 0)));
             Assert.True(TestObject.CanRun(new DateTime(1999, 1, 1, 1, 1, 0), new DateTime(2000, 1, 2)));
+            Assert.False(TestObject.CanRun(new DateTime(2000, 1, 2), new DateTime(2000, 1, 3)));
         }
 
         [Fact]

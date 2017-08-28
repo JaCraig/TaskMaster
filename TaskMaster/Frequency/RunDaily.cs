@@ -53,9 +53,8 @@ namespace TaskMaster.Frequency
         /// <returns>True if it can, false otherwise</returns>
         public bool CanRun(DateTime lastRun, DateTime currentTime)
         {
-            return lastRun.Date != currentTime.Date
-                && (HourToRun <= currentTime.Hour
-                || (HourToRun == currentTime.Hour && MinuteToRun <= currentTime.Minute));
+            var RunAfterDate = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, HourToRun, MinuteToRun, 0);
+            return lastRun < RunAfterDate && currentTime >= RunAfterDate;
         }
     }
 }

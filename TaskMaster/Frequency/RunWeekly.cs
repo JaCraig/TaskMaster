@@ -11,6 +11,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using BigBook;
 using System;
 using TaskMaster.Interfaces;
 
@@ -45,8 +46,8 @@ namespace TaskMaster.Frequency
         /// <returns>True if it can, false otherwise</returns>
         public bool CanRun(DateTime lastRun, DateTime currentTime)
         {
-            return lastRun.Date < currentTime.Date
-                && DayToRun <= currentTime.DayOfWeek;
+            var RunAfterDate = currentTime.BeginningOf(TimeFrame.Week).AddDays((int)DayToRun);
+            return lastRun < RunAfterDate && currentTime >= RunAfterDate;
         }
     }
 }
