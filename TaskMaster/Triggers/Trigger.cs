@@ -93,6 +93,7 @@ namespace TaskMaster.Triggers
                     Logger.Information("Beginning task: {Name:l}", Task.Name);
                     var Result = Task.Execute(LastRun);
                     DataManager.SetLastRun(Task, DateTime.Now);
+                    Logger.Information("Task {Name:l} ended", Task.Name);
                     return Result;
                 }
                 Logger.Information("Task skipped based on schedule: {Name:l}", Task.Name);
