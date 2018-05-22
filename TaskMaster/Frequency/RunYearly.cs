@@ -36,7 +36,7 @@ namespace TaskMaster.Frequency
         /// Gets the day of month.
         /// </summary>
         /// <value>The day of month.</value>
-        public int DayOfYear { get; private set; }
+        public int DayOfYear { get; }
 
         /// <summary>
         /// Determines whether this instance can run based on the specified last run.

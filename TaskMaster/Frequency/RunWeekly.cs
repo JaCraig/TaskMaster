@@ -36,7 +36,7 @@ namespace TaskMaster.Frequency
         /// Gets the day to run.
         /// </summary>
         /// <value>The day to run.</value>
-        public DayOfWeek DayToRun { get; private set; }
+        public DayOfWeek DayToRun { get; }
 
         /// <summary>
         /// Determines whether this instance can run based on the specified last run.

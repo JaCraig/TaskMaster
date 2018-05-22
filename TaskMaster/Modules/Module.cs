@@ -33,13 +33,13 @@ namespace TaskMaster.Modules
         /// <summary>
         /// Loads the module
         /// </summary>
-        /// <param name="Bootstrapper">Bootstrapper to register with</param>
-        public void Load(IBootstrapper Bootstrapper)
+        /// <param name="bootstrapper">Bootstrapper to register with</param>
+        public void Load(IBootstrapper bootstrapper)
         {
-            if (Bootstrapper == null)
+            if (bootstrapper == null)
                 return;
-            Bootstrapper.RegisterAll<ITask>();
-            Bootstrapper.RegisterAll<IDataManager>();
+            bootstrapper.RegisterAll<ITask>();
+            bootstrapper.RegisterAll<IDataManager>();
         }
     }
 }

@@ -54,13 +54,13 @@ namespace TaskMaster.Triggers
         /// Gets the frequency.
         /// </summary>
         /// <value>The frequency.</value>
-        public IFrequency[] Frequencies { get; private set; }
+        public IFrequency[] Frequencies { get; }
 
         /// <summary>
         /// Gets the last run.
         /// </summary>
         /// <value>The last run.</value>
-        public DateTime LastRun { get; private set; }
+        public DateTime LastRun { get; }
 
         /// <summary>
         /// Priority to run in.
@@ -71,7 +71,7 @@ namespace TaskMaster.Triggers
         /// Gets the task.
         /// </summary>
         /// <value>The task.</value>
-        public ITask Task { get; private set; }
+        public ITask Task { get; }
 
         /// <summary>
         /// Gets the logger.

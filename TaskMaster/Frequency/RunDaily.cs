@@ -37,7 +37,7 @@ namespace TaskMaster.Frequency
         /// Gets the hour to run.
         /// </summary>
         /// <value>The hour to run.</value>
-        public int HourToRun { get; private set; }
+        public int HourToRun { get; }
 
         /// <summary>
         /// Gets or sets the minute to run.

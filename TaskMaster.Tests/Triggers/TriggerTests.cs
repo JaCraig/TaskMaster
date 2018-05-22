@@ -13,7 +13,7 @@ namespace TaskMaster.Tests.Triggers
         public void Creation()
         {
             var TestObject = new Trigger(new TestTask(), null, null);
-            Assert.Equal(1, TestObject.Frequencies.Length);
+            Assert.Single(TestObject.Frequencies);
             Assert.Equal(new DateTime(1, 1, 1), TestObject.LastRun);
             Assert.IsType<TestTask>(TestObject.Task);
         }

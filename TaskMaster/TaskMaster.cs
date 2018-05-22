@@ -33,9 +33,8 @@ namespace TaskMaster
         {
             var Tasks = Canister.Builder.Bootstrapper.ResolveAll<ITask>().ToArray();
             var DataManagers = Canister.Builder.Bootstrapper.ResolveAll<IDataManager>();
-            DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly != typeof(TaskMaster).GetTypeInfo().Assembly);
-            if (DataManager == null)
-                DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
+            DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly != typeof(TaskMaster).GetTypeInfo().Assembly)
+                ?? DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
             Logger = Canister.Builder.Bootstrapper.Resolve<ILogger>() ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
             Triggers = new ListMapping<int, Trigger>();
             foreach (var Task in Tasks)

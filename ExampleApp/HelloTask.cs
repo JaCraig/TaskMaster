@@ -27,12 +27,6 @@ namespace ExampleApp
         public int Priority => 1;
 
         /// <summary>
-        /// Gets or sets the data manager.
-        /// </summary>
-        /// <value>The data manager.</value>
-        private IDataManager DataManager { get; set; }
-
-        /// <summary>
         /// Executes the specified last run.
         /// </summary>
         /// <param name="lastRun">The last run.</param>
