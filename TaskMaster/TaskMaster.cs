@@ -30,12 +30,21 @@ namespace TaskMaster
         /// Initializes a new instance of the <see cref="TaskMaster"/> class.
         /// </summary>
         public TaskMaster()
+            : this(null)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TaskMaster"/> class.
+        /// </summary>
+        /// <param name="logger">The logger.</param>
+        public TaskMaster(ILogger logger)
         {
             var Tasks = Canister.Builder.Bootstrapper.ResolveAll<ITask>().ToArray();
             var DataManagers = Canister.Builder.Bootstrapper.ResolveAll<IDataManager>();
             DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly != typeof(TaskMaster).GetTypeInfo().Assembly)
                 ?? DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
-            Logger = Canister.Builder.Bootstrapper.Resolve<ILogger>() ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
+            Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
             Triggers = new ListMapping<int, Trigger>();
             foreach (var Task in Tasks)
             {
@@ -49,6 +58,10 @@ namespace TaskMaster
         /// <value>The data manager.</value>
         private IDataManager DataManager { get; }
 
+        /// <summary>
+        /// Gets the logger.
+        /// </summary>
+        /// <value>The logger.</value>
         private ILogger Logger { get; }
 
         /// <summary>
