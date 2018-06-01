@@ -40,6 +40,7 @@ namespace TaskMaster.Modules
                 return;
             bootstrapper.RegisterAll<ITask>();
             bootstrapper.RegisterAll<IDataManager>();
+            bootstrapper.Register<TaskMaster>();
         }
     }
 }

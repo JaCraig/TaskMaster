@@ -14,9 +14,7 @@ namespace ExampleApp
                     .AddAssembly(typeof(Program).GetTypeInfo().Assembly)
                     .RegisterTaskMaster()
                     .Build();
-            var Bootstrapper = Canister.Builder.Bootstrapper;
-            var Manager = new TaskMaster.TaskMaster();
-            Manager.Run();
+            Canister.Builder.Bootstrapper.Resolve<TaskMaster.TaskMaster>().Run();
             Console.ReadKey();
         }
     }
