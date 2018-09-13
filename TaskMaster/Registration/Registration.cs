@@ -14,6 +14,7 @@ limitations under the License.
 using BigBook.Registration;
 using Canister.Interfaces;
 using FileCurator.Registration;
+using Monarch;
 using SerialBox.Registration;
 using System.Reflection;
 
@@ -34,7 +35,8 @@ namespace TaskMaster.Registration
             return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
                                .RegisterFileCurator()
                                .RegisterSerialBox()
-                               .RegisterBigBookOfDataTypes();
+                               .RegisterBigBookOfDataTypes()
+                               .RegisterMonarch();
         }
     }
 }

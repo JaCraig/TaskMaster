@@ -12,6 +12,7 @@ limitations under the License.
 */
 
 using BigBook;
+using Monarch;
 using Serilog;
 using System;
 using System.Linq;
@@ -73,11 +74,14 @@ namespace TaskMaster
         /// <summary>
         /// Runs the tasks.
         /// </summary>
+        /// <param name="args">The arguments.</param>
         /// <returns>True if it runs successfully, false otherwise.</returns>
-        public bool Run()
+        public bool Run(params string[] args)
         {
             try
             {
+                if (args.Length > 0)
+                    return Canister.Builder.Bootstrapper.Resolve<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
                 var Result = true;
                 foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {
@@ -89,6 +93,28 @@ namespace TaskMaster
             {
                 Logger.Error(e.ToString());
                 return false;
+            }
+        }
+
+        /// <summary>
+        /// Runs the specified name.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        internal void Run(string name)
+        {
+            try
+            {
+                var TaskToRun = Triggers.SelectMany(x => x.Value).FirstOrDefault(x => string.Equals(x.Task.Name, name, StringComparison.OrdinalIgnoreCase));
+                if (TaskToRun == null)
+                {
+                    Console.WriteLine($"Task {TaskToRun} not found.");
+                    throw new ArgumentException($"Task {TaskToRun} not found.");
+                }
+                TaskToRun.Run();
+            }
+            catch (Exception e)
+            {
+                Logger.Error(e.ToString());
             }
         }
     }

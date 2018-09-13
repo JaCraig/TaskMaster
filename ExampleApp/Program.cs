@@ -14,7 +14,7 @@ namespace ExampleApp
                     .AddAssembly(typeof(Program).GetTypeInfo().Assembly)
                     .RegisterTaskMaster()
                     .Build();
-            Canister.Builder.Bootstrapper.Resolve<TaskMaster.TaskMaster>().Run();
+            Canister.Builder.Bootstrapper.Resolve<TaskMaster.TaskMaster>().Run(args);
             Console.ReadKey();
         }
     }
