@@ -12,11 +12,13 @@ limitations under the License.
 */
 
 using BigBook;
+using Canister;
 using Monarch;
 using Serilog;
 using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using TaskMaster.DataManager;
 using TaskMaster.Interfaces;
 using TaskMaster.Triggers;
 
@@ -31,7 +33,10 @@ namespace TaskMaster
         /// Initializes a new instance of the <see cref="TaskMaster"/> class.
         /// </summary>
         public TaskMaster()
-            : this(null)
+            : this(
+                Log.Logger,
+                Builder.Bootstrapper?.ResolveAll<ITask>() ?? Array.Empty<ITask>(),
+                Builder.Bootstrapper?.ResolveAll<IDataManager>() ?? Array.Empty<IDataManager>())
         {
         }
 
@@ -39,15 +44,15 @@ namespace TaskMaster
         /// Initializes a new instance of the <see cref="TaskMaster"/> class.
         /// </summary>
         /// <param name="logger">The logger.</param>
-        public TaskMaster(ILogger logger)
+        /// <param name="tasks">The tasks.</param>
+        /// <param name="dataManagers">The data managers.</param>
+        public TaskMaster(ILogger logger, IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers)
         {
-            var Tasks = Canister.Builder.Bootstrapper.ResolveAll<ITask>().ToArray();
-            var DataManagers = Canister.Builder.Bootstrapper.ResolveAll<IDataManager>();
-            DataManager = DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly != typeof(TaskMaster).GetTypeInfo().Assembly)
-                ?? DataManagers.FirstOrDefault(x => x.GetType().GetTypeInfo().Assembly == typeof(TaskMaster).GetTypeInfo().Assembly);
+            DataManager = dataManagers.FirstOrDefault(x => !(x is DefaultDataManager))
+                          ?? dataManagers.FirstOrDefault(x => x is DefaultDataManager);
             Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
             Triggers = new ListMapping<int, Trigger>();
-            foreach (var Task in Tasks)
+            foreach (var Task in tasks)
             {
                 Triggers.Add(Task.Priority, new Trigger(Task, Logger, DataManager));
             }
@@ -81,7 +86,7 @@ namespace TaskMaster
             try
             {
                 if (args.Length > 0)
-                    return Canister.Builder.Bootstrapper.Resolve<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
+                    return Canister.Builder.Bootstrapper?.Resolve<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
                 var Result = true;
                 foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {

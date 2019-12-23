@@ -52,7 +52,7 @@ namespace TaskMaster.DataManager
         /// </summary>
         /// <param name="task">The task.</param>
         /// <returns>The data associated with the task</returns>
-        public dynamic GetData(ITask task)
+        public dynamic? GetData(ITask task)
         {
             new DirectoryInfo(Location + "Data/").Create();
             var File = new FileInfo(Location + "Data/" + task.Name + ".txt");

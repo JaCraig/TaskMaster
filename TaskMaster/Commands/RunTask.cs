@@ -50,8 +50,8 @@ namespace TaskMaster.Commands
         /// <returns>The result.</returns>
         protected override async Task<int> Run(TaskName input)
         {
-            await Task.CompletedTask;
-            Bootstrapper.Resolve<TaskMaster>()?.Run(input.Name);
+            await Task.CompletedTask.ConfigureAwait(false);
+            Bootstrapper.Resolve<TaskMaster>()?.Run(input.Name ?? "");
             return 0;
         }
     }

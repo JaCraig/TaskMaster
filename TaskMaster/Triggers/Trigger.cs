@@ -11,6 +11,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using SerialBox.Interfaces;
 using Serilog;
 using System;
 using System.Linq;
@@ -34,7 +35,7 @@ namespace TaskMaster.Triggers
         /// <exception cref="ArgumentNullException">logger</exception>
         public Trigger(ITask task, ILogger logger, IDataManager dataManager)
         {
-            DataManager = dataManager ?? new DefaultDataManager(Canister.Builder.Bootstrapper.Resolve<SerialBox.SerialBox>());
+            DataManager = dataManager ?? new DefaultDataManager(Canister.Builder.Bootstrapper?.Resolve<SerialBox.SerialBox>() ?? new SerialBox.SerialBox(Array.Empty<ISerializer>()));
             Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger() ?? throw new ArgumentNullException(nameof(logger));
             Frequencies = task.Frequencies ?? new IFrequency[] { new RunAlways() };
             Task = task;

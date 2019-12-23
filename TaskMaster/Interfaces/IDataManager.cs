@@ -25,7 +25,7 @@ namespace TaskMaster.Interfaces
         /// </summary>
         /// <param name="task">The task.</param>
         /// <returns>The data associated with the task</returns>
-        dynamic GetData(ITask task);
+        dynamic? GetData(ITask task);
 
         /// <summary>
         /// Gets the last run date/time.
