@@ -90,7 +90,7 @@ namespace TaskMaster
                 var Result = true;
                 foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {
-                    Result &= Triggers[Priority].ForEachParallel(x => x.Run()).All(x => x);
+                    Result &= Triggers[Priority].ForEachParallel(x => x.RunAsync().GetAwaiter().GetResult()).All(x => x);
                 }
                 return Result;
             }
@@ -115,7 +115,7 @@ namespace TaskMaster
                     Console.WriteLine($"Task {TaskToRun} not found.");
                     throw new ArgumentException($"Task {TaskToRun} not found.");
                 }
-                TaskToRun.Run();
+                TaskToRun.RunAsync().GetAwaiter().GetResult();
             }
             catch (Exception e)
             {

@@ -12,6 +12,7 @@ limitations under the License.
 */
 
 using System;
+using System.Threading.Tasks;
 
 namespace TaskMaster.Interfaces
 {
@@ -42,7 +43,7 @@ namespace TaskMaster.Interfaces
         /// </summary>
         /// <param name="lastRun">The last run date.</param>
         /// <returns>Returns true if it runs successfully, false otherwise</returns>
-        bool Execute(DateTime lastRun);
+        Task<bool> ExecuteAsync(DateTime lastRun);
 
         /// <summary>
         /// Initializes the task using the specified data manager.

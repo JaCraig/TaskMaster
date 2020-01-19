@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using TaskMaster.Frequency;
 using TaskMaster.Interfaces;
 
@@ -31,10 +32,10 @@ namespace ExampleApp
         /// </summary>
         /// <param name="lastRun">The last run.</param>
         /// <returns></returns>
-        public bool Execute(DateTime lastRun)
+        public Task<bool> ExecuteAsync(DateTime lastRun)
         {
             Console.Write("World");
-            return true;
+            return Task.FromResult(true);
         }
 
         /// <summary>

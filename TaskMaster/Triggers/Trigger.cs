@@ -15,6 +15,7 @@ using SerialBox.Interfaces;
 using Serilog;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using TaskMaster.DataManager;
 using TaskMaster.Frequency;
 using TaskMaster.Interfaces;
@@ -84,7 +85,7 @@ namespace TaskMaster.Triggers
         /// Runs this instance.
         /// </summary>
         /// <returns>True if it ran successfully, false otherwise</returns>
-        public bool Run()
+        public async Task<bool> RunAsync()
         {
             Logger.Information("Initializing task: {Name:l}", Task.Name);
             try
@@ -92,7 +93,7 @@ namespace TaskMaster.Triggers
                 if (Frequencies.Any(x => x.CanRun(LastRun, DateTime.Now)))
                 {
                     Logger.Information("Beginning task: {Name:l}", Task.Name);
-                    var Result = Task.Execute(LastRun);
+                    var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
                     DataManager.SetLastRun(Task, DateTime.Now);
                     Logger.Information("Task {Name:l} ended", Task.Name);
                     return Result;

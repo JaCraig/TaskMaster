@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using TaskMaster.Frequency;
 using TaskMaster.Interfaces;
 using TaskMaster.Tests.BaseClasses;
@@ -19,10 +20,10 @@ namespace TaskMaster.Tests.Triggers
         }
 
         [Fact]
-        public void Run()
+        public async System.Threading.Tasks.Task RunAsync()
         {
             var TestObject = new Trigger(new TestTask(), null, null);
-            Assert.True(TestObject.Run());
+            Assert.True(await TestObject.RunAsync().ConfigureAwait(false));
         }
 
         private class TestTask : ITask
@@ -33,9 +34,9 @@ namespace TaskMaster.Tests.Triggers
 
             public int Priority => 1;
 
-            public bool Execute(DateTime lastRun)
+            public Task<bool> ExecuteAsync(DateTime lastRun)
             {
-                return true;
+                return Task.FromResult(true);
             }
 
             public bool Initialize(IDataManager dataManager)
