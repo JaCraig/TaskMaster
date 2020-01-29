@@ -14,6 +14,7 @@ limitations under the License.
 using SerialBox.Interfaces;
 using Serilog;
 using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using TaskMaster.DataManager;
@@ -92,10 +93,13 @@ namespace TaskMaster.Triggers
             {
                 if (Frequencies.Any(x => x.CanRun(LastRun, DateTime.Now)))
                 {
+                    var InternalTimer = new Stopwatch();
+                    InternalTimer.Start();
                     Logger.Information("Beginning task: {Name:l}", Task.Name);
                     var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
                     DataManager.SetLastRun(Task, DateTime.Now);
-                    Logger.Information("Task {Name:l} ended", Task.Name);
+                    InternalTimer.Stop();
+                    Logger.Information("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
                     return Result;
                 }
                 Logger.Information("Task skipped based on schedule: {Name:l}", Task.Name);
