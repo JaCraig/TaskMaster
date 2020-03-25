@@ -30,13 +30,13 @@ namespace TaskMaster.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterTaskMaster(this IBootstrapper bootstrapper)
+        public static IBootstrapper? RegisterTaskMaster(this IBootstrapper? bootstrapper)
         {
-            return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
-                               .RegisterFileCurator()
-                               .RegisterSerialBox()
-                               .RegisterBigBookOfDataTypes()
-                               .RegisterMonarch();
+            return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+                               ?.RegisterFileCurator()
+                               ?.RegisterSerialBox()
+                               ?.RegisterBigBookOfDataTypes()
+                               ?.RegisterMonarch();
         }
     }
 }
