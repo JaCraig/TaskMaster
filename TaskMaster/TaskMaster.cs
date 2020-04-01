@@ -17,6 +17,7 @@ using Monarch;
 using Serilog;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using TaskMaster.DataManager;
 using TaskMaster.Interfaces;
@@ -85,6 +86,8 @@ namespace TaskMaster
         {
             try
             {
+                var InternalTimer = new Stopwatch();
+                InternalTimer.Start();
                 if (args.Length > 0)
                     return Canister.Builder.Bootstrapper?.Resolve<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
                 var Result = true;
@@ -92,6 +95,8 @@ namespace TaskMaster
                 {
                     Result &= Triggers[Priority].ForEachParallel(x => x.RunAsync().GetAwaiter().GetResult()).All(x => x);
                 }
+                InternalTimer.Stop();
+                Logger.Information("All tasks ended in {Time:l}", InternalTimer.Elapsed.ToString("g"));
                 return Result;
             }
             catch (Exception e)
