@@ -11,6 +11,12 @@ namespace ExampleApp
     public class WorldTask : ITask
     {
         /// <summary>
+        /// Gets a value indicating whether this <see cref="T:TaskMaster.Interfaces.ITask"/> is active.
+        /// </summary>
+        /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        public bool Active => true;
+
+        /// <summary>
         /// Gets the frequencies.
         /// </summary>
         /// <value>The frequencies.</value>

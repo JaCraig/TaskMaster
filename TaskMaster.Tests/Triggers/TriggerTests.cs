@@ -28,8 +28,8 @@ namespace TaskMaster.Tests.Triggers
 
         private class TestTask : ITask
         {
+            public bool Active => true;
             public IFrequency[] Frequencies => new IFrequency[] { new RunAlways() };
-
             public string Name => "Test task";
 
             public int Priority => 1;

@@ -22,6 +22,12 @@ namespace TaskMaster.Interfaces
     public interface ITask
     {
         /// <summary>
+        /// Gets a value indicating whether this <see cref="ITask"/> is active.
+        /// </summary>
+        /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        bool Active { get; }
+
+        /// <summary>
         /// Gets the frequencies.
         /// </summary>
         /// <value>The frequencies.</value>

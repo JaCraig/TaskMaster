@@ -42,10 +42,17 @@ namespace TaskMaster.Triggers
             Frequencies = task.Frequencies ?? new IFrequency[] { new RunAlways() };
             Task = task;
             Priority = Task.Priority;
+            Active = Task.Active;
 
             Task.Initialize(DataManager);
             LastRun = DataManager.GetLastRun(Task);
         }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="Trigger"/> is active.
+        /// </summary>
+        /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        public bool Active { get; set; }
 
         /// <summary>
         /// Gets the data manager.
@@ -91,7 +98,7 @@ namespace TaskMaster.Triggers
             Logger.Information("Initializing task: {Name:l}", Task.Name);
             try
             {
-                if (Frequencies.Any(x => x.CanRun(LastRun, DateTime.Now)))
+                if (Active && Frequencies.Any(x => x.CanRun(LastRun, DateTime.Now)))
                 {
                     var InternalTimer = new Stopwatch();
                     InternalTimer.Start();
