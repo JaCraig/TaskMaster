@@ -95,16 +95,17 @@ namespace TaskMaster.Triggers
         /// <returns>True if it ran successfully, false otherwise</returns>
         public async Task<bool> RunAsync()
         {
+            var StartTime = DateTime.Now;
             Logger.Information("Initializing task: {Name:l}", Task.Name);
             try
             {
-                if (Active && Frequencies.Any(x => x.CanRun(LastRun, DateTime.Now)))
+                if (Active && Frequencies.Any(x => x.CanRun(LastRun, StartTime)))
                 {
                     var InternalTimer = new Stopwatch();
                     InternalTimer.Start();
                     Logger.Information("Beginning task: {Name:l}", Task.Name);
                     var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
-                    DataManager.SetLastRun(Task, DateTime.Now);
+                    DataManager.SetLastRun(Task, StartTime);
                     InternalTimer.Stop();
                     Logger.Information("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
                     return Result;
