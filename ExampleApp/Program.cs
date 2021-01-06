@@ -1,8 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Reflection;
-using TaskMaster.Registration;
 
 namespace ExampleApp
 {
@@ -10,10 +7,8 @@ namespace ExampleApp
     {
         private static void Main(string[] args)
         {
-            Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .AddAssembly(typeof(Program).GetTypeInfo().Assembly)
-                    .RegisterTaskMaster()
-                    .Build();
+            new ServiceCollection().AddCanisterModules(x => x.AddAssembly(typeof(Program).Assembly)
+                    .RegisterTaskMaster());
             Canister.Builder.Bootstrapper.Resolve<TaskMaster.TaskMaster>().Run(args);
             Console.ReadKey();
         }

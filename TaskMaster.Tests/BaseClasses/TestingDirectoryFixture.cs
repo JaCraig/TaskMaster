@@ -1,9 +1,6 @@
 ﻿using FileCurator;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Reflection;
-using TaskMaster.Registration;
 using Xunit;
 
 namespace TaskMaster.Tests.BaseClasses
@@ -15,10 +12,8 @@ namespace TaskMaster.Tests.BaseClasses
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                   .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
-                   .RegisterTaskMaster()
-                   .Build();
+                new ServiceCollection().AddCanisterModules(x => x.AddAssembly(typeof(TestingDirectoryFixture).Assembly)
+                   .RegisterTaskMaster());
             }
         }
 

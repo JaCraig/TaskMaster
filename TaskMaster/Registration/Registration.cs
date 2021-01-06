@@ -11,14 +11,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook.Registration;
 using Canister.Interfaces;
-using FileCurator.Registration;
-using Monarch;
-using SerialBox.Registration;
 using System.Reflection;
 
-namespace TaskMaster.Registration
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Registration extension methods
@@ -30,7 +26,7 @@ namespace TaskMaster.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper? RegisterTaskMaster(this IBootstrapper? bootstrapper)
+        public static ICanisterConfiguration? RegisterTaskMaster(this ICanisterConfiguration? bootstrapper)
         {
             return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
                                ?.RegisterFileCurator()
