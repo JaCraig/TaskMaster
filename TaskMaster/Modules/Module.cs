@@ -25,22 +25,17 @@ namespace TaskMaster.Modules
         /// <summary>
         /// Order to run it in
         /// </summary>
-        public int Order
-        {
-            get { return 1; }
-        }
+        public int Order { get; } = 1;
 
         /// <summary>
         /// Loads the module
         /// </summary>
         /// <param name="bootstrapper">Bootstrapper to register with</param>
-        public void Load(IBootstrapper bootstrapper)
+        public void Load(IBootstrapper? bootstrapper)
         {
-            if (bootstrapper == null)
-                return;
-            bootstrapper.RegisterAll<ITask>();
-            bootstrapper.RegisterAll<IDataManager>();
-            bootstrapper.Register<TaskMaster>();
+            bootstrapper?.RegisterAll<ITask>()
+                .RegisterAll<IDataManager>()
+                .Register<TaskMaster>();
         }
     }
 }

@@ -11,7 +11,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using Canister.Interfaces;
 using Monarch.Commands.BaseClasses;
 using System.Threading.Tasks;
 
@@ -24,25 +23,10 @@ namespace TaskMaster.Commands
     public class RunTask : CommandBaseClass<TaskName>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RunTask"/> class.
-        /// </summary>
-        /// <param name="bootstrapper">The bootstrapper.</param>
-        public RunTask(IBootstrapper bootstrapper)
-        {
-            Bootstrapper = bootstrapper;
-        }
-
-        /// <summary>
         /// Gets the aliases.
         /// </summary>
         /// <value>The aliases.</value>
         public override string[] Aliases => new string[] { "run" };
-
-        /// <summary>
-        /// Gets the bootstrapper.
-        /// </summary>
-        /// <value>The bootstrapper.</value>
-        public IBootstrapper Bootstrapper { get; }
 
         /// <summary>
         /// Gets the description.
@@ -61,11 +45,10 @@ namespace TaskMaster.Commands
         /// </summary>
         /// <param name="input">The input.</param>
         /// <returns>The result.</returns>
-        protected override async Task<int> Run(TaskName input)
+        protected override Task<int> Run(TaskName input)
         {
-            await Task.CompletedTask.ConfigureAwait(false);
-            Bootstrapper.Resolve<TaskMaster>()?.Run(input.Name ?? "");
-            return 0;
+            TaskMaster.Instance?.Run(input.Name ?? "");
+            return Task.FromResult(0);
         }
     }
 }

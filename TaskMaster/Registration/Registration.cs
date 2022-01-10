@@ -19,7 +19,7 @@ namespace Microsoft.Extensions.DependencyInjection
     /// <summary>
     /// Registration extension methods
     /// </summary>
-    public static class Registration
+    public static class RegistrationTaskMaster
     {
         /// <summary>
         /// Registers the library with the bootstrapper.
@@ -28,7 +28,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>The bootstrapper</returns>
         public static ICanisterConfiguration? RegisterTaskMaster(this ICanisterConfiguration? bootstrapper)
         {
-            return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+            return bootstrapper?.AddAssembly(typeof(RegistrationTaskMaster).GetTypeInfo().Assembly)
                                ?.RegisterFileCurator()
                                ?.RegisterSerialBox()
                                ?.RegisterBigBookOfDataTypes()

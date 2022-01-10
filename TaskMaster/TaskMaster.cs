@@ -57,7 +57,14 @@ namespace TaskMaster
             {
                 Triggers.Add(Task.Priority, new Trigger(Task, Logger, DataManager));
             }
+            Instance = this;
         }
+
+        /// <summary>
+        /// Gets the instance.
+        /// </summary>
+        /// <value>The instance.</value>
+        internal static TaskMaster? Instance { get; private set; }
 
         /// <summary>
         /// Gets the data manager.
