@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using TaskMaster.Commands;
 using TaskMaster.Frequency;
 using TaskMaster.Interfaces;
 using TaskMaster.Tests.BaseClasses;
@@ -15,7 +16,7 @@ namespace TaskMaster.Tests.Triggers
         {
             var TestObject = new Trigger(new TestTask(), null, null);
             Assert.Single(TestObject.Frequencies);
-            Assert.Equal(new DateTime(1, 1, 1), TestObject.LastRun);
+            Assert.Equal(new LastRunInfo { LastRunStart = new DateTime(1, 1, 1) }, TestObject.LastRun);
             Assert.IsType<TestTask>(TestObject.Task);
         }
 
@@ -34,7 +35,7 @@ namespace TaskMaster.Tests.Triggers
 
             public int Priority => 1;
 
-            public Task<bool> ExecuteAsync(DateTime lastRun)
+            public Task<bool> ExecuteAsync(LastRunInfo lastRun)
             {
                 return Task.FromResult(true);
             }

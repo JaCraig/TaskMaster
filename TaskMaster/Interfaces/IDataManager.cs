@@ -11,7 +11,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using System;
+using TaskMaster.Commands;
 
 namespace TaskMaster.Interfaces
 {
@@ -32,7 +32,7 @@ namespace TaskMaster.Interfaces
         /// </summary>
         /// <param name="task">The task.</param>
         /// <returns>The last run date/time.</returns>
-        DateTime GetLastRun(ITask task);
+        LastRunInfo GetLastRun(ITask task);
 
         /// <summary>
         /// Sets the data.
@@ -46,8 +46,8 @@ namespace TaskMaster.Interfaces
         /// Sets the last run date/time.
         /// </summary>
         /// <param name="task">The task.</param>
-        /// <param name="time">The last run date/time.</param>
+        /// <param name="runInfo">The run information.</param>
         /// <returns>True if it succeeds, false otherwise.</returns>
-        bool SetLastRun(ITask task, DateTime time);
+        bool SetLastRun(ITask task, LastRunInfo runInfo);
     }
 }

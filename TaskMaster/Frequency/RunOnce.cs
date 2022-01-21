@@ -12,6 +12,7 @@ limitations under the License.
 */
 
 using System;
+using TaskMaster.Commands;
 using TaskMaster.Interfaces;
 
 namespace TaskMaster.Frequency
@@ -28,9 +29,9 @@ namespace TaskMaster.Frequency
         /// <param name="lastRun">The last run.</param>
         /// <param name="currentTime">The current time.</param>
         /// <returns>True if it can, false otherwise</returns>
-        public bool CanRun(DateTime lastRun, DateTime currentTime)
+        public bool CanRun(LastRunInfo lastRun, DateTime currentTime)
         {
-            return lastRun == DateTime.MinValue;
+            return lastRun.LastRunStart == DateTime.MinValue;
         }
     }
 }

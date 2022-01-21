@@ -12,6 +12,7 @@ limitations under the License.
 */
 
 using System;
+using TaskMaster.Commands;
 
 namespace TaskMaster.Interfaces
 {
@@ -26,6 +27,6 @@ namespace TaskMaster.Interfaces
         /// <param name="lastRun">The last run.</param>
         /// <param name="currentTime">The current time.</param>
         /// <returns>True if it can, false otherwise</returns>
-        bool CanRun(DateTime lastRun, DateTime currentTime);
+        bool CanRun(LastRunInfo lastRun, DateTime currentTime);
     }
 }

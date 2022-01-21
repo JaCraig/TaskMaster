@@ -14,6 +14,7 @@ limitations under the License.
 using BigBook;
 using FileCurator;
 using System;
+using TaskMaster.Commands;
 using TaskMaster.Interfaces;
 
 namespace TaskMaster.DataManager
@@ -66,13 +67,25 @@ namespace TaskMaster.DataManager
         /// </summary>
         /// <param name="task">The task.</param>
         /// <returns>The last run date/time.</returns>
-        public DateTime GetLastRun(ITask task)
+        public LastRunInfo GetLastRun(ITask task)
         {
             new DirectoryInfo(Location + "LastRun/").Create();
             var File = new FileInfo(Location + "LastRun/" + task.Name + ".txt");
             if (!File.Exists)
-                return DateTime.MinValue;
-            return SerialBox.Deserialize<string, DateTime>(File.Read());
+                return LastRunInfo.MinValue;
+            try
+            {
+                return SerialBox.Deserialize<string, LastRunInfo>(File.Read());
+            }
+            catch
+            {
+                try
+                {
+                    var Start = SerialBox.Deserialize<string, DateTime>(File.Read());
+                    return new LastRunInfo { LastRunStart = Start, LastRunEnd = Start };
+                }
+                catch { return LastRunInfo.MinValue; }
+            }
         }
 
         /// <summary>
@@ -94,10 +107,10 @@ namespace TaskMaster.DataManager
         /// <param name="task">The task.</param>
         /// <param name="time">The last run date/time.</param>
         /// <returns>True if it succeeds, false otherwise.</returns>
-        public bool SetLastRun(ITask task, DateTime time)
+        public bool SetLastRun(ITask task, LastRunInfo time)
         {
             new DirectoryInfo(Location + "LastRun/").Create();
-            new FileInfo(Location + "LastRun/" + task.Name + ".txt").Write(SerialBox.Serialize<DateTime, string>(time));
+            new FileInfo(Location + "LastRun/" + task.Name + ".txt").Write(SerialBox.Serialize<LastRunInfo, string>(time));
             return true;
         }
     }

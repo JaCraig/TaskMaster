@@ -17,6 +17,7 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using TaskMaster.Commands;
 using TaskMaster.DataManager;
 using TaskMaster.Frequency;
 using TaskMaster.Interfaces;
@@ -70,7 +71,7 @@ namespace TaskMaster.Triggers
         /// Gets the last run.
         /// </summary>
         /// <value>The last run.</value>
-        public DateTime LastRun { get; }
+        public LastRunInfo LastRun { get; }
 
         /// <summary>
         /// Priority to run in.
@@ -105,7 +106,7 @@ namespace TaskMaster.Triggers
                     InternalTimer.Start();
                     Logger.Information("Beginning task: {Name:l}", Task.Name);
                     var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
-                    DataManager.SetLastRun(Task, StartTime);
+                    DataManager.SetLastRun(Task, new LastRunInfo { LastRunStart = StartTime, LastRunEnd = DateTime.Now });
                     InternalTimer.Stop();
                     Logger.Information("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
                     return Result;
