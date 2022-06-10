@@ -10,7 +10,7 @@
     <Description>TaskMaster is a simple library used to manage sets of fire and forget tasks that need to run after specific dates/times.</Description>
     <AssemblyTitle>TaskMaster</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard2.1</TargetFramework>
+	  <TargetFrameworks>netstandard2.1;net5.0;net6.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>TaskMaster</AssemblyName>
     <PackageId>TaskMaster</PackageId>
