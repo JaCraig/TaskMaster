@@ -1,5 +1,4 @@
 ﻿using FileCurator;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using Xunit;
 
@@ -10,11 +9,6 @@ namespace TaskMaster.Tests.BaseClasses
     {
         public TestingDirectoryFixture()
         {
-            if (Canister.Builder.Bootstrapper == null)
-            {
-                new ServiceCollection().AddCanisterModules(x => x.AddAssembly(typeof(TestingDirectoryFixture).Assembly)
-                   .RegisterTaskMaster());
-            }
         }
 
         public void Dispose()

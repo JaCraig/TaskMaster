@@ -7,8 +7,7 @@ namespace ExampleApp
     {
         private static void Main(string[] args)
         {
-            new ServiceCollection().AddCanisterModules();
-            Canister.Builder.Bootstrapper.Resolve<TaskMaster.TaskMaster>().Run(args);
+            new ServiceCollection().AddCanisterModules().BuildServiceProvider().GetService<TaskMaster.TaskMaster>().Run(args);
             Console.ReadKey();
         }
     }

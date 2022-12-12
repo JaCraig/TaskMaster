@@ -1,4 +1,5 @@
 ﻿using BigBook;
+using Microsoft.Extensions.DependencyInjection;
 
 /*
 Copyright 2017 James Craig
@@ -28,7 +29,7 @@ namespace TaskMaster.Commands
         /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
         public override string ToString()
         {
-            return $"[Values: ({Canister.Builder.Bootstrapper?.ResolveAll<ITask>().ToString(x => x.Name)})]";
+            return $"[Values: ({Services.ServiceProvider.GetServices<ITask>().ToString(x => x.Name)})]";
         }
     }
 }

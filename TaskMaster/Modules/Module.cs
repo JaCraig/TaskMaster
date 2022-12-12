@@ -12,6 +12,7 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using TaskMaster.Interfaces;
 
 namespace TaskMaster.Modules
@@ -31,11 +32,11 @@ namespace TaskMaster.Modules
         /// Loads the module
         /// </summary>
         /// <param name="bootstrapper">Bootstrapper to register with</param>
-        public void Load(IBootstrapper? bootstrapper)
+        public void Load(IServiceCollection? bootstrapper)
         {
-            bootstrapper?.RegisterAll<ITask>()
-                .RegisterAll<IDataManager>()
-                .Register<TaskMaster>();
+            bootstrapper?.AddAllTransient<ITask>()
+                ?.AddAllTransient<IDataManager>()
+                ?.AddTransient<TaskMaster>();
         }
     }
 }

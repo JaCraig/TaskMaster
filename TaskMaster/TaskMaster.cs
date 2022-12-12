@@ -12,7 +12,7 @@ limitations under the License.
 */
 
 using BigBook;
-using Canister;
+using Microsoft.Extensions.DependencyInjection;
 using Monarch;
 using Serilog;
 using System;
@@ -36,8 +36,8 @@ namespace TaskMaster
         public TaskMaster()
             : this(
                 Log.Logger,
-                Builder.Bootstrapper?.ResolveAll<ITask>() ?? Array.Empty<ITask>(),
-                Builder.Bootstrapper?.ResolveAll<IDataManager>() ?? Array.Empty<IDataManager>())
+                Services.ServiceProvider.GetServices<ITask>() ?? Array.Empty<ITask>(),
+                Services.ServiceProvider.GetServices<IDataManager>() ?? Array.Empty<IDataManager>())
         {
         }
 
@@ -96,7 +96,7 @@ namespace TaskMaster
                 var InternalTimer = new Stopwatch();
                 InternalTimer.Start();
                 if (args.Length > 0)
-                    return Canister.Builder.Bootstrapper?.Resolve<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
+                    return Services.ServiceProvider.GetService<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
                 var Result = true;
                 foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {
