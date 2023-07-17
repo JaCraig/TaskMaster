@@ -11,9 +11,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using SerialBox.Interfaces;
-using Serilog;
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -39,8 +38,8 @@ namespace TaskMaster.Triggers
         /// <exception cref="ArgumentNullException">logger</exception>
         public Trigger(ITask task, ILogger logger, IDataManager dataManager)
         {
-            DataManager = dataManager ?? new DefaultDataManager(Services.ServiceProvider.GetService<SerialBox.SerialBox>() ?? new SerialBox.SerialBox(Array.Empty<ISerializer>()));
-            Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger() ?? throw new ArgumentNullException(nameof(logger));
+            DataManager = dataManager ?? new DefaultDataManager(new SerialBox.SerialBox(Array.Empty<ISerializer>()));
+            Logger = logger;
             Frequencies = task.Frequencies ?? new IFrequency[] { new RunAlways() };
             Task = task;
             Priority = Task.Priority;
@@ -98,27 +97,27 @@ namespace TaskMaster.Triggers
         public async Task<bool> RunAsync()
         {
             var StartTime = DateTime.Now;
-            Logger.Information("Initializing task: {Name:l}", Task.Name);
+            Logger?.LogInformation("Initializing task: {Name:l}", Task.Name);
             try
             {
                 if (Active && Frequencies.Any(x => x.CanRun(LastRun, StartTime)))
                 {
                     var InternalTimer = new Stopwatch();
                     InternalTimer.Start();
-                    Logger.Information("Beginning task: {Name:l}", Task.Name);
+                    Logger?.LogInformation("Beginning task: {Name:l}", Task.Name);
                     var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
                     DataManager.SetLastRun(Task, new LastRunInfo { LastRunStart = StartTime, LastRunEnd = DateTime.Now });
                     InternalTimer.Stop();
-                    Logger.Information("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
+                    Logger?.LogInformation("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
                     return Result;
                 }
-                Logger.Information("Task skipped based on schedule: {Name:l}", Task.Name);
+                Logger?.LogInformation("Task skipped based on schedule: {Name:l}", Task.Name);
             }
             catch (Exception e)
             {
-                Logger.Error(e.ToString());
+                Logger?.LogError("Error running the task: ", e);
             }
-            Logger.Information("Task {Name:l} ended", Task.Name);
+            Logger?.LogInformation("Task {Name:l} ended", Task.Name);
             return false;
         }
     }

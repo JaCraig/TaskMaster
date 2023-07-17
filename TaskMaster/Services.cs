@@ -9,10 +9,20 @@ namespace TaskMaster
     internal static class Services
     {
         /// <summary>
+        /// The service provider lock
+        /// </summary>
+        private static readonly object ServiceProviderLock = new();
+
+        /// <summary>
+        /// The service provider
+        /// </summary>
+        private static IServiceProvider? _ServiceProvider;
+
+        /// <summary>
         /// Gets the service provider.
         /// </summary>
         /// <value>The service provider.</value>
-        public static IServiceProvider ServiceProvider
+        public static IServiceProvider? ServiceProvider
         {
             get
             {
@@ -27,15 +37,5 @@ namespace TaskMaster
                 return _ServiceProvider;
             }
         }
-
-        /// <summary>
-        /// The service provider lock
-        /// </summary>
-        private static readonly object ServiceProviderLock = new object();
-
-        /// <summary>
-        /// The service provider
-        /// </summary>
-        private static IServiceProvider _ServiceProvider;
     }
 }

@@ -8,7 +8,7 @@ namespace TaskMaster.Tests
         [Fact]
         public void CreateAndRun()
         {
-            var TestObject = new TaskMaster();
+            var TestObject = new TaskMaster(null, null, null);
             Assert.True(TestObject.Run());
         }
     }

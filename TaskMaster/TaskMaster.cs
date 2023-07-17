@@ -12,9 +12,8 @@ limitations under the License.
 */
 
 using BigBook;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Monarch;
-using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -31,27 +30,35 @@ namespace TaskMaster
     public class TaskMaster
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TaskMaster"/> class.
+        /// Initializes a new instance of the <see cref="TaskMaster" /> class.
         /// </summary>
-        public TaskMaster()
+        /// <param name="tasks">The tasks.</param>
+        /// <param name="dataManagers">The data managers.</param>
+        /// <param name="commandRunner">The command runner.</param>
+        public TaskMaster(IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers, CommandRunner? commandRunner)
             : this(
-                Log.Logger,
-                Services.ServiceProvider.GetServices<ITask>() ?? Array.Empty<ITask>(),
-                Services.ServiceProvider.GetServices<IDataManager>() ?? Array.Empty<IDataManager>())
+                null,
+                tasks,
+                dataManagers,
+                commandRunner)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TaskMaster"/> class.
+        /// Initializes a new instance of the <see cref="TaskMaster" /> class.
         /// </summary>
         /// <param name="logger">The logger.</param>
         /// <param name="tasks">The tasks.</param>
         /// <param name="dataManagers">The data managers.</param>
-        public TaskMaster(ILogger logger, IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers)
+        /// <param name="commandRunner">The command runner.</param>
+        public TaskMaster(ILogger<TaskMaster>? logger, IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers, CommandRunner? commandRunner)
         {
-            DataManager = dataManagers.FirstOrDefault(x => !(x is DefaultDataManager))
+            tasks ??= Array.Empty<ITask>();
+            dataManagers ??= Array.Empty<IDataManager>();
+            DataManager = dataManagers.FirstOrDefault(x => x is not DefaultDataManager)
                           ?? dataManagers.FirstOrDefault(x => x is DefaultDataManager);
-            Logger = logger ?? Log.Logger ?? new LoggerConfiguration().CreateLogger();
+            Logger = logger;
+            CommandRunner = commandRunner;
             Triggers = new ListMapping<int, Trigger>();
             foreach (var Task in tasks)
             {
@@ -67,16 +74,24 @@ namespace TaskMaster
         internal static TaskMaster? Instance { get; private set; }
 
         /// <summary>
+        /// Gets the command runner.
+        /// </summary>
+        /// <value>
+        /// The command runner.
+        /// </value>
+        private CommandRunner? CommandRunner { get; }
+
+        /// <summary>
         /// Gets the data manager.
         /// </summary>
         /// <value>The data manager.</value>
-        private IDataManager DataManager { get; }
+        private IDataManager? DataManager { get; }
 
         /// <summary>
         /// Gets the logger.
         /// </summary>
         /// <value>The logger.</value>
-        private ILogger Logger { get; }
+        private ILogger? Logger { get; }
 
         /// <summary>
         /// Gets the triggers.
@@ -96,19 +111,19 @@ namespace TaskMaster
                 var InternalTimer = new Stopwatch();
                 InternalTimer.Start();
                 if (args.Length > 0)
-                    return Services.ServiceProvider.GetService<CommandRunner>()?.Run(args).GetAwaiter().GetResult() == 0;
+                    return CommandRunner?.Run(args).GetAwaiter().GetResult() == 0;
                 var Result = true;
                 foreach (int Priority in Triggers.Keys.OrderBy(x => x))
                 {
-                    Result &= Triggers[Priority].ForEachParallel(x => x.RunAsync().GetAwaiter().GetResult()).All(x => x);
+                    Result &= Triggers[Priority].ForEachParallel(x => AsyncHelper.RunSync(x.RunAsync)).All(x => x);
                 }
                 InternalTimer.Stop();
-                Logger.Information("All tasks ended in {Time:l}", InternalTimer.Elapsed.ToString("g"));
+                Logger?.LogInformation("All tasks ended in {Time:l}", InternalTimer.Elapsed.ToString("g"));
                 return Result;
             }
             catch (Exception e)
             {
-                Logger.Error(e.ToString());
+                Logger?.LogError("Error when running task:", e);
                 return false;
             }
         }
@@ -122,16 +137,16 @@ namespace TaskMaster
             try
             {
                 var TaskToRun = Triggers.SelectMany(x => x.Value).FirstOrDefault(x => string.Equals(x.Task.Name, name, StringComparison.OrdinalIgnoreCase));
-                if (TaskToRun == null)
+                if (TaskToRun is null)
                 {
-                    Console.WriteLine($"Task {TaskToRun} not found.");
+                    Logger?.LogError($"Task {TaskToRun} not found.");
                     throw new ArgumentException($"Task {TaskToRun} not found.");
                 }
-                TaskToRun.RunAsync().GetAwaiter().GetResult();
+                AsyncHelper.RunSync(TaskToRun.RunAsync);
             }
             catch (Exception e)
             {
-                Logger.Error(e.ToString());
+                Logger?.LogError("Error running tasks: ", e);
             }
         }
     }

@@ -29,7 +29,7 @@ namespace TaskMaster.Commands
         /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
         public override string ToString()
         {
-            return $"[Values: ({Services.ServiceProvider.GetServices<ITask>().ToString(x => x.Name)})]";
+            return $"[Values: ({Services.ServiceProvider?.GetServices<ITask>().ToString(x => x.Name)})]";
         }
     }
 }
