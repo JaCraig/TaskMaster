@@ -1,94 +1,74 @@
 # TaskMaster
-TaskMaster is a basic library to help with running tasks only after certain criteria are met.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/vi7fu8ahwmd823vo?svg=true)](https://ci.appveyor.com/project/JaCraig/taskmaster)
+TaskMaster is a lightweight C# library that provides functionality for running tasks based on specific criteria. It simplifies the process of setting up and executing tasks in your application.
 
 ## Basic Usage
 
-The system relies on an IoC wrapper called [Canister](https://github.com/JaCraig/Canister). While Canister has a built in IoC container, it's purpose is to actually wrap your container of choice in a way that simplifies setup and usage for other libraries that don't want to be tied to a specific IoC container. TaskMaster uses it to detect and pull in various info. As such you must set up Canister in order to use TaskMaster:
+In order to use TaskMaster, you must wire it up first by adding it to your ServiceCollection:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .RegisterTaskMaster()
-                    .Build();
-					
-You must also register any assemblies that will contain your tasks with Canister in order for the system to find them:
+```csharp
+serviceCollection.AddCanisterModules();
+```
+Once Canister is configured, you can create a new instance of the TaskMaster service:
 
-	Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-					.AddAssembly(typeof(MyTask).GetTypeInfo().Assembly)
-                    .RegisterTaskMaster()
-                    .Build();
+```csharp
+var Runner = services.GetService<TaskMaster>();
+Runner.Run(args);
+```
 
-This is required prior to using the TaskMaster class for the first time. Once Canister is set up, you can use the TaskMaster class:
+The TaskMaster class handles task discovery, prioritization, and execution. It also logs any errors it encounters using Serilog. If Serilog is not registered with Canister, a default empty logger will be used. However, if a logger is specified, events will be logged using the ILogger class.
 
-    var Manager = new TaskMaster.TaskMaster();
-    Manager.Run();
+## Creating a Task
 
-The TaskMaster class will handle discovery of tasks, prioritization, and running of tasks. It will also log any errors that it finds to Serilog. If Serilog is not registered to Canister, it will default to an empty logger that does nothing. However if one is specified it will log events as they occur to the ILogger class.
+Creating a task with TaskMaster is straightforward. Simply inherit from the `ITask` interface and implement its methods. Here's an example of a basic "Hello World" task:
 
-## Creating a task
+```csharp
+/// <summary>
+/// Basic hello world task
+/// </summary>
+public class HelloWorldTask : ITask
+{
+    public IFrequency[] Frequencies => new IFrequency[] { new RunAlways() };
 
-Creating a task is rather simple, you just need to inherit a class from ITask:
+    public string Name => "Hello World";
 
-    /// <summary>
-    /// Basic hello world task
-    /// </summary>
-    public class HelloWorldTask : ITask
+    public int Priority => 1;
+
+    public bool Execute(DateTime lastRun)
     {
-        /// <summary>
-        /// Gets the frequencies.
-        /// </summary>
-        /// <value>The frequencies.</value>
-        public IFrequency[] Frequencies => new IFrequency[] { new RunAlways() };
-
-        /// <summary>
-        /// Gets the name.
-        /// </summary>
-        /// <value>The name.</value>
-        public string Name => "Hello World";
-
-		/// <summary>
-        /// Order to run it in (items with the same Priority value will be run in parallel)
-        /// </summary>
-        public int Priority => 1;
-
-        /// <summary>
-        /// Executes the specified last run.
-        /// </summary>
-        /// <param name="lastRun">The last run.</param>
-        /// <returns></returns>
-        public bool Execute(DateTime lastRun)
-        {
-            Console.WriteLine("Hello World");
-            return true;
-        }
-
-        /// <summary>
-        /// Initializes the specified data manager.
-        /// </summary>
-        /// <param name="dataManager">The data manager.</param>
-        /// <returns></returns>
-        public bool Initialize(IDataManager dataManager)
-        {
-            return true;
-        }
+        Console.WriteLine("Hello World");
+        return true;
     }
-	
-The above task runs every time the TaskManager's Run method is called. However you can specify another or even multiple frequencies at which to run. The name of the task is Hello World. As such all logged events will use that name. The priority is set to 1, which determines the batch they are run in. Lower numbered items are run first and if more than one task has the same priority, they will be run at the same time in parallel.
 
-The Initialization function is called when the item is created. The function is passed in an IDataManager class that will handle saving/getting configuration data for the task. By default the data manager saves configuration data in json serialized strings but this can be changed by creating your own data manager.
+    public bool Initialize(IDataManager dataManager)
+    {
+        return true;
+    }
+}
+```
 
-The Execute function is called when the task is actually triggered. As such that is where your task's actual work should go.
+In this example, the task runs every time the `Run` method of the TaskMaster is called. However, you can specify different frequencies for execution. The task's name is "Hello World," which is used for logging purposes. The priority is set to 1, determining the execution order. Tasks with lower priority values are executed first, and tasks with the same priority may run in parallel.
+
+The `Initialize` method is called when the task is created and receives an `IDataManager` instance, which handles saving and retrieving configuration data for the task. By default, the data manager saves configuration data as JSON-serialized strings, but you can implement your own data manager for customization.
+
+The `Execute` method is where the actual work of the task should be performed.
 
 ## Installation
 
-The library is available via Nuget with the package name "TaskMaster". To install it run the following command in the Package Manager Console:
+TaskMaster is available as a NuGet package. You can install it by running the following command in the Package Manager Console:
 
+```shell
 Install-Package TaskMaster
+```
 
 ## Build Process
 
-In order to build the library you will require the following as a minimum:
+To build the library, ensure you have the following minimum requirements:
 
-1. Visual Studio 2017
+- Visual Studio 2017
 
-Other than that, just clone the project and you should be able to load the solution and build without too much effort.
+Clone the project repository, and you should be able to load the solution in Visual Studio and build it without any issues.
+
+For any further assistance or information, please refer to the project documentation or reach out to the project contributors.
+
+Enjoy using TaskMaster in your applications!
