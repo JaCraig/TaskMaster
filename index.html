@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>TaskMaster | TaskMaster API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="TaskMaster | TaskMaster API Reference ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/config.css">
+      <link rel="stylesheet" href="styles/discord.css">
+      <link rel="stylesheet" href="styles/singulink.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="index.html">
+              <img src="images/icon.png" alt="TaskMaster" class="logomark">
+              <span class="brand-title">TaskMaster</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="index.html">
+                          <img src="images/icon.png" alt="TaskMaster" class="logomark">
+                          <span class="brand-title">TaskMaster</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+                </div>
+                <div class="footer">
+  <strong><a href='https://github.com/JaCraig/TaskMaster'>Open in Github</a></strong>
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                         <div id="contribution">
+                               <a href="https://github.com/JaCraig/TaskMaster/blob/master/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                         </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="taskmaster">TaskMaster</h1>
+
+<p>TaskMaster is a basic library to help with running tasks only after certain criteria are met.</p>
+<p><a href="https://ci.appveyor.com/project/JaCraig/taskmaster"><img src="https://ci.appveyor.com/api/projects/status/vi7fu8ahwmd823vo?svg=true" alt="Build status"></a></p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>The system relies on an IoC wrapper called <a href="https://github.com/JaCraig/Canister">Canister</a>. While Canister has a built in IoC container, it's purpose is to actually wrap your container of choice in a way that simplifies setup and usage for other libraries that don't want to be tied to a specific IoC container. TaskMaster uses it to detect and pull in various info. As such you must set up Canister in order to use TaskMaster:</p>
+<pre><code>Canister.Builder.CreateContainer(new List&lt;ServiceDescriptor&gt;())
+                .RegisterTaskMaster()
+                .Build();
+				
+</code></pre>
+<p>You must also register any assemblies that will contain your tasks with Canister in order for the system to find them:</p>
+<pre><code>Canister.Builder.CreateContainer(new List&lt;ServiceDescriptor&gt;())
+				.AddAssembly(typeof(MyTask).GetTypeInfo().Assembly)
+                .RegisterTaskMaster()
+                .Build();
+</code></pre>
+<p>This is required prior to using the TaskMaster class for the first time. Once Canister is set up, you can use the TaskMaster class:</p>
+<pre><code>var Manager = new TaskMaster.TaskMaster();
+Manager.Run();
+</code></pre>
+<p>The TaskMaster class will handle discovery of tasks, prioritization, and running of tasks. It will also log any errors that it finds to Serilog. If Serilog is not registered to Canister, it will default to an empty logger that does nothing. However if one is specified it will log events as they occur to the ILogger class.</p>
+<h2 id="creating-a-task">Creating a task</h2>
+<p>Creating a task is rather simple, you just need to inherit a class from ITask:</p>
+<pre><code>/// &lt;summary&gt;
+/// Basic hello world task
+/// &lt;/summary&gt;
+public class HelloWorldTask : ITask
+{
+    /// &lt;summary&gt;
+    /// Gets the frequencies.
+    /// &lt;/summary&gt;
+    /// &lt;value&gt;The frequencies.&lt;/value&gt;
+    public IFrequency[] Frequencies =&gt; new IFrequency[] { new RunAlways() };
+
+    /// &lt;summary&gt;
+    /// Gets the name.
+    /// &lt;/summary&gt;
+    /// &lt;value&gt;The name.&lt;/value&gt;
+    public string Name =&gt; &quot;Hello World&quot;;
+
+	/// &lt;summary&gt;
+    /// Order to run it in (items with the same Priority value will be run in parallel)
+    /// &lt;/summary&gt;
+    public int Priority =&gt; 1;
+
+    /// &lt;summary&gt;
+    /// Executes the specified last run.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;lastRun&quot;&gt;The last run.&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public bool Execute(DateTime lastRun)
+    {
+        Console.WriteLine(&quot;Hello World&quot;);
+        return true;
+    }
+
+    /// &lt;summary&gt;
+    /// Initializes the specified data manager.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;dataManager&quot;&gt;The data manager.&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public bool Initialize(IDataManager dataManager)
+    {
+        return true;
+    }
+}
+</code></pre>
+<p>The above task runs every time the TaskManager's Run method is called. However you can specify another or even multiple frequencies at which to run. The name of the task is Hello World. As such all logged events will use that name. The priority is set to 1, which determines the batch they are run in. Lower numbered items are run first and if more than one task has the same priority, they will be run at the same time in parallel.</p>
+<p>The Initialization function is called when the item is created. The function is passed in an IDataManager class that will handle saving/getting configuration data for the task. By default the data manager saves configuration data in json serialized strings but this can be changed by creating your own data manager.</p>
+<p>The Execute function is called when the task is actually triggered. As such that is where your task's actual work should go.</p>
+<h2 id="installation">Installation</h2>
+<p>The library is available via Nuget with the package name &quot;TaskMaster&quot;. To install it run the following command in the Package Manager Console:</p>
+<p>Install-Package TaskMaster</p>
+<h2 id="build-process">Build Process</h2>
+<p>In order to build the library you will require the following as a minimum:</p>
+<ol>
+<li>Visual Studio 2017</li>
+</ol>
+<p>Other than that, just clone the project and you should be able to load the solution and build without too much effort.</p>
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; James Craig. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="styles/docfx.js"></script>
+        <script type="text/javascript" src="styles/main.js"></script>
+        <script type="text/javascript" src="styles/singulink.js"></script>    </body>
+</html>

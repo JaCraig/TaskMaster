@@ -1,0 +1,1040 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster
+  name: RegistrationTaskMaster
+  href: api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster
+  fullName: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster
+  nameWithType: RegistrationTaskMaster
+- uid: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Canister.Interfaces.ICanisterConfiguration)
+  name: RegisterTaskMaster(ICanisterConfiguration?)
+  href: api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html#Microsoft_Extensions_DependencyInjection_RegistrationTaskMaster_RegisterTaskMaster_Canister_Interfaces_ICanisterConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Canister.Interfaces.ICanisterConfiguration)
+  name.vb: RegisterTaskMaster(ICanisterConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Canister.Interfaces.ICanisterConfiguration?)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Canister.Interfaces.ICanisterConfiguration)
+  nameWithType: RegistrationTaskMaster.RegisterTaskMaster(ICanisterConfiguration?)
+  nameWithType.vb: RegistrationTaskMaster.RegisterTaskMaster(ICanisterConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster*
+  name: RegisterTaskMaster
+  href: api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html#Microsoft_Extensions_DependencyInjection_RegistrationTaskMaster_RegisterTaskMaster_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster
+  nameWithType: RegistrationTaskMaster.RegisterTaskMaster
+- uid: TaskMaster
+  name: TaskMaster
+  href: api/TaskMaster.html
+  commentId: N:TaskMaster
+  fullName: TaskMaster
+  nameWithType: TaskMaster
+- uid: TaskMaster.Commands
+  name: TaskMaster.Commands
+  href: api/TaskMaster.Commands.html
+  commentId: N:TaskMaster.Commands
+  fullName: TaskMaster.Commands
+  nameWithType: TaskMaster.Commands
+- uid: TaskMaster.Commands.LastRunInfo
+  name: LastRunInfo
+  href: api/TaskMaster.Commands.LastRunInfo.html
+  commentId: T:TaskMaster.Commands.LastRunInfo
+  fullName: TaskMaster.Commands.LastRunInfo
+  nameWithType: LastRunInfo
+- uid: TaskMaster.Commands.LastRunInfo.LastRunEnd
+  name: LastRunEnd
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_LastRunEnd
+  commentId: P:TaskMaster.Commands.LastRunInfo.LastRunEnd
+  fullName: TaskMaster.Commands.LastRunInfo.LastRunEnd
+  nameWithType: LastRunInfo.LastRunEnd
+- uid: TaskMaster.Commands.LastRunInfo.LastRunEnd*
+  name: LastRunEnd
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_LastRunEnd_
+  commentId: Overload:TaskMaster.Commands.LastRunInfo.LastRunEnd
+  isSpec: "True"
+  fullName: TaskMaster.Commands.LastRunInfo.LastRunEnd
+  nameWithType: LastRunInfo.LastRunEnd
+- uid: TaskMaster.Commands.LastRunInfo.LastRunStart
+  name: LastRunStart
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_LastRunStart
+  commentId: P:TaskMaster.Commands.LastRunInfo.LastRunStart
+  fullName: TaskMaster.Commands.LastRunInfo.LastRunStart
+  nameWithType: LastRunInfo.LastRunStart
+- uid: TaskMaster.Commands.LastRunInfo.LastRunStart*
+  name: LastRunStart
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_LastRunStart_
+  commentId: Overload:TaskMaster.Commands.LastRunInfo.LastRunStart
+  isSpec: "True"
+  fullName: TaskMaster.Commands.LastRunInfo.LastRunStart
+  nameWithType: LastRunInfo.LastRunStart
+- uid: TaskMaster.Commands.LastRunInfo.MinValue
+  name: MinValue
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_MinValue
+  commentId: P:TaskMaster.Commands.LastRunInfo.MinValue
+  fullName: TaskMaster.Commands.LastRunInfo.MinValue
+  nameWithType: LastRunInfo.MinValue
+- uid: TaskMaster.Commands.LastRunInfo.MinValue*
+  name: MinValue
+  href: api/TaskMaster.Commands.LastRunInfo.html#TaskMaster_Commands_LastRunInfo_MinValue_
+  commentId: Overload:TaskMaster.Commands.LastRunInfo.MinValue
+  isSpec: "True"
+  fullName: TaskMaster.Commands.LastRunInfo.MinValue
+  nameWithType: LastRunInfo.MinValue
+- uid: TaskMaster.Commands.RunTask
+  name: RunTask
+  href: api/TaskMaster.Commands.RunTask.html
+  commentId: T:TaskMaster.Commands.RunTask
+  fullName: TaskMaster.Commands.RunTask
+  nameWithType: RunTask
+- uid: TaskMaster.Commands.RunTask.Aliases
+  name: Aliases
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Aliases
+  commentId: P:TaskMaster.Commands.RunTask.Aliases
+  fullName: TaskMaster.Commands.RunTask.Aliases
+  nameWithType: RunTask.Aliases
+- uid: TaskMaster.Commands.RunTask.Aliases*
+  name: Aliases
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Aliases_
+  commentId: Overload:TaskMaster.Commands.RunTask.Aliases
+  isSpec: "True"
+  fullName: TaskMaster.Commands.RunTask.Aliases
+  nameWithType: RunTask.Aliases
+- uid: TaskMaster.Commands.RunTask.Description
+  name: Description
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Description
+  commentId: P:TaskMaster.Commands.RunTask.Description
+  fullName: TaskMaster.Commands.RunTask.Description
+  nameWithType: RunTask.Description
+- uid: TaskMaster.Commands.RunTask.Description*
+  name: Description
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Description_
+  commentId: Overload:TaskMaster.Commands.RunTask.Description
+  isSpec: "True"
+  fullName: TaskMaster.Commands.RunTask.Description
+  nameWithType: RunTask.Description
+- uid: TaskMaster.Commands.RunTask.Name
+  name: Name
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Name
+  commentId: P:TaskMaster.Commands.RunTask.Name
+  fullName: TaskMaster.Commands.RunTask.Name
+  nameWithType: RunTask.Name
+- uid: TaskMaster.Commands.RunTask.Name*
+  name: Name
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Name_
+  commentId: Overload:TaskMaster.Commands.RunTask.Name
+  isSpec: "True"
+  fullName: TaskMaster.Commands.RunTask.Name
+  nameWithType: RunTask.Name
+- uid: TaskMaster.Commands.RunTask.Run(TaskMaster.Commands.TaskName)
+  name: Run(TaskName)
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Run_TaskMaster_Commands_TaskName_
+  commentId: M:TaskMaster.Commands.RunTask.Run(TaskMaster.Commands.TaskName)
+  fullName: TaskMaster.Commands.RunTask.Run(TaskMaster.Commands.TaskName)
+  nameWithType: RunTask.Run(TaskName)
+- uid: TaskMaster.Commands.RunTask.Run*
+  name: Run
+  href: api/TaskMaster.Commands.RunTask.html#TaskMaster_Commands_RunTask_Run_
+  commentId: Overload:TaskMaster.Commands.RunTask.Run
+  isSpec: "True"
+  fullName: TaskMaster.Commands.RunTask.Run
+  nameWithType: RunTask.Run
+- uid: TaskMaster.Commands.TaskListing
+  name: TaskListing
+  href: api/TaskMaster.Commands.TaskListing.html
+  commentId: T:TaskMaster.Commands.TaskListing
+  fullName: TaskMaster.Commands.TaskListing
+  nameWithType: TaskListing
+- uid: TaskMaster.Commands.TaskListing.ToString
+  name: ToString()
+  href: api/TaskMaster.Commands.TaskListing.html#TaskMaster_Commands_TaskListing_ToString
+  commentId: M:TaskMaster.Commands.TaskListing.ToString
+  fullName: TaskMaster.Commands.TaskListing.ToString()
+  nameWithType: TaskListing.ToString()
+- uid: TaskMaster.Commands.TaskListing.ToString*
+  name: ToString
+  href: api/TaskMaster.Commands.TaskListing.html#TaskMaster_Commands_TaskListing_ToString_
+  commentId: Overload:TaskMaster.Commands.TaskListing.ToString
+  isSpec: "True"
+  fullName: TaskMaster.Commands.TaskListing.ToString
+  nameWithType: TaskListing.ToString
+- uid: TaskMaster.Commands.TaskName
+  name: TaskName
+  href: api/TaskMaster.Commands.TaskName.html
+  commentId: T:TaskMaster.Commands.TaskName
+  fullName: TaskMaster.Commands.TaskName
+  nameWithType: TaskName
+- uid: TaskMaster.Commands.TaskName.Name
+  name: Name
+  href: api/TaskMaster.Commands.TaskName.html#TaskMaster_Commands_TaskName_Name
+  commentId: P:TaskMaster.Commands.TaskName.Name
+  fullName: TaskMaster.Commands.TaskName.Name
+  nameWithType: TaskName.Name
+- uid: TaskMaster.Commands.TaskName.Name*
+  name: Name
+  href: api/TaskMaster.Commands.TaskName.html#TaskMaster_Commands_TaskName_Name_
+  commentId: Overload:TaskMaster.Commands.TaskName.Name
+  isSpec: "True"
+  fullName: TaskMaster.Commands.TaskName.Name
+  nameWithType: TaskName.Name
+- uid: TaskMaster.DataManager
+  name: TaskMaster.DataManager
+  href: api/TaskMaster.DataManager.html
+  commentId: N:TaskMaster.DataManager
+  fullName: TaskMaster.DataManager
+  nameWithType: TaskMaster.DataManager
+- uid: TaskMaster.DataManager.DefaultDataManager
+  name: DefaultDataManager
+  href: api/TaskMaster.DataManager.DefaultDataManager.html
+  commentId: T:TaskMaster.DataManager.DefaultDataManager
+  fullName: TaskMaster.DataManager.DefaultDataManager
+  nameWithType: DefaultDataManager
+- uid: TaskMaster.DataManager.DefaultDataManager.#ctor(SerialBox.SerialBox)
+  name: DefaultDataManager(SerialBox)
+  href: api/TaskMaster.DataManager.DefaultDataManager.html#TaskMaster_DataManager_DefaultDataManager__ctor_SerialBox_SerialBox_
+  commentId: M:TaskMaster.DataManager.DefaultDataManager.#ctor(SerialBox.SerialBox)
+  name.vb: New(SerialBox)
+  fullName: TaskMaster.DataManager.DefaultDataManager.DefaultDataManager(SerialBox.SerialBox)
+  fullName.vb: TaskMaster.DataManager.DefaultDataManager.New(SerialBox.SerialBox)
+  nameWithType: DefaultDataManager.DefaultDataManager(SerialBox)
+  nameWithType.vb: DefaultDataManager.New(SerialBox)
+- uid: TaskMaster.DataManager.DefaultDataManager.#ctor*
+  name: DefaultDataManager
+  href: api/TaskMaster.DataManager.DefaultDataManager.html#TaskMaster_DataManager_DefaultDataManager__ctor_
+  commentId: Overload:TaskMaster.DataManager.DefaultDataManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.DataManager.DefaultDataManager.DefaultDataManager
+  fullName.vb: TaskMaster.DataManager.DefaultDataManager.New
+  nameWithType: DefaultDataManager.DefaultDataManager
+  nameWithType.vb: DefaultDataManager.New
+- uid: TaskMaster.DataManager.SimpleFileStore
+  name: SimpleFileStore
+  href: api/TaskMaster.DataManager.SimpleFileStore.html
+  commentId: T:TaskMaster.DataManager.SimpleFileStore
+  fullName: TaskMaster.DataManager.SimpleFileStore
+  nameWithType: SimpleFileStore
+- uid: TaskMaster.DataManager.SimpleFileStore.#ctor(System.String,SerialBox.SerialBox)
+  name: SimpleFileStore(string, SerialBox)
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore__ctor_System_String_SerialBox_SerialBox_
+  commentId: M:TaskMaster.DataManager.SimpleFileStore.#ctor(System.String,SerialBox.SerialBox)
+  name.vb: New(String, SerialBox)
+  fullName: TaskMaster.DataManager.SimpleFileStore.SimpleFileStore(string, SerialBox.SerialBox)
+  fullName.vb: TaskMaster.DataManager.SimpleFileStore.New(String, SerialBox.SerialBox)
+  nameWithType: SimpleFileStore.SimpleFileStore(string, SerialBox)
+  nameWithType.vb: SimpleFileStore.New(String, SerialBox)
+- uid: TaskMaster.DataManager.SimpleFileStore.#ctor*
+  name: SimpleFileStore
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore__ctor_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.DataManager.SimpleFileStore.SimpleFileStore
+  fullName.vb: TaskMaster.DataManager.SimpleFileStore.New
+  nameWithType: SimpleFileStore.SimpleFileStore
+  nameWithType.vb: SimpleFileStore.New
+- uid: TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)
+  name: GetData(ITask)
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_GetData_TaskMaster_Interfaces_ITask_
+  commentId: M:TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)
+  fullName: TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)
+  nameWithType: SimpleFileStore.GetData(ITask)
+- uid: TaskMaster.DataManager.SimpleFileStore.GetData*
+  name: GetData
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_GetData_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.GetData
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.GetData
+  nameWithType: SimpleFileStore.GetData
+- uid: TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)
+  name: GetLastRun(ITask)
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_GetLastRun_TaskMaster_Interfaces_ITask_
+  commentId: M:TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)
+  fullName: TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)
+  nameWithType: SimpleFileStore.GetLastRun(ITask)
+- uid: TaskMaster.DataManager.SimpleFileStore.GetLastRun*
+  name: GetLastRun
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_GetLastRun_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.GetLastRun
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.GetLastRun
+  nameWithType: SimpleFileStore.GetLastRun
+- uid: TaskMaster.DataManager.SimpleFileStore.Location
+  name: Location
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_Location
+  commentId: P:TaskMaster.DataManager.SimpleFileStore.Location
+  fullName: TaskMaster.DataManager.SimpleFileStore.Location
+  nameWithType: SimpleFileStore.Location
+- uid: TaskMaster.DataManager.SimpleFileStore.Location*
+  name: Location
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_Location_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.Location
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.Location
+  nameWithType: SimpleFileStore.Location
+- uid: TaskMaster.DataManager.SimpleFileStore.SerialBox
+  name: SerialBox
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SerialBox
+  commentId: P:TaskMaster.DataManager.SimpleFileStore.SerialBox
+  fullName: TaskMaster.DataManager.SimpleFileStore.SerialBox
+  nameWithType: SimpleFileStore.SerialBox
+- uid: TaskMaster.DataManager.SimpleFileStore.SerialBox*
+  name: SerialBox
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SerialBox_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.SerialBox
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.SerialBox
+  nameWithType: SimpleFileStore.SerialBox
+- uid: TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask,System.Object)
+  name: SetData(ITask, dynamic)
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SetData_TaskMaster_Interfaces_ITask_System_Object_
+  commentId: M:TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask,System.Object)
+  name.vb: SetData(ITask, Object)
+  fullName: TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask, dynamic)
+  fullName.vb: TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask, Object)
+  nameWithType: SimpleFileStore.SetData(ITask, dynamic)
+  nameWithType.vb: SimpleFileStore.SetData(ITask, Object)
+- uid: TaskMaster.DataManager.SimpleFileStore.SetData*
+  name: SetData
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SetData_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.SetData
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.SetData
+  nameWithType: SimpleFileStore.SetData
+- uid: TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)
+  name: SetLastRun(ITask, LastRunInfo)
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo_
+  commentId: M:TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)
+  fullName: TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask, TaskMaster.Commands.LastRunInfo)
+  nameWithType: SimpleFileStore.SetLastRun(ITask, LastRunInfo)
+- uid: TaskMaster.DataManager.SimpleFileStore.SetLastRun*
+  name: SetLastRun
+  href: api/TaskMaster.DataManager.SimpleFileStore.html#TaskMaster_DataManager_SimpleFileStore_SetLastRun_
+  commentId: Overload:TaskMaster.DataManager.SimpleFileStore.SetLastRun
+  isSpec: "True"
+  fullName: TaskMaster.DataManager.SimpleFileStore.SetLastRun
+  nameWithType: SimpleFileStore.SetLastRun
+- uid: TaskMaster.Frequency
+  name: TaskMaster.Frequency
+  href: api/TaskMaster.Frequency.html
+  commentId: N:TaskMaster.Frequency
+  fullName: TaskMaster.Frequency
+  nameWithType: TaskMaster.Frequency
+- uid: TaskMaster.Frequency.RunAlways
+  name: RunAlways
+  href: api/TaskMaster.Frequency.RunAlways.html
+  commentId: T:TaskMaster.Frequency.RunAlways
+  fullName: TaskMaster.Frequency.RunAlways
+  nameWithType: RunAlways
+- uid: TaskMaster.Frequency.RunAlways.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunAlways.html#TaskMaster_Frequency_RunAlways_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunAlways.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunAlways.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunAlways.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunAlways.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunAlways.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunAlways.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunAlways.html#TaskMaster_Frequency_RunAlways_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunAlways.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunAlways.CanRun
+  nameWithType: RunAlways.CanRun
+- uid: TaskMaster.Frequency.RunDaily
+  name: RunDaily
+  href: api/TaskMaster.Frequency.RunDaily.html
+  commentId: T:TaskMaster.Frequency.RunDaily
+  fullName: TaskMaster.Frequency.RunDaily
+  nameWithType: RunDaily
+- uid: TaskMaster.Frequency.RunDaily.#ctor(System.Int32,System.Int32)
+  name: RunDaily(int, int)
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily__ctor_System_Int32_System_Int32_
+  commentId: M:TaskMaster.Frequency.RunDaily.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: TaskMaster.Frequency.RunDaily.RunDaily(int, int)
+  fullName.vb: TaskMaster.Frequency.RunDaily.New(Integer, Integer)
+  nameWithType: RunDaily.RunDaily(int, int)
+  nameWithType.vb: RunDaily.New(Integer, Integer)
+- uid: TaskMaster.Frequency.RunDaily.#ctor*
+  name: RunDaily
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily__ctor_
+  commentId: Overload:TaskMaster.Frequency.RunDaily.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Frequency.RunDaily.RunDaily
+  fullName.vb: TaskMaster.Frequency.RunDaily.New
+  nameWithType: RunDaily.RunDaily
+  nameWithType.vb: RunDaily.New
+- uid: TaskMaster.Frequency.RunDaily.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunDaily.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunDaily.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunDaily.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunDaily.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunDaily.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunDaily.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunDaily.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunDaily.CanRun
+  nameWithType: RunDaily.CanRun
+- uid: TaskMaster.Frequency.RunDaily.HourToRun
+  name: HourToRun
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_HourToRun
+  commentId: P:TaskMaster.Frequency.RunDaily.HourToRun
+  fullName: TaskMaster.Frequency.RunDaily.HourToRun
+  nameWithType: RunDaily.HourToRun
+- uid: TaskMaster.Frequency.RunDaily.HourToRun*
+  name: HourToRun
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_HourToRun_
+  commentId: Overload:TaskMaster.Frequency.RunDaily.HourToRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunDaily.HourToRun
+  nameWithType: RunDaily.HourToRun
+- uid: TaskMaster.Frequency.RunDaily.MinuteToRun
+  name: MinuteToRun
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_MinuteToRun
+  commentId: P:TaskMaster.Frequency.RunDaily.MinuteToRun
+  fullName: TaskMaster.Frequency.RunDaily.MinuteToRun
+  nameWithType: RunDaily.MinuteToRun
+- uid: TaskMaster.Frequency.RunDaily.MinuteToRun*
+  name: MinuteToRun
+  href: api/TaskMaster.Frequency.RunDaily.html#TaskMaster_Frequency_RunDaily_MinuteToRun_
+  commentId: Overload:TaskMaster.Frequency.RunDaily.MinuteToRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunDaily.MinuteToRun
+  nameWithType: RunDaily.MinuteToRun
+- uid: TaskMaster.Frequency.RunHourly
+  name: RunHourly
+  href: api/TaskMaster.Frequency.RunHourly.html
+  commentId: T:TaskMaster.Frequency.RunHourly
+  fullName: TaskMaster.Frequency.RunHourly
+  nameWithType: RunHourly
+- uid: TaskMaster.Frequency.RunHourly.#ctor(System.Int32)
+  name: RunHourly(int)
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly__ctor_System_Int32_
+  commentId: M:TaskMaster.Frequency.RunHourly.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: TaskMaster.Frequency.RunHourly.RunHourly(int)
+  fullName.vb: TaskMaster.Frequency.RunHourly.New(Integer)
+  nameWithType: RunHourly.RunHourly(int)
+  nameWithType.vb: RunHourly.New(Integer)
+- uid: TaskMaster.Frequency.RunHourly.#ctor*
+  name: RunHourly
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly__ctor_
+  commentId: Overload:TaskMaster.Frequency.RunHourly.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Frequency.RunHourly.RunHourly
+  fullName.vb: TaskMaster.Frequency.RunHourly.New
+  nameWithType: RunHourly.RunHourly
+  nameWithType.vb: RunHourly.New
+- uid: TaskMaster.Frequency.RunHourly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunHourly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunHourly.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunHourly.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunHourly.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunHourly.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunHourly.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunHourly.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunHourly.CanRun
+  nameWithType: RunHourly.CanRun
+- uid: TaskMaster.Frequency.RunHourly.MinuteToRun
+  name: MinuteToRun
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly_MinuteToRun
+  commentId: P:TaskMaster.Frequency.RunHourly.MinuteToRun
+  fullName: TaskMaster.Frequency.RunHourly.MinuteToRun
+  nameWithType: RunHourly.MinuteToRun
+- uid: TaskMaster.Frequency.RunHourly.MinuteToRun*
+  name: MinuteToRun
+  href: api/TaskMaster.Frequency.RunHourly.html#TaskMaster_Frequency_RunHourly_MinuteToRun_
+  commentId: Overload:TaskMaster.Frequency.RunHourly.MinuteToRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunHourly.MinuteToRun
+  nameWithType: RunHourly.MinuteToRun
+- uid: TaskMaster.Frequency.RunMonthly
+  name: RunMonthly
+  href: api/TaskMaster.Frequency.RunMonthly.html
+  commentId: T:TaskMaster.Frequency.RunMonthly
+  fullName: TaskMaster.Frequency.RunMonthly
+  nameWithType: RunMonthly
+- uid: TaskMaster.Frequency.RunMonthly.#ctor(System.Int32)
+  name: RunMonthly(int)
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly__ctor_System_Int32_
+  commentId: M:TaskMaster.Frequency.RunMonthly.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: TaskMaster.Frequency.RunMonthly.RunMonthly(int)
+  fullName.vb: TaskMaster.Frequency.RunMonthly.New(Integer)
+  nameWithType: RunMonthly.RunMonthly(int)
+  nameWithType.vb: RunMonthly.New(Integer)
+- uid: TaskMaster.Frequency.RunMonthly.#ctor*
+  name: RunMonthly
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly__ctor_
+  commentId: Overload:TaskMaster.Frequency.RunMonthly.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Frequency.RunMonthly.RunMonthly
+  fullName.vb: TaskMaster.Frequency.RunMonthly.New
+  nameWithType: RunMonthly.RunMonthly
+  nameWithType.vb: RunMonthly.New
+- uid: TaskMaster.Frequency.RunMonthly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunMonthly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunMonthly.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunMonthly.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunMonthly.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunMonthly.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunMonthly.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunMonthly.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunMonthly.CanRun
+  nameWithType: RunMonthly.CanRun
+- uid: TaskMaster.Frequency.RunMonthly.DayOfMonth
+  name: DayOfMonth
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly_DayOfMonth
+  commentId: P:TaskMaster.Frequency.RunMonthly.DayOfMonth
+  fullName: TaskMaster.Frequency.RunMonthly.DayOfMonth
+  nameWithType: RunMonthly.DayOfMonth
+- uid: TaskMaster.Frequency.RunMonthly.DayOfMonth*
+  name: DayOfMonth
+  href: api/TaskMaster.Frequency.RunMonthly.html#TaskMaster_Frequency_RunMonthly_DayOfMonth_
+  commentId: Overload:TaskMaster.Frequency.RunMonthly.DayOfMonth
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunMonthly.DayOfMonth
+  nameWithType: RunMonthly.DayOfMonth
+- uid: TaskMaster.Frequency.RunOnce
+  name: RunOnce
+  href: api/TaskMaster.Frequency.RunOnce.html
+  commentId: T:TaskMaster.Frequency.RunOnce
+  fullName: TaskMaster.Frequency.RunOnce
+  nameWithType: RunOnce
+- uid: TaskMaster.Frequency.RunOnce.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunOnce.html#TaskMaster_Frequency_RunOnce_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunOnce.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunOnce.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunOnce.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunOnce.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunOnce.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunOnce.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunOnce.html#TaskMaster_Frequency_RunOnce_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunOnce.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunOnce.CanRun
+  nameWithType: RunOnce.CanRun
+- uid: TaskMaster.Frequency.RunWeekly
+  name: RunWeekly
+  href: api/TaskMaster.Frequency.RunWeekly.html
+  commentId: T:TaskMaster.Frequency.RunWeekly
+  fullName: TaskMaster.Frequency.RunWeekly
+  nameWithType: RunWeekly
+- uid: TaskMaster.Frequency.RunWeekly.#ctor(System.DayOfWeek)
+  name: RunWeekly(DayOfWeek)
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly__ctor_System_DayOfWeek_
+  commentId: M:TaskMaster.Frequency.RunWeekly.#ctor(System.DayOfWeek)
+  name.vb: New(DayOfWeek)
+  fullName: TaskMaster.Frequency.RunWeekly.RunWeekly(System.DayOfWeek)
+  fullName.vb: TaskMaster.Frequency.RunWeekly.New(System.DayOfWeek)
+  nameWithType: RunWeekly.RunWeekly(DayOfWeek)
+  nameWithType.vb: RunWeekly.New(DayOfWeek)
+- uid: TaskMaster.Frequency.RunWeekly.#ctor*
+  name: RunWeekly
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly__ctor_
+  commentId: Overload:TaskMaster.Frequency.RunWeekly.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Frequency.RunWeekly.RunWeekly
+  fullName.vb: TaskMaster.Frequency.RunWeekly.New
+  nameWithType: RunWeekly.RunWeekly
+  nameWithType.vb: RunWeekly.New
+- uid: TaskMaster.Frequency.RunWeekly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunWeekly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunWeekly.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunWeekly.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunWeekly.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunWeekly.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunWeekly.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunWeekly.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunWeekly.CanRun
+  nameWithType: RunWeekly.CanRun
+- uid: TaskMaster.Frequency.RunWeekly.DayToRun
+  name: DayToRun
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly_DayToRun
+  commentId: P:TaskMaster.Frequency.RunWeekly.DayToRun
+  fullName: TaskMaster.Frequency.RunWeekly.DayToRun
+  nameWithType: RunWeekly.DayToRun
+- uid: TaskMaster.Frequency.RunWeekly.DayToRun*
+  name: DayToRun
+  href: api/TaskMaster.Frequency.RunWeekly.html#TaskMaster_Frequency_RunWeekly_DayToRun_
+  commentId: Overload:TaskMaster.Frequency.RunWeekly.DayToRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunWeekly.DayToRun
+  nameWithType: RunWeekly.DayToRun
+- uid: TaskMaster.Frequency.RunYearly
+  name: RunYearly
+  href: api/TaskMaster.Frequency.RunYearly.html
+  commentId: T:TaskMaster.Frequency.RunYearly
+  fullName: TaskMaster.Frequency.RunYearly
+  nameWithType: RunYearly
+- uid: TaskMaster.Frequency.RunYearly.#ctor(System.Int32)
+  name: RunYearly(int)
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly__ctor_System_Int32_
+  commentId: M:TaskMaster.Frequency.RunYearly.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: TaskMaster.Frequency.RunYearly.RunYearly(int)
+  fullName.vb: TaskMaster.Frequency.RunYearly.New(Integer)
+  nameWithType: RunYearly.RunYearly(int)
+  nameWithType.vb: RunYearly.New(Integer)
+- uid: TaskMaster.Frequency.RunYearly.#ctor*
+  name: RunYearly
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly__ctor_
+  commentId: Overload:TaskMaster.Frequency.RunYearly.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Frequency.RunYearly.RunYearly
+  fullName.vb: TaskMaster.Frequency.RunYearly.New
+  nameWithType: RunYearly.RunYearly
+  nameWithType.vb: RunYearly.New
+- uid: TaskMaster.Frequency.RunYearly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Frequency.RunYearly.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Frequency.RunYearly.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Frequency.RunYearly.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: RunYearly.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: RunYearly.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Frequency.RunYearly.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly_CanRun_
+  commentId: Overload:TaskMaster.Frequency.RunYearly.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunYearly.CanRun
+  nameWithType: RunYearly.CanRun
+- uid: TaskMaster.Frequency.RunYearly.DayOfYear
+  name: DayOfYear
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly_DayOfYear
+  commentId: P:TaskMaster.Frequency.RunYearly.DayOfYear
+  fullName: TaskMaster.Frequency.RunYearly.DayOfYear
+  nameWithType: RunYearly.DayOfYear
+- uid: TaskMaster.Frequency.RunYearly.DayOfYear*
+  name: DayOfYear
+  href: api/TaskMaster.Frequency.RunYearly.html#TaskMaster_Frequency_RunYearly_DayOfYear_
+  commentId: Overload:TaskMaster.Frequency.RunYearly.DayOfYear
+  isSpec: "True"
+  fullName: TaskMaster.Frequency.RunYearly.DayOfYear
+  nameWithType: RunYearly.DayOfYear
+- uid: TaskMaster.Interfaces
+  name: TaskMaster.Interfaces
+  href: api/TaskMaster.Interfaces.html
+  commentId: N:TaskMaster.Interfaces
+  fullName: TaskMaster.Interfaces
+  nameWithType: TaskMaster.Interfaces
+- uid: TaskMaster.Interfaces.IDataManager
+  name: IDataManager
+  href: api/TaskMaster.Interfaces.IDataManager.html
+  commentId: T:TaskMaster.Interfaces.IDataManager
+  fullName: TaskMaster.Interfaces.IDataManager
+  nameWithType: IDataManager
+- uid: TaskMaster.Interfaces.IDataManager.GetData(TaskMaster.Interfaces.ITask)
+  name: GetData(ITask)
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_GetData_TaskMaster_Interfaces_ITask_
+  commentId: M:TaskMaster.Interfaces.IDataManager.GetData(TaskMaster.Interfaces.ITask)
+  fullName: TaskMaster.Interfaces.IDataManager.GetData(TaskMaster.Interfaces.ITask)
+  nameWithType: IDataManager.GetData(ITask)
+- uid: TaskMaster.Interfaces.IDataManager.GetData*
+  name: GetData
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_GetData_
+  commentId: Overload:TaskMaster.Interfaces.IDataManager.GetData
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.IDataManager.GetData
+  nameWithType: IDataManager.GetData
+- uid: TaskMaster.Interfaces.IDataManager.GetLastRun(TaskMaster.Interfaces.ITask)
+  name: GetLastRun(ITask)
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_GetLastRun_TaskMaster_Interfaces_ITask_
+  commentId: M:TaskMaster.Interfaces.IDataManager.GetLastRun(TaskMaster.Interfaces.ITask)
+  fullName: TaskMaster.Interfaces.IDataManager.GetLastRun(TaskMaster.Interfaces.ITask)
+  nameWithType: IDataManager.GetLastRun(ITask)
+- uid: TaskMaster.Interfaces.IDataManager.GetLastRun*
+  name: GetLastRun
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_GetLastRun_
+  commentId: Overload:TaskMaster.Interfaces.IDataManager.GetLastRun
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.IDataManager.GetLastRun
+  nameWithType: IDataManager.GetLastRun
+- uid: TaskMaster.Interfaces.IDataManager.SetData(TaskMaster.Interfaces.ITask,System.Object)
+  name: SetData(ITask, dynamic)
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_SetData_TaskMaster_Interfaces_ITask_System_Object_
+  commentId: M:TaskMaster.Interfaces.IDataManager.SetData(TaskMaster.Interfaces.ITask,System.Object)
+  name.vb: SetData(ITask, Object)
+  fullName: TaskMaster.Interfaces.IDataManager.SetData(TaskMaster.Interfaces.ITask, dynamic)
+  fullName.vb: TaskMaster.Interfaces.IDataManager.SetData(TaskMaster.Interfaces.ITask, Object)
+  nameWithType: IDataManager.SetData(ITask, dynamic)
+  nameWithType.vb: IDataManager.SetData(ITask, Object)
+- uid: TaskMaster.Interfaces.IDataManager.SetData*
+  name: SetData
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_SetData_
+  commentId: Overload:TaskMaster.Interfaces.IDataManager.SetData
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.IDataManager.SetData
+  nameWithType: IDataManager.SetData
+- uid: TaskMaster.Interfaces.IDataManager.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)
+  name: SetLastRun(ITask, LastRunInfo)
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo_
+  commentId: M:TaskMaster.Interfaces.IDataManager.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)
+  fullName: TaskMaster.Interfaces.IDataManager.SetLastRun(TaskMaster.Interfaces.ITask, TaskMaster.Commands.LastRunInfo)
+  nameWithType: IDataManager.SetLastRun(ITask, LastRunInfo)
+- uid: TaskMaster.Interfaces.IDataManager.SetLastRun*
+  name: SetLastRun
+  href: api/TaskMaster.Interfaces.IDataManager.html#TaskMaster_Interfaces_IDataManager_SetLastRun_
+  commentId: Overload:TaskMaster.Interfaces.IDataManager.SetLastRun
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.IDataManager.SetLastRun
+  nameWithType: IDataManager.SetLastRun
+- uid: TaskMaster.Interfaces.IFrequency
+  name: IFrequency
+  href: api/TaskMaster.Interfaces.IFrequency.html
+  commentId: T:TaskMaster.Interfaces.IFrequency
+  fullName: TaskMaster.Interfaces.IFrequency
+  nameWithType: IFrequency
+- uid: TaskMaster.Interfaces.IFrequency.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name: CanRun(LastRunInfo, DateTime)
+  href: api/TaskMaster.Interfaces.IFrequency.html#TaskMaster_Interfaces_IFrequency_CanRun_TaskMaster_Commands_LastRunInfo_System_DateTime_
+  commentId: M:TaskMaster.Interfaces.IFrequency.CanRun(TaskMaster.Commands.LastRunInfo,System.DateTime)
+  name.vb: CanRun(LastRunInfo, Date)
+  fullName: TaskMaster.Interfaces.IFrequency.CanRun(TaskMaster.Commands.LastRunInfo, System.DateTime)
+  fullName.vb: TaskMaster.Interfaces.IFrequency.CanRun(TaskMaster.Commands.LastRunInfo, Date)
+  nameWithType: IFrequency.CanRun(LastRunInfo, DateTime)
+  nameWithType.vb: IFrequency.CanRun(LastRunInfo, Date)
+- uid: TaskMaster.Interfaces.IFrequency.CanRun*
+  name: CanRun
+  href: api/TaskMaster.Interfaces.IFrequency.html#TaskMaster_Interfaces_IFrequency_CanRun_
+  commentId: Overload:TaskMaster.Interfaces.IFrequency.CanRun
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.IFrequency.CanRun
+  nameWithType: IFrequency.CanRun
+- uid: TaskMaster.Interfaces.ITask
+  name: ITask
+  href: api/TaskMaster.Interfaces.ITask.html
+  commentId: T:TaskMaster.Interfaces.ITask
+  fullName: TaskMaster.Interfaces.ITask
+  nameWithType: ITask
+- uid: TaskMaster.Interfaces.ITask.Active
+  name: Active
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Active
+  commentId: P:TaskMaster.Interfaces.ITask.Active
+  fullName: TaskMaster.Interfaces.ITask.Active
+  nameWithType: ITask.Active
+- uid: TaskMaster.Interfaces.ITask.Active*
+  name: Active
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Active_
+  commentId: Overload:TaskMaster.Interfaces.ITask.Active
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.Active
+  nameWithType: ITask.Active
+- uid: TaskMaster.Interfaces.ITask.ExecuteAsync(TaskMaster.Commands.LastRunInfo)
+  name: ExecuteAsync(LastRunInfo)
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_ExecuteAsync_TaskMaster_Commands_LastRunInfo_
+  commentId: M:TaskMaster.Interfaces.ITask.ExecuteAsync(TaskMaster.Commands.LastRunInfo)
+  fullName: TaskMaster.Interfaces.ITask.ExecuteAsync(TaskMaster.Commands.LastRunInfo)
+  nameWithType: ITask.ExecuteAsync(LastRunInfo)
+- uid: TaskMaster.Interfaces.ITask.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_ExecuteAsync_
+  commentId: Overload:TaskMaster.Interfaces.ITask.ExecuteAsync
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.ExecuteAsync
+  nameWithType: ITask.ExecuteAsync
+- uid: TaskMaster.Interfaces.ITask.Frequencies
+  name: Frequencies
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Frequencies
+  commentId: P:TaskMaster.Interfaces.ITask.Frequencies
+  fullName: TaskMaster.Interfaces.ITask.Frequencies
+  nameWithType: ITask.Frequencies
+- uid: TaskMaster.Interfaces.ITask.Frequencies*
+  name: Frequencies
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Frequencies_
+  commentId: Overload:TaskMaster.Interfaces.ITask.Frequencies
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.Frequencies
+  nameWithType: ITask.Frequencies
+- uid: TaskMaster.Interfaces.ITask.Initialize(TaskMaster.Interfaces.IDataManager)
+  name: Initialize(IDataManager)
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Initialize_TaskMaster_Interfaces_IDataManager_
+  commentId: M:TaskMaster.Interfaces.ITask.Initialize(TaskMaster.Interfaces.IDataManager)
+  fullName: TaskMaster.Interfaces.ITask.Initialize(TaskMaster.Interfaces.IDataManager)
+  nameWithType: ITask.Initialize(IDataManager)
+- uid: TaskMaster.Interfaces.ITask.Initialize*
+  name: Initialize
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Initialize_
+  commentId: Overload:TaskMaster.Interfaces.ITask.Initialize
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.Initialize
+  nameWithType: ITask.Initialize
+- uid: TaskMaster.Interfaces.ITask.Name
+  name: Name
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Name
+  commentId: P:TaskMaster.Interfaces.ITask.Name
+  fullName: TaskMaster.Interfaces.ITask.Name
+  nameWithType: ITask.Name
+- uid: TaskMaster.Interfaces.ITask.Name*
+  name: Name
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Name_
+  commentId: Overload:TaskMaster.Interfaces.ITask.Name
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.Name
+  nameWithType: ITask.Name
+- uid: TaskMaster.Interfaces.ITask.Priority
+  name: Priority
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Priority
+  commentId: P:TaskMaster.Interfaces.ITask.Priority
+  fullName: TaskMaster.Interfaces.ITask.Priority
+  nameWithType: ITask.Priority
+- uid: TaskMaster.Interfaces.ITask.Priority*
+  name: Priority
+  href: api/TaskMaster.Interfaces.ITask.html#TaskMaster_Interfaces_ITask_Priority_
+  commentId: Overload:TaskMaster.Interfaces.ITask.Priority
+  isSpec: "True"
+  fullName: TaskMaster.Interfaces.ITask.Priority
+  nameWithType: ITask.Priority
+- uid: TaskMaster.Modules
+  name: TaskMaster.Modules
+  href: api/TaskMaster.Modules.html
+  commentId: N:TaskMaster.Modules
+  fullName: TaskMaster.Modules
+  nameWithType: TaskMaster.Modules
+- uid: TaskMaster.Modules.Module
+  name: Module
+  href: api/TaskMaster.Modules.Module.html
+  commentId: T:TaskMaster.Modules.Module
+  fullName: TaskMaster.Modules.Module
+  nameWithType: Module
+- uid: TaskMaster.Modules.Module.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: Load(IServiceCollection?)
+  href: api/TaskMaster.Modules.Module.html#TaskMaster_Modules_Module_Load_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:TaskMaster.Modules.Module.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: Load(IServiceCollection)
+  fullName: TaskMaster.Modules.Module.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: TaskMaster.Modules.Module.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: Module.Load(IServiceCollection?)
+  nameWithType.vb: Module.Load(IServiceCollection)
+- uid: TaskMaster.Modules.Module.Load*
+  name: Load
+  href: api/TaskMaster.Modules.Module.html#TaskMaster_Modules_Module_Load_
+  commentId: Overload:TaskMaster.Modules.Module.Load
+  isSpec: "True"
+  fullName: TaskMaster.Modules.Module.Load
+  nameWithType: Module.Load
+- uid: TaskMaster.Modules.Module.Order
+  name: Order
+  href: api/TaskMaster.Modules.Module.html#TaskMaster_Modules_Module_Order
+  commentId: P:TaskMaster.Modules.Module.Order
+  fullName: TaskMaster.Modules.Module.Order
+  nameWithType: Module.Order
+- uid: TaskMaster.Modules.Module.Order*
+  name: Order
+  href: api/TaskMaster.Modules.Module.html#TaskMaster_Modules_Module_Order_
+  commentId: Overload:TaskMaster.Modules.Module.Order
+  isSpec: "True"
+  fullName: TaskMaster.Modules.Module.Order
+  nameWithType: Module.Order
+- uid: TaskMaster.TaskMaster
+  name: TaskMaster
+  href: api/TaskMaster.TaskMaster.html
+  commentId: T:TaskMaster.TaskMaster
+  fullName: TaskMaster.TaskMaster
+  nameWithType: TaskMaster
+- uid: TaskMaster.TaskMaster.#ctor(Microsoft.Extensions.Logging.ILogger{TaskMaster.TaskMaster},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.ITask},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.IDataManager},Monarch.CommandRunner)
+  name: TaskMaster(ILogger<TaskMaster>?, IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?)
+  href: api/TaskMaster.TaskMaster.html#TaskMaster_TaskMaster__ctor_Microsoft_Extensions_Logging_ILogger_TaskMaster_TaskMaster__System_Collections_Generic_IEnumerable_TaskMaster_Interfaces_ITask__System_Collections_Generic_IEnumerable_TaskMaster_Interfaces_IDataManager__Monarch_CommandRunner_
+  commentId: M:TaskMaster.TaskMaster.#ctor(Microsoft.Extensions.Logging.ILogger{TaskMaster.TaskMaster},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.ITask},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.IDataManager},Monarch.CommandRunner)
+  name.vb: New(ILogger(Of TaskMaster), IEnumerable(Of ITask), IEnumerable(Of IDataManager), CommandRunner)
+  fullName: TaskMaster.TaskMaster.TaskMaster(Microsoft.Extensions.Logging.ILogger<TaskMaster.TaskMaster>?, System.Collections.Generic.IEnumerable<TaskMaster.Interfaces.ITask>, System.Collections.Generic.IEnumerable<TaskMaster.Interfaces.IDataManager>, Monarch.CommandRunner?)
+  fullName.vb: TaskMaster.TaskMaster.New(Microsoft.Extensions.Logging.ILogger(Of TaskMaster.TaskMaster), System.Collections.Generic.IEnumerable(Of TaskMaster.Interfaces.ITask), System.Collections.Generic.IEnumerable(Of TaskMaster.Interfaces.IDataManager), Monarch.CommandRunner)
+  nameWithType: TaskMaster.TaskMaster(ILogger<TaskMaster>?, IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?)
+  nameWithType.vb: TaskMaster.New(ILogger(Of TaskMaster), IEnumerable(Of ITask), IEnumerable(Of IDataManager), CommandRunner)
+- uid: TaskMaster.TaskMaster.#ctor(System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.ITask},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.IDataManager},Monarch.CommandRunner)
+  name: TaskMaster(IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?)
+  href: api/TaskMaster.TaskMaster.html#TaskMaster_TaskMaster__ctor_System_Collections_Generic_IEnumerable_TaskMaster_Interfaces_ITask__System_Collections_Generic_IEnumerable_TaskMaster_Interfaces_IDataManager__Monarch_CommandRunner_
+  commentId: M:TaskMaster.TaskMaster.#ctor(System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.ITask},System.Collections.Generic.IEnumerable{TaskMaster.Interfaces.IDataManager},Monarch.CommandRunner)
+  name.vb: New(IEnumerable(Of ITask), IEnumerable(Of IDataManager), CommandRunner)
+  fullName: TaskMaster.TaskMaster.TaskMaster(System.Collections.Generic.IEnumerable<TaskMaster.Interfaces.ITask>, System.Collections.Generic.IEnumerable<TaskMaster.Interfaces.IDataManager>, Monarch.CommandRunner?)
+  fullName.vb: TaskMaster.TaskMaster.New(System.Collections.Generic.IEnumerable(Of TaskMaster.Interfaces.ITask), System.Collections.Generic.IEnumerable(Of TaskMaster.Interfaces.IDataManager), Monarch.CommandRunner)
+  nameWithType: TaskMaster.TaskMaster(IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?)
+  nameWithType.vb: TaskMaster.New(IEnumerable(Of ITask), IEnumerable(Of IDataManager), CommandRunner)
+- uid: TaskMaster.TaskMaster.#ctor*
+  name: TaskMaster
+  href: api/TaskMaster.TaskMaster.html#TaskMaster_TaskMaster__ctor_
+  commentId: Overload:TaskMaster.TaskMaster.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.TaskMaster.TaskMaster
+  fullName.vb: TaskMaster.TaskMaster.New
+  nameWithType: TaskMaster.TaskMaster
+  nameWithType.vb: TaskMaster.New
+- uid: TaskMaster.TaskMaster.Run(System.String[])
+  name: Run(params string[])
+  href: api/TaskMaster.TaskMaster.html#TaskMaster_TaskMaster_Run_System_String___
+  commentId: M:TaskMaster.TaskMaster.Run(System.String[])
+  name.vb: Run(ParamArray String())
+  fullName: TaskMaster.TaskMaster.Run(params string[])
+  fullName.vb: TaskMaster.TaskMaster.Run(ParamArray String())
+  nameWithType: TaskMaster.Run(params string[])
+  nameWithType.vb: TaskMaster.Run(ParamArray String())
+- uid: TaskMaster.TaskMaster.Run*
+  name: Run
+  href: api/TaskMaster.TaskMaster.html#TaskMaster_TaskMaster_Run_
+  commentId: Overload:TaskMaster.TaskMaster.Run
+  isSpec: "True"
+  fullName: TaskMaster.TaskMaster.Run
+  nameWithType: TaskMaster.Run
+- uid: TaskMaster.Triggers
+  name: TaskMaster.Triggers
+  href: api/TaskMaster.Triggers.html
+  commentId: N:TaskMaster.Triggers
+  fullName: TaskMaster.Triggers
+  nameWithType: TaskMaster.Triggers
+- uid: TaskMaster.Triggers.Trigger
+  name: Trigger
+  href: api/TaskMaster.Triggers.Trigger.html
+  commentId: T:TaskMaster.Triggers.Trigger
+  fullName: TaskMaster.Triggers.Trigger
+  nameWithType: Trigger
+- uid: TaskMaster.Triggers.Trigger.#ctor(TaskMaster.Interfaces.ITask,Microsoft.Extensions.Logging.ILogger,TaskMaster.Interfaces.IDataManager)
+  name: Trigger(ITask, ILogger, IDataManager)
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger__ctor_TaskMaster_Interfaces_ITask_Microsoft_Extensions_Logging_ILogger_TaskMaster_Interfaces_IDataManager_
+  commentId: M:TaskMaster.Triggers.Trigger.#ctor(TaskMaster.Interfaces.ITask,Microsoft.Extensions.Logging.ILogger,TaskMaster.Interfaces.IDataManager)
+  name.vb: New(ITask, ILogger, IDataManager)
+  fullName: TaskMaster.Triggers.Trigger.Trigger(TaskMaster.Interfaces.ITask, Microsoft.Extensions.Logging.ILogger, TaskMaster.Interfaces.IDataManager)
+  fullName.vb: TaskMaster.Triggers.Trigger.New(TaskMaster.Interfaces.ITask, Microsoft.Extensions.Logging.ILogger, TaskMaster.Interfaces.IDataManager)
+  nameWithType: Trigger.Trigger(ITask, ILogger, IDataManager)
+  nameWithType.vb: Trigger.New(ITask, ILogger, IDataManager)
+- uid: TaskMaster.Triggers.Trigger.#ctor*
+  name: Trigger
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger__ctor_
+  commentId: Overload:TaskMaster.Triggers.Trigger.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskMaster.Triggers.Trigger.Trigger
+  fullName.vb: TaskMaster.Triggers.Trigger.New
+  nameWithType: Trigger.Trigger
+  nameWithType.vb: Trigger.New
+- uid: TaskMaster.Triggers.Trigger.Active
+  name: Active
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Active
+  commentId: P:TaskMaster.Triggers.Trigger.Active
+  fullName: TaskMaster.Triggers.Trigger.Active
+  nameWithType: Trigger.Active
+- uid: TaskMaster.Triggers.Trigger.Active*
+  name: Active
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Active_
+  commentId: Overload:TaskMaster.Triggers.Trigger.Active
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.Active
+  nameWithType: Trigger.Active
+- uid: TaskMaster.Triggers.Trigger.DataManager
+  name: DataManager
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_DataManager
+  commentId: P:TaskMaster.Triggers.Trigger.DataManager
+  fullName: TaskMaster.Triggers.Trigger.DataManager
+  nameWithType: Trigger.DataManager
+- uid: TaskMaster.Triggers.Trigger.DataManager*
+  name: DataManager
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_DataManager_
+  commentId: Overload:TaskMaster.Triggers.Trigger.DataManager
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.DataManager
+  nameWithType: Trigger.DataManager
+- uid: TaskMaster.Triggers.Trigger.Frequencies
+  name: Frequencies
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Frequencies
+  commentId: P:TaskMaster.Triggers.Trigger.Frequencies
+  fullName: TaskMaster.Triggers.Trigger.Frequencies
+  nameWithType: Trigger.Frequencies
+- uid: TaskMaster.Triggers.Trigger.Frequencies*
+  name: Frequencies
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Frequencies_
+  commentId: Overload:TaskMaster.Triggers.Trigger.Frequencies
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.Frequencies
+  nameWithType: Trigger.Frequencies
+- uid: TaskMaster.Triggers.Trigger.LastRun
+  name: LastRun
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_LastRun
+  commentId: P:TaskMaster.Triggers.Trigger.LastRun
+  fullName: TaskMaster.Triggers.Trigger.LastRun
+  nameWithType: Trigger.LastRun
+- uid: TaskMaster.Triggers.Trigger.LastRun*
+  name: LastRun
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_LastRun_
+  commentId: Overload:TaskMaster.Triggers.Trigger.LastRun
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.LastRun
+  nameWithType: Trigger.LastRun
+- uid: TaskMaster.Triggers.Trigger.Priority
+  name: Priority
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Priority
+  commentId: P:TaskMaster.Triggers.Trigger.Priority
+  fullName: TaskMaster.Triggers.Trigger.Priority
+  nameWithType: Trigger.Priority
+- uid: TaskMaster.Triggers.Trigger.Priority*
+  name: Priority
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Priority_
+  commentId: Overload:TaskMaster.Triggers.Trigger.Priority
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.Priority
+  nameWithType: Trigger.Priority
+- uid: TaskMaster.Triggers.Trigger.RunAsync
+  name: RunAsync()
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_RunAsync
+  commentId: M:TaskMaster.Triggers.Trigger.RunAsync
+  fullName: TaskMaster.Triggers.Trigger.RunAsync()
+  nameWithType: Trigger.RunAsync()
+- uid: TaskMaster.Triggers.Trigger.RunAsync*
+  name: RunAsync
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_RunAsync_
+  commentId: Overload:TaskMaster.Triggers.Trigger.RunAsync
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.RunAsync
+  nameWithType: Trigger.RunAsync
+- uid: TaskMaster.Triggers.Trigger.Task
+  name: Task
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Task
+  commentId: P:TaskMaster.Triggers.Trigger.Task
+  fullName: TaskMaster.Triggers.Trigger.Task
+  nameWithType: Trigger.Task
+- uid: TaskMaster.Triggers.Trigger.Task*
+  name: Task
+  href: api/TaskMaster.Triggers.Trigger.html#TaskMaster_Triggers_Trigger_Task_
+  commentId: Overload:TaskMaster.Triggers.Trigger.Task
+  isSpec: "True"
+  fullName: TaskMaster.Triggers.Trigger.Task
+  nameWithType: Trigger.Task
