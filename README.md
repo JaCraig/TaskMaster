@@ -1,5 +1,7 @@
 # TaskMaster
 
+[![.NET Publish](https://github.com/JaCraig/TaskMaster/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/TaskMaster/actions/workflows/dotnet-publish.yml)
+
 TaskMaster is a lightweight C# library that provides functionality for running tasks based on specific criteria. It simplifies the process of setting up and executing tasks in your application.
 
 ## Basic Usage
