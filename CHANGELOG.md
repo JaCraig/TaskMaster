@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.2"></a>
+## [4.0.2](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.2) (2023-7-20)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([ed94de6](https://www.github.com/JaCraig/TaskMaster/commit/ed94de6c4c5f8ed208981d76f9cbd2c0c67079b1))
+
+### Other
+
+* Merge pull request #1 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([23fd2d6](https://www.github.com/JaCraig/TaskMaster/commit/23fd2d6ea59b1c90e387d0b9a45e88896f38c25e))
+* Merge pull request #2 from JaCraig/dependabot/nuget/dependencies-dd930e6650 ([59b84d3](https://www.github.com/JaCraig/TaskMaster/commit/59b84d3116a8528b1578fe7067b01a321384a7e3))
+* adding editor config ([95b3357](https://www.github.com/JaCraig/TaskMaster/commit/95b33572cfc2712908637a5585fcbe677277a608))
+* bump the dependencies group with 2 updates ([9137c97](https://www.github.com/JaCraig/TaskMaster/commit/9137c97cb3ff7896e95ffc45169c94182220d5d2))
+* dependabot update ([ebb6656](https://www.github.com/JaCraig/TaskMaster/commit/ebb6656a8c23cd0865c4b6abe79c14d354a86a72))
+* merge ([a314000](https://www.github.com/JaCraig/TaskMaster/commit/a314000aa603ea3f6d447dff9b15d334d8f3d7ce))
+* README update ([9385ea9](https://www.github.com/JaCraig/TaskMaster/commit/9385ea974f8ffaab3ad17f00cf3e6557a0548262))
+* Update README.md ([d525dce](https://www.github.com/JaCraig/TaskMaster/commit/d525dce340d712536d09ffd842290bc9422495e0))
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.1) (2023-7-17)
 
