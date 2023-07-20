@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>TaskMaster is a simple library used to manage sets of fire and forget tasks that need to run after specific dates/times.</Description>
@@ -46,7 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="4.0.4" />
+    <PackageReference Include="FileCurator" Version="4.0.5" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Monarch" Version="3.0.1" />
     <PackageReference Include="SerialBox" Version="4.0.3" />
