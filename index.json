@@ -1,23 +1,13 @@
 {
-  "api/index.html": {
-    "href": "api/index.html",
-    "title": "Welcome | TaskMaster API Reference",
-    "keywords": "Welcome Welcome to the API browser."
-  },
-  "api/Microsoft.Extensions.DependencyInjection.html": {
-    "href": "api/Microsoft.Extensions.DependencyInjection.html",
-    "title": "Namespace Microsoft.Extensions.DependencyInjection | TaskMaster API Reference",
-    "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes RegistrationTaskMaster Registration extension methods"
-  },
   "api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html": {
     "href": "api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html",
     "title": "Class RegistrationTaskMaster | TaskMaster API Reference",
     "keywords": "Class RegistrationTaskMaster Registration extension methods Inheritance object RegistrationTaskMaster Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Microsoft.Extensions.DependencyInjection Assembly: TaskMaster.dll Syntax public static class RegistrationTaskMaster Methods | Improve this Doc View Source RegisterTaskMaster(ICanisterConfiguration?) Registers the library with the bootstrapper. Declaration public static ICanisterConfiguration? RegisterTaskMaster(this ICanisterConfiguration? bootstrapper) Parameters Type Name Description ICanisterConfiguration bootstrapper The bootstrapper. Returns Type Description ICanisterConfiguration The bootstrapper"
   },
-  "api/TaskMaster.Commands.html": {
-    "href": "api/TaskMaster.Commands.html",
-    "title": "Namespace TaskMaster.Commands | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster.Commands Classes RunTask Runs a specific task TaskListing Task listing TaskName Task name input Structs LastRunInfo Last run info"
+  "api/Microsoft.Extensions.DependencyInjection.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.html",
+    "title": "Namespace Microsoft.Extensions.DependencyInjection | TaskMaster API Reference",
+    "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes RegistrationTaskMaster Registration extension methods"
   },
   "api/TaskMaster.Commands.LastRunInfo.html": {
     "href": "api/TaskMaster.Commands.LastRunInfo.html",
@@ -39,25 +29,25 @@
     "title": "Class TaskName | TaskMaster API Reference",
     "keywords": "Class TaskName Task name input Inheritance object TaskName Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.Commands Assembly: TaskMaster.dll Syntax public class TaskName Properties | Improve this Doc View Source Name Gets or sets the name. Declaration [DynamicDisplay(typeof(TaskListing))] public string? Name { get; set; } Property Value Type Description string The name."
   },
+  "api/TaskMaster.Commands.html": {
+    "href": "api/TaskMaster.Commands.html",
+    "title": "Namespace TaskMaster.Commands | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster.Commands Classes RunTask Runs a specific task TaskListing Task listing TaskName Task name input Structs LastRunInfo Last run info"
+  },
   "api/TaskMaster.DataManager.DefaultDataManager.html": {
     "href": "api/TaskMaster.DataManager.DefaultDataManager.html",
     "title": "Class DefaultDataManager | TaskMaster API Reference",
     "keywords": "Class DefaultDataManager Default data manager Inheritance object SimpleFileStore DefaultDataManager Implements IDataManager Inherited Members SimpleFileStore.Location SimpleFileStore.SerialBox SimpleFileStore.GetData(ITask) SimpleFileStore.GetLastRun(ITask) SimpleFileStore.SetData(ITask, dynamic) SimpleFileStore.SetLastRun(ITask, LastRunInfo) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.DataManager Assembly: TaskMaster.dll Syntax public class DefaultDataManager : SimpleFileStore, IDataManager Constructors | Improve this Doc View Source DefaultDataManager(SerialBox) Initializes a new instance of the DefaultDataManager class. Declaration public DefaultDataManager(SerialBox serialBox) Parameters Type Name Description SerialBox serialBox The serial box. See Also SimpleFileStore Implements IDataManager See Also SimpleFileStore"
-  },
-  "api/TaskMaster.DataManager.html": {
-    "href": "api/TaskMaster.DataManager.html",
-    "title": "Namespace TaskMaster.DataManager | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster.DataManager Classes DefaultDataManager Default data manager SimpleFileStore Simple file store."
   },
   "api/TaskMaster.DataManager.SimpleFileStore.html": {
     "href": "api/TaskMaster.DataManager.SimpleFileStore.html",
     "title": "Class SimpleFileStore | TaskMaster API Reference",
     "keywords": "Class SimpleFileStore Simple file store. Inheritance object SimpleFileStore DefaultDataManager Implements IDataManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.DataManager Assembly: TaskMaster.dll Syntax public abstract class SimpleFileStore : IDataManager Constructors | Improve this Doc View Source SimpleFileStore(string, SerialBox) Initializes a new instance of the SimpleFileStore class. Declaration protected SimpleFileStore(string location, SerialBox serialBox) Parameters Type Name Description string location The location to save to. SerialBox serialBox The serial box. See Also IDataManager Properties | Improve this Doc View Source Location Gets the location. Declaration public string Location { get; } Property Value Type Description string The location. See Also IDataManager | Improve this Doc View Source SerialBox Gets the serial box. Declaration public SerialBox SerialBox { get; } Property Value Type Description SerialBox The serial box. See Also IDataManager Methods | Improve this Doc View Source GetData(ITask) Gets the data. Declaration public dynamic? GetData(ITask task) Parameters Type Name Description ITask task The task. Returns Type Description dynamic The data associated with the task See Also IDataManager | Improve this Doc View Source GetLastRun(ITask) Gets the last run date/time. Declaration public LastRunInfo GetLastRun(ITask task) Parameters Type Name Description ITask task The task. Returns Type Description LastRunInfo The last run date/time. See Also IDataManager | Improve this Doc View Source SetData(ITask, dynamic) Sets the data. Declaration public bool SetData(ITask task, dynamic data) Parameters Type Name Description ITask task The task. dynamic data The data. Returns Type Description bool True if it is saved properly, false otherwise. See Also IDataManager | Improve this Doc View Source SetLastRun(ITask, LastRunInfo) Sets the last run date/time. Declaration public bool SetLastRun(ITask task, LastRunInfo time) Parameters Type Name Description ITask task The task. LastRunInfo time The last run date/time. Returns Type Description bool True if it succeeds, false otherwise. See Also IDataManager Implements IDataManager See Also IDataManager"
   },
-  "api/TaskMaster.Frequency.html": {
-    "href": "api/TaskMaster.Frequency.html",
-    "title": "Namespace TaskMaster.Frequency | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster.Frequency Classes RunAlways Runs every time it is called RunDaily Runs once daily RunHourly Run hourly RunMonthly Runs a task monthly RunOnce Runs the task one time RunWeekly Runs a trigger weekly RunYearly Runs a task yearly"
+  "api/TaskMaster.DataManager.html": {
+    "href": "api/TaskMaster.DataManager.html",
+    "title": "Namespace TaskMaster.DataManager | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster.DataManager Classes DefaultDataManager Default data manager SimpleFileStore Simple file store."
   },
   "api/TaskMaster.Frequency.RunAlways.html": {
     "href": "api/TaskMaster.Frequency.RunAlways.html",
@@ -94,15 +84,10 @@
     "title": "Class RunYearly | TaskMaster API Reference",
     "keywords": "Class RunYearly Runs a task yearly Inheritance object RunYearly Implements IFrequency Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.Frequency Assembly: TaskMaster.dll Syntax public class RunYearly : IFrequency Constructors | Improve this Doc View Source RunYearly(int) Initializes a new instance of the RunYearly class. Declaration public RunYearly(int dayOfYear) Parameters Type Name Description int dayOfYear The day of year. See Also IFrequency Properties | Improve this Doc View Source DayOfYear Gets the day of month. Declaration public int DayOfYear { get; } Property Value Type Description int The day of month. See Also IFrequency Methods | Improve this Doc View Source CanRun(LastRunInfo, DateTime) Determines whether this instance can run based on the specified last run. Declaration public bool CanRun(LastRunInfo lastRun, DateTime currentTime) Parameters Type Name Description LastRunInfo lastRun The last run. DateTime currentTime The current time. Returns Type Description bool True if it can, false otherwise See Also IFrequency Implements IFrequency See Also IFrequency"
   },
-  "api/TaskMaster.html": {
-    "href": "api/TaskMaster.html",
-    "title": "Namespace TaskMaster | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster Classes TaskMaster Task master"
-  },
-  "api/TaskMaster.Interfaces.html": {
-    "href": "api/TaskMaster.Interfaces.html",
-    "title": "Namespace TaskMaster.Interfaces | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster.Interfaces Interfaces IDataManager Data manager IFrequency Frequency interface ITask Task interface"
+  "api/TaskMaster.Frequency.html": {
+    "href": "api/TaskMaster.Frequency.html",
+    "title": "Namespace TaskMaster.Frequency | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster.Frequency Classes RunAlways Runs every time it is called RunDaily Runs once daily RunHourly Run hourly RunMonthly Runs a task monthly RunOnce Runs the task one time RunWeekly Runs a trigger weekly RunYearly Runs a task yearly"
   },
   "api/TaskMaster.Interfaces.IDataManager.html": {
     "href": "api/TaskMaster.Interfaces.IDataManager.html",
@@ -119,30 +104,45 @@
     "title": "Interface ITask | TaskMaster API Reference",
     "keywords": "Interface ITask Task interface Namespace: TaskMaster.Interfaces Assembly: TaskMaster.dll Syntax public interface ITask Properties | Improve this Doc View Source Active Gets a value indicating whether this ITask is active. Declaration bool Active { get; } Property Value Type Description bool true if active; otherwise, false. | Improve this Doc View Source Frequencies Gets the frequencies. Declaration IFrequency[] Frequencies { get; } Property Value Type Description IFrequency[] The frequencies. | Improve this Doc View Source Name Gets the name. Declaration string Name { get; } Property Value Type Description string The name. | Improve this Doc View Source Priority Order to run it in (items with the same Priority value will be run in parallel) Declaration int Priority { get; } Property Value Type Description int Methods | Improve this Doc View Source ExecuteAsync(LastRunInfo) Executes this task Declaration Task<bool> ExecuteAsync(LastRunInfo lastRun) Parameters Type Name Description LastRunInfo lastRun The last run date. Returns Type Description Task<bool> Returns true if it runs successfully, false otherwise | Improve this Doc View Source Initialize(IDataManager) Initializes the task using the specified data manager. Declaration bool Initialize(IDataManager dataManager) Parameters Type Name Description IDataManager dataManager The data manager. Returns Type Description bool True if it initializes correctly, false otherwise."
   },
-  "api/TaskMaster.Modules.html": {
-    "href": "api/TaskMaster.Modules.html",
-    "title": "Namespace TaskMaster.Modules | TaskMaster API Reference",
-    "keywords": "Namespace TaskMaster.Modules Classes Module Task master module"
+  "api/TaskMaster.Interfaces.html": {
+    "href": "api/TaskMaster.Interfaces.html",
+    "title": "Namespace TaskMaster.Interfaces | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster.Interfaces Interfaces IDataManager Data manager IFrequency Frequency interface ITask Task interface"
   },
   "api/TaskMaster.Modules.Module.html": {
     "href": "api/TaskMaster.Modules.Module.html",
     "title": "Class Module | TaskMaster API Reference",
     "keywords": "Class Module Task master module Inheritance object Module Implements IModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.Modules Assembly: TaskMaster.dll Syntax public class Module : IModule Properties | Improve this Doc View Source Order Order to run it in Declaration public int Order { get; } Property Value Type Description int See Also IModule Methods | Improve this Doc View Source Load(IServiceCollection?) Loads the module Declaration public void Load(IServiceCollection? bootstrapper) Parameters Type Name Description IServiceCollection bootstrapper Bootstrapper to register with See Also IModule Implements IModule See Also IModule"
   },
+  "api/TaskMaster.Modules.html": {
+    "href": "api/TaskMaster.Modules.html",
+    "title": "Namespace TaskMaster.Modules | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster.Modules Classes Module Task master module"
+  },
   "api/TaskMaster.TaskMaster.html": {
     "href": "api/TaskMaster.TaskMaster.html",
     "title": "Class TaskMaster | TaskMaster API Reference",
     "keywords": "Class TaskMaster Task master Inheritance object TaskMaster Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster Assembly: TaskMaster.dll Syntax public class TaskMaster Constructors | Improve this Doc View Source TaskMaster(ILogger<TaskMaster>?, IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?) Initializes a new instance of the TaskMaster class. Declaration public TaskMaster(ILogger<TaskMaster>? logger, IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers, CommandRunner? commandRunner) Parameters Type Name Description ILogger<TaskMaster> logger The logger. IEnumerable<ITask> tasks The tasks. IEnumerable<IDataManager> dataManagers The data managers. CommandRunner commandRunner The command runner. | Improve this Doc View Source TaskMaster(IEnumerable<ITask>, IEnumerable<IDataManager>, CommandRunner?) Initializes a new instance of the TaskMaster class. Declaration public TaskMaster(IEnumerable<ITask> tasks, IEnumerable<IDataManager> dataManagers, CommandRunner? commandRunner) Parameters Type Name Description IEnumerable<ITask> tasks The tasks. IEnumerable<IDataManager> dataManagers The data managers. CommandRunner commandRunner The command runner. Methods | Improve this Doc View Source Run(params string[]) Runs the tasks. Declaration public bool Run(params string[] args) Parameters Type Name Description string[] args The arguments. Returns Type Description bool True if it runs successfully, false otherwise."
+  },
+  "api/TaskMaster.Triggers.Trigger.html": {
+    "href": "api/TaskMaster.Triggers.Trigger.html",
+    "title": "Class Trigger | TaskMaster API Reference",
+    "keywords": "Class Trigger Determines when a task is triggered Inheritance object Trigger Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.Triggers Assembly: TaskMaster.dll Syntax public class Trigger Constructors | Improve this Doc View Source Trigger(ITask, ILogger, IDataManager) Initializes a new instance of the Trigger class. Declaration public Trigger(ITask task, ILogger logger, IDataManager dataManager) Parameters Type Name Description ITask task The task. ILogger logger The logger. IDataManager dataManager The data manager. Exceptions Type Condition ArgumentNullException logger Properties | Improve this Doc View Source Active Gets or sets a value indicating whether this Trigger is active. Declaration public bool Active { get; set; } Property Value Type Description bool true if active; otherwise, false. | Improve this Doc View Source DataManager Gets the data manager. Declaration public IDataManager DataManager { get; } Property Value Type Description IDataManager The data manager. | Improve this Doc View Source Frequencies Gets the frequency. Declaration public IFrequency[] Frequencies { get; } Property Value Type Description IFrequency[] The frequency. | Improve this Doc View Source LastRun Gets the last run. Declaration public LastRunInfo LastRun { get; } Property Value Type Description LastRunInfo The last run. | Improve this Doc View Source Priority Priority to run in. Declaration public int Priority { get; } Property Value Type Description int | Improve this Doc View Source Task Gets the task. Declaration public ITask Task { get; } Property Value Type Description ITask The task. Methods | Improve this Doc View Source RunAsync() Runs this instance. Declaration public Task<bool> RunAsync() Returns Type Description Task<bool> True if it ran successfully, false otherwise"
   },
   "api/TaskMaster.Triggers.html": {
     "href": "api/TaskMaster.Triggers.html",
     "title": "Namespace TaskMaster.Triggers | TaskMaster API Reference",
     "keywords": "Namespace TaskMaster.Triggers Classes Trigger Determines when a task is triggered"
   },
-  "api/TaskMaster.Triggers.Trigger.html": {
-    "href": "api/TaskMaster.Triggers.Trigger.html",
-    "title": "Class Trigger | TaskMaster API Reference",
-    "keywords": "Class Trigger Determines when a task is triggered Inheritance object Trigger Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: TaskMaster.Triggers Assembly: TaskMaster.dll Syntax public class Trigger Constructors | Improve this Doc View Source Trigger(ITask, ILogger, IDataManager) Initializes a new instance of the Trigger class. Declaration public Trigger(ITask task, ILogger logger, IDataManager dataManager) Parameters Type Name Description ITask task The task. ILogger logger The logger. IDataManager dataManager The data manager. Exceptions Type Condition ArgumentNullException logger Properties | Improve this Doc View Source Active Gets or sets a value indicating whether this Trigger is active. Declaration public bool Active { get; set; } Property Value Type Description bool true if active; otherwise, false. | Improve this Doc View Source DataManager Gets the data manager. Declaration public IDataManager DataManager { get; } Property Value Type Description IDataManager The data manager. | Improve this Doc View Source Frequencies Gets the frequency. Declaration public IFrequency[] Frequencies { get; } Property Value Type Description IFrequency[] The frequency. | Improve this Doc View Source LastRun Gets the last run. Declaration public LastRunInfo LastRun { get; } Property Value Type Description LastRunInfo The last run. | Improve this Doc View Source Priority Priority to run in. Declaration public int Priority { get; } Property Value Type Description int | Improve this Doc View Source Task Gets the task. Declaration public ITask Task { get; } Property Value Type Description ITask The task. Methods | Improve this Doc View Source RunAsync() Runs this instance. Declaration public Task<bool> RunAsync() Returns Type Description Task<bool> True if it ran successfully, false otherwise"
+  "api/TaskMaster.html": {
+    "href": "api/TaskMaster.html",
+    "title": "Namespace TaskMaster | TaskMaster API Reference",
+    "keywords": "Namespace TaskMaster Classes TaskMaster Task master"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome | TaskMaster API Reference",
+    "keywords": "Welcome Welcome to the API browser."
   },
   "articles/intro.html": {
     "href": "articles/intro.html",
