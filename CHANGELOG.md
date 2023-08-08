@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.8"></a>
+## [4.0.8](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.8) (2023-8-8)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([edab2ed](https://www.github.com/JaCraig/TaskMaster/commit/edab2ed8646c9db65acf4376d6aa3d5198d6c5da))
+
+### Other
+
+* Merge pull request #8 from JaCraig/dependabot/nuget/dependencies-eb7b248aa9 ([f19cfa2](https://www.github.com/JaCraig/TaskMaster/commit/f19cfa2bd293802d34e03bce54fbad910cda58e3))
+* Update dependabot.yml ([3e3cbb0](https://www.github.com/JaCraig/TaskMaster/commit/3e3cbb0a0c38a837363a2ee9b35e8276f02b954a))
+
 <a name="4.0.7"></a>
 ## [4.0.7](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.7) (2023-8-8)
 
