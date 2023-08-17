@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.11"></a>
+## [4.0.11](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.11) (2023-8-17)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([0a6a544](https://www.github.com/JaCraig/TaskMaster/commit/0a6a544ebd159db0ec26055581494bd8ea5c7855))
+
+### Other
+
+* Merge pull request #11 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-7c5f3fc8cd ([c7c5c19](https://www.github.com/JaCraig/TaskMaster/commit/c7c5c1903f0d667723524231f24335f04f6d25c9))
+* Merge pull request #12 from JaCraig/dependabot/nuget/dependencies-3d2765d673 ([3770ebf](https://www.github.com/JaCraig/TaskMaster/commit/3770ebfe96dda342ad02b59aca1796d5de5081b0))
+* bump the dependencies group in /TaskMaster.Tests with 1 update ([7f15e3f](https://www.github.com/JaCraig/TaskMaster/commit/7f15e3f76eba9dc18d859af420b723e2847d8c13))
+* Update dependabot.yml ([4e3c2fd](https://www.github.com/JaCraig/TaskMaster/commit/4e3c2fd29b7d800037494a34adb94c320674c255))
+
 <a name="4.0.10"></a>
 ## [4.0.10](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.10) (2023-8-10)
 
