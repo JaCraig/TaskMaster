@@ -51,7 +51,7 @@
     <PackageReference Include="Monarch" Version="3.0.10" />
     <PackageReference Include="SerialBox" Version="4.0.5" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
-	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.3">
+	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.4">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
