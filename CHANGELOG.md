@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.46"></a>
+## [4.0.46](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.46) (2023-11-03)
+
+### Bug Fixes
+
+* Fixing tests ([b73649f](https://www.github.com/JaCraig/TaskMaster/commit/b73649fcc62fae256a04f15da3f6097e5b3b7d03))
+
 <a name="4.0.45"></a>
 ## [4.0.45](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.45) (2023-11-02)
 
