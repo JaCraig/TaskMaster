@@ -2,6 +2,116 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.53"></a>
+## [4.0.53](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.53) (2023-11-14)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([a8c60fe](https://www.github.com/JaCraig/TaskMaster/commit/a8c60fe0a7930b264e4240dd4339903ddd9ec339))
+
+### Other
+
+* Merge pull request #61 from JaCraig/dependabot/nuget/dependencies-96e7ee94ea ([0785687](https://www.github.com/JaCraig/TaskMaster/commit/0785687374e858f9298f9be237f6b416a6741997))
+
+<a name="4.0.52"></a>
+## [4.0.52](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.52) (2023-11-13)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([ce7815a](https://www.github.com/JaCraig/TaskMaster/commit/ce7815a177f963aebc8e8ac31f54c4a9e875c31b))
+
+### Other
+
+* Merge pull request #60 from JaCraig/dependabot/nuget/dependencies-016796b40c ([7c309d0](https://www.github.com/JaCraig/TaskMaster/commit/7c309d002883d8896173d08ad34c351f570b988e))
+
+<a name="4.0.51"></a>
+## [4.0.51](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.51) (2023-11-10)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([84706e8](https://www.github.com/JaCraig/TaskMaster/commit/84706e888220844dc21d8a759568300af81939ec))
+
+### Other
+
+* Merge pull request #58 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-c2c108d172 ([3d3c632](https://www.github.com/JaCraig/TaskMaster/commit/3d3c632dceb4fadea8a0071345422b8b8584720c))
+* Merge pull request #59 from JaCraig/dependabot/nuget/dependencies-18ac767eda ([e2c28d7](https://www.github.com/JaCraig/TaskMaster/commit/e2c28d76220ef7ecce57b01f532e93e9b9f488a5))
+* bump the dependencies group in /TaskMaster.Tests with 1 update ([aaac5b2](https://www.github.com/JaCraig/TaskMaster/commit/aaac5b2bcbd4953b0cdec8d06f0c85e6b3cca75d))
+
+<a name="4.0.50"></a>
+## [4.0.50](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.50) (2023-11-09)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([5972214](https://www.github.com/JaCraig/TaskMaster/commit/597221448bd53df19347fc50a668ba57c5c7ade9))
+
+### Other
+
+* Merge pull request #57 from JaCraig/dependabot/nuget/dependencies-1121195398 ([3f656f9](https://www.github.com/JaCraig/TaskMaster/commit/3f656f9a4c83b284770de42dc6b0076f542dee6b))
+
+<a name="4.0.49"></a>
+## [4.0.49](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.49) (2023-11-08)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([e227743](https://www.github.com/JaCraig/TaskMaster/commit/e22774337908564db14465e5875176f7f6286733))
+
+### Other
+
+* Merge pull request #56 from JaCraig/dependabot/nuget/dependencies-526be4ab7f ([7e73d94](https://www.github.com/JaCraig/TaskMaster/commit/7e73d9422abd9f4fc0e3f9dd0b4ee6343148c35c))
+
+<a name="4.0.48"></a>
+## [4.0.48](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.48) (2023-11-07)
+
+### Bug Fixes
+
+* bump the dependencies group with 3 updates ([0f8fab2](https://www.github.com/JaCraig/TaskMaster/commit/0f8fab2a3a786163108582deb23421ce6d12d121))
+
+### Other
+
+* Merge pull request #55 from JaCraig/dependabot/nuget/dependencies-cc2c2aae3d ([9d4fe33](https://www.github.com/JaCraig/TaskMaster/commit/9d4fe33e20d6278a028768f9b5508245ab943ffc))
+
+<a name="4.0.47"></a>
+## [4.0.47](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.47) (2023-11-06)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([5407a5b](https://www.github.com/JaCraig/TaskMaster/commit/5407a5bc35a76b3f179dc353ad25372a85b0f60e))
+
+### Other
+
+* Merge pull request #54 from JaCraig/dependabot/nuget/dependencies-e44d31145b ([0437c9d](https://www.github.com/JaCraig/TaskMaster/commit/0437c9d137c2c90d2771e1ce2559c46cab24b12f))
+
+<a name="4.0.46"></a>
+## [4.0.46](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.46) (2023-11-03)
+
+### Bug Fixes
+
+* Fixing tests ([b73649f](https://www.github.com/JaCraig/TaskMaster/commit/b73649fcc62fae256a04f15da3f6097e5b3b7d03))
+
+<a name="4.0.45"></a>
+## [4.0.45](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.45) (2023-11-02)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([85bd5b8](https://www.github.com/JaCraig/TaskMaster/commit/85bd5b8c0545dd9060f3f9056b72aad8bed1f258))
+
+### Other
+
+* Merge pull request #53 from JaCraig/dependabot/nuget/dependencies-4f92f5919c ([9925172](https://www.github.com/JaCraig/TaskMaster/commit/992517222d01a223be4f21b299a109601341a71f))
+
+<a name="4.0.44"></a>
+## [4.0.44](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.44) (2023-11-01)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([c1180cf](https://www.github.com/JaCraig/TaskMaster/commit/c1180cf1751bde0768166f4ff6a063ec52b32352))
+
+### Other
+
+* Merge pull request #51 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-7cf140af72 ([9967d99](https://www.github.com/JaCraig/TaskMaster/commit/9967d9964586f97ec72eb69c82de226968466654))
+* Merge pull request #52 from JaCraig/dependabot/nuget/dependencies-cd679c418e ([ac9dda9](https://www.github.com/JaCraig/TaskMaster/commit/ac9dda907cbeb30872f5ae56865d971faff52370))
+* bump the dependencies group in /TaskMaster.Tests with 1 update ([98beab5](https://www.github.com/JaCraig/TaskMaster/commit/98beab52b3a33af66847357ff69bc66587c04975))
+
 <a name="4.0.43"></a>
 ## [4.0.43](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.43) (2023-10-31)
 
