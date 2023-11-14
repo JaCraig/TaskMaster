@@ -106,16 +106,17 @@ namespace TaskMaster.Triggers
                     InternalTimer.Start();
                     Logger?.LogInformation("Beginning task: {Name:l}", Task.Name);
                     var Result = await Task.ExecuteAsync(LastRun).ConfigureAwait(false);
-                    DataManager.SetLastRun(Task, new LastRunInfo { LastRunStart = StartTime, LastRunEnd = DateTime.Now });
+                    if (Result)
+                        DataManager.SetLastRun(Task, new LastRunInfo { LastRunStart = StartTime, LastRunEnd = DateTime.Now });
                     InternalTimer.Stop();
-                    Logger?.LogInformation("Task {Name:l} ended in {Time:l}", Task.Name, InternalTimer.Elapsed.ToString("g"));
+                    Logger?.LogInformation("Task {Name:l} ended in {Time:l}: {Status:l}", Task.Name, InternalTimer.Elapsed.ToString("g"), Result ? "Success" : "Failure");
                     return Result;
                 }
                 Logger?.LogInformation("Task skipped based on schedule: {Name:l}", Task.Name);
             }
-            catch (Exception e)
+            catch (Exception E)
             {
-                Logger?.LogError("Error running the task: ", e);
+                Logger?.LogError(E, "Error running the task: {Name:l}: ", Task.Name);
             }
             Logger?.LogInformation("Task {Name:l} ended", Task.Name);
             return false;
