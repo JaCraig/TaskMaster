@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.54"></a>
+## [4.0.54](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.54) (2023-11-14)
+
+### Bug Fixes
+
+* last run shouldn't save on failure ([3c9b78a](https://www.github.com/JaCraig/TaskMaster/commit/3c9b78a7a4ecfe6d62bbb98e8f369f9cae289770))
+
+### Other
+
+* merge ([dbdd023](https://www.github.com/JaCraig/TaskMaster/commit/dbdd02396505bd9dd3aff172275920d7f38de2b3))
+
 <a name="4.0.53"></a>
 ## [4.0.53](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.53) (2023-11-14)
 
