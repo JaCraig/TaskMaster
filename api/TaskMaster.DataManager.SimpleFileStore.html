@@ -1,123 +1,140 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8">
       <title>Class SimpleFileStore
  | TaskMaster API Reference </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SimpleFileStore
  | TaskMaster API Reference ">
-      <meta name="generator" content="docfx ">
-  
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
-      <link rel="stylesheet" href="../styles/config.css">
-      <link rel="stylesheet" href="../styles/discord.css">
-      <link rel="stylesheet" href="../styles/singulink.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.json">
-      <meta property="docfx:tocrel" content="toc.json">
-  
-  <meta property="docfx:rel" content="../">
-  <meta property="docfx:newtab" content="true">
-    </head>
-    <body>
-        <div class="top-navbar">
-            <a class="burger-icon" onclick="toggleMenu()">
-                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
-            </a>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
 
 
-            <a class="brand" href="../index.html">
-              <img src="../images/icon.png" alt="TaskMaster" class="logomark">
-              <span class="brand-title">TaskMaster</span>
-            </a>        </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="TaskMaster">
+            TaskMaster
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <div class="body-content">
-            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
-            <nav id="sidebar" role="navigation">
-                <div class="sidebar">
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
-                    <div>
-                      <div class="mobile-hide">
+          <nav id="breadcrumb"></nav>
+        </div>
 
-                        <a class="brand" href="../index.html">
-                          <img src="../images/icon.png" alt="TaskMaster" class="logomark">
-                          <span class="brand-title">TaskMaster</span>
-                        </a>                      </div>
-
-                      <div class="sidesearch">
-                        <form id="search" role="search" class="search">
-                            <i class="bi bi-search search-icon"></i>
-                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
-                        </form>
-                      </div>
-
-                      <div id="navbar">
-                      </div>
-                    </div>                    <div class="sidebar-item-separator"></div>
-
-                        <div id="sidetoggle">
-                          <div id="sidetoc"></div>
-                        </div>
-                </div>
-                <div class="footer">
-  <strong><a href='https://github.com/JaCraig/TaskMaster'>Open in Github</a></strong>
-  
-                </div>            </nav>
-
-            <main class="main-panel">
-
-                <div id="search-results" style="display: none;">
-                  <h1 class="search-list">Search Results for <span></span></h1>
-                  <div class="sr-items">
-                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
-                  </div>
-                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-                </div>
- 
-
-                <div role="main" class="hide-when-search">
-
-                        <div class="subnav navbar navbar-default">
-                          <div class="container hide-when-search" id="breadcrumb">
-                            <ul class="breadcrumb">
-                              <li></li>
-                            </ul>
-                          </div>
-                        </div>
-
-                         <div id="contribution">
-                               <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                         </div>
-
-                    <article class="content wrap" id="_content" data-uid="TaskMaster.DataManager.SimpleFileStore">
+        <article data-uid="TaskMaster.DataManager.SimpleFileStore">
 
 
 
-  <h1 id="TaskMaster_DataManager_SimpleFileStore" data-uid="TaskMaster.DataManager.SimpleFileStore" class="text-break">Class SimpleFileStore
-</h1>
-  <div class="markdown level0 summary"><p>Simple file store.</p>
+  <h1 id="TaskMaster_DataManager_SimpleFileStore" data-uid="TaskMaster.DataManager.SimpleFileStore" class="text-break">
+    Class SimpleFileStore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaskMaster.html">TaskMaster</a>.<a class="xref" href="TaskMaster.DataManager.html">DataManager</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TaskMaster.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Simple file store.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">SimpleFileStore</span></div>
-      <div class="level2"><a class="xref" href="TaskMaster.DataManager.DefaultDataManager.html">DefaultDataManager</a></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SimpleFileStore : IDataManager</code></pre>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SimpleFileStore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="TaskMaster.DataManager.DefaultDataManager.html">DefaultDataManager</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -139,391 +156,316 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="TaskMaster.html">TaskMaster</a>.<a class="xref" href="TaskMaster.DataManager.html">DataManager</a></h6>
-  <h6><strong>Assembly</strong>: TaskMaster.dll</h6>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SimpleFileStore : IDataManager</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore__ctor_System_String_SerialBox_SerialBox_.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.%23ctor(System.String%2CSerialBox.SerialBox)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L33">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore__ctor_" data-uid="TaskMaster.DataManager.SimpleFileStore.#ctor*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore__ctor_System_String_SerialBox_SerialBox_" data-uid="TaskMaster.DataManager.SimpleFileStore.#ctor(System.String,SerialBox.SerialBox)">SimpleFileStore(string, SerialBox)</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore__ctor_System_String_SerialBox_SerialBox_" data-uid="TaskMaster.DataManager.SimpleFileStore.#ctor(System.String,SerialBox.SerialBox)">
+  SimpleFileStore(string, SerialBox)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TaskMaster.DataManager.SimpleFileStore.html">SimpleFileStore</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected SimpleFileStore(string location, SerialBox serialBox)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">location</span></td>
-        <td><p>The location to save to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://github.com/JaCraig/SerialBox/blob/master/src/SerialBox/SerialBox.cs">SerialBox</a></td>
-        <td><span class="parametername">serialBox</span></td>
-        <td><p>The serial box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore__ctor_System_String_SerialBox_SerialBox__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_Location.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.Location%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L43">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The location to save to.</p>
+</dd>
+    <dt><code>serialBox</code> <a class="xref" href="https://github.com/JaCraig/SerialBox/blob/master/src/SerialBox/SerialBox.cs">SerialBox</a></dt>
+    <dd><p>The serial box.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_Location_" data-uid="TaskMaster.DataManager.SimpleFileStore.Location*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_Location" data-uid="TaskMaster.DataManager.SimpleFileStore.Location">Location</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_Location" data-uid="TaskMaster.DataManager.SimpleFileStore.Location">
+  Location
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the location.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Location { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>The location.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_Location_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_SerialBox.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.SerialBox%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L49">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The location.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_SerialBox_" data-uid="TaskMaster.DataManager.SimpleFileStore.SerialBox*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_SerialBox" data-uid="TaskMaster.DataManager.SimpleFileStore.SerialBox">SerialBox</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_SerialBox" data-uid="TaskMaster.DataManager.SimpleFileStore.SerialBox">
+  SerialBox
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the serial box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public SerialBox SerialBox { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://github.com/JaCraig/SerialBox/blob/master/src/SerialBox/SerialBox.cs">SerialBox</a></td>
-        <td><p>The serial box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_SerialBox_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_GetData_TaskMaster_Interfaces_ITask_.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L56">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://github.com/JaCraig/SerialBox/blob/master/src/SerialBox/SerialBox.cs">SerialBox</a></dt>
+    <dd><p>The serial box.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_GetData_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetData*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_GetData_TaskMaster_Interfaces_ITask_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)">GetData(ITask)</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_GetData_TaskMaster_Interfaces_ITask_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetData(TaskMaster.Interfaces.ITask)">
+  GetData(ITask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public dynamic? GetData(ITask task)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></td>
-        <td><span class="parametername">task</span></td>
-        <td><p>The task.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">dynamic</span></td>
-        <td><p>The data associated with the task</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_GetData_TaskMaster_Interfaces_ITask__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_GetLastRun_TaskMaster_Interfaces_ITask_.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L70">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></dt>
+    <dd><p>The task.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The data associated with the task</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_GetLastRun_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetLastRun*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_GetLastRun_TaskMaster_Interfaces_ITask_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)">GetLastRun(ITask)</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_GetLastRun_TaskMaster_Interfaces_ITask_" data-uid="TaskMaster.DataManager.SimpleFileStore.GetLastRun(TaskMaster.Interfaces.ITask)">
+  GetLastRun(ITask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the last run date/time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public LastRunInfo GetLastRun(ITask task)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></td>
-        <td><span class="parametername">task</span></td>
-        <td><p>The task.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Commands.LastRunInfo.html">LastRunInfo</a></td>
-        <td><p>The last run date/time.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_GetLastRun_TaskMaster_Interfaces_ITask__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_SetData_TaskMaster_Interfaces_ITask_System_Object_.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L97">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></dt>
+    <dd><p>The task.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaskMaster.Commands.LastRunInfo.html">LastRunInfo</a></dt>
+    <dd><p>The last run date/time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_SetData_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetData*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_SetData_TaskMaster_Interfaces_ITask_System_Object_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask,System.Object)">SetData(ITask, dynamic)</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_SetData_TaskMaster_Interfaces_ITask_System_Object_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetData(TaskMaster.Interfaces.ITask,System.Object)">
+  SetData(ITask, dynamic)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Sets the data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool SetData(ITask task, dynamic data)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></td>
-        <td><span class="parametername">task</span></td>
-        <td><p>The task.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">dynamic</span></td>
-        <td><span class="parametername">data</span></td>
-        <td><p>The data.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if it is saved properly, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_SetData_TaskMaster_Interfaces_ITask_System_Object__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/TaskMaster/new/master/apiSpec/new?filename=TaskMaster_DataManager_SimpleFileStore_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo_.md&amp;value=---%0Auid%3A%20TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask%2CTaskMaster.Commands.LastRunInfo)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L110">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></dt>
+    <dd><p>The task.</p>
+</dd>
+    <dt><code>data</code> <span class="xref">dynamic</span></dt>
+    <dd><p>The data.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if it is saved properly, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="TaskMaster_DataManager_SimpleFileStore_SetLastRun_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetLastRun*"></a>
-  <h4 id="TaskMaster_DataManager_SimpleFileStore_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)">SetLastRun(ITask, LastRunInfo)</h4>
+
+  <h3 id="TaskMaster_DataManager_SimpleFileStore_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo_" data-uid="TaskMaster.DataManager.SimpleFileStore.SetLastRun(TaskMaster.Interfaces.ITask,TaskMaster.Commands.LastRunInfo)">
+  SetLastRun(ITask, LastRunInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Sets the last run date/time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool SetLastRun(ITask task, LastRunInfo time)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></td>
-        <td><span class="parametername">task</span></td>
-        <td><p>The task.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="TaskMaster.Commands.LastRunInfo.html">LastRunInfo</a></td>
-        <td><span class="parametername">time</span></td>
-        <td><p>The last run date/time.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if it succeeds, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="TaskMaster_DataManager_SimpleFileStore_SetLastRun_TaskMaster_Interfaces_ITask_TaskMaster_Commands_LastRunInfo__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a>
-  </div>
-  <h3 id="seealso">See Also</h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="TaskMaster.Interfaces.ITask.html">ITask</a></dt>
+    <dd><p>The task.</p>
+</dd>
+    <dt><code>time</code> <a class="xref" href="TaskMaster.Commands.LastRunInfo.html">LastRunInfo</a></dt>
+    <dd><p>The last run date/time.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if it succeeds, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
   <div class="seealso">
       <div><a class="xref" href="TaskMaster.Interfaces.IDataManager.html">IDataManager</a></div>
   </div>
 
 </article>
-                </div>
 
-                <div class="copyright-footer">
-                    <span>&#169; James Craig. All rights reserved.</span>
-                </div>
-            </main>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/TaskMaster/blob/master/TaskMaster/DataManager/SimpleFileStore.cs/#L26" class="edit-link">Edit this page</a>
         </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
-        <script type="text/javascript" src="../styles/url.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
-        <script type="text/javascript" src="../styles/docfx.js"></script>
-        <script type="text/javascript" src="../styles/main.js"></script>
-        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/TaskMaster'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
