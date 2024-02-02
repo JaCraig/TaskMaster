@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.81"></a>
+## [4.0.81](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.81) (2024-02-02)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([9c453b4](https://www.github.com/JaCraig/TaskMaster/commit/9c453b46b4de9238dedfcd16eb0045da2d6ae76c))
+
+### Other
+
+* Merge pull request #98 from JaCraig/dependabot/nuget/dependencies-2306cda70e ([f44a8de](https://www.github.com/JaCraig/TaskMaster/commit/f44a8deb850d2d71a22ad0bc6b6b23c93e23d0c7))
+* Update dependabot-reviewer.yml ([e1e057c](https://www.github.com/JaCraig/TaskMaster/commit/e1e057cddf0c7d390b3d3d596119f8a8e8b8223f))
+
 <a name="4.0.80"></a>
 ## [4.0.80](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.80) (2024-02-01)
 
