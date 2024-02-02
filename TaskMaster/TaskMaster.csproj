@@ -48,7 +48,7 @@
   <ItemGroup>
     <PackageReference Include="FileCurator" Version="4.0.51" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Monarch" Version="3.0.47" />
+    <PackageReference Include="Monarch" Version="3.0.48" />
     <PackageReference Include="SerialBox" Version="4.0.20" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.4">
