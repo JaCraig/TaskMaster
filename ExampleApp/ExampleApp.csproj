@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="FileCurator" Version="4.0.51" />
-    <PackageReference Include="SerialBox" Version="4.0.20" />
+    <PackageReference Include="SerialBox" Version="4.0.21" />
     <PackageReference Include="Serilog" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
