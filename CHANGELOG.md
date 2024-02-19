@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.91"></a>
+## [4.0.91](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.91) (2024-02-19)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([65ec89a](https://www.github.com/JaCraig/TaskMaster/commit/65ec89a01a04d4e6b34a05421399dfbe533466e9))
+
+### Other
+
+* Merge pull request #109 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-5305f2162c ([e73f40c](https://www.github.com/JaCraig/TaskMaster/commit/e73f40cb720fcaebdf3c59cbd6461b902d0ef082))
+* Merge pull request #110 from JaCraig/dependabot/nuget/dependencies-9a8acc8f41 ([3be612f](https://www.github.com/JaCraig/TaskMaster/commit/3be612f82d7c71b6f7d9c84005fc3d2bed9eb2ff))
+* bump the dependencies group in /TaskMaster.Tests with 2 updates ([e0d57a1](https://www.github.com/JaCraig/TaskMaster/commit/e0d57a10963d410ec199c9609d39f8e14c550cf8))
+
 <a name="4.0.90"></a>
 ## [4.0.90](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.90) (2024-02-16)
 
