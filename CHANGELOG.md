@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.100"></a>
+## [4.0.100](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.100) (2024-03-01)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([5df509d](https://www.github.com/JaCraig/TaskMaster/commit/5df509d547a251fbd790db58bfa00b8dd7c344ed))
+
+### Other
+
+* Merge pull request #120 from JaCraig/dependabot/nuget/dependencies-09588ac2b0 ([d1431c2](https://www.github.com/JaCraig/TaskMaster/commit/d1431c2cdc6f34df79a7a007b59a62fa5cd755c7))
+
 <a name="4.0.99"></a>
 ## [4.0.99](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.99) (2024-02-29)
 
