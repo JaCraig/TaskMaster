@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.115"></a>
+## [4.0.115](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.115) (2024-04-11)
+
+### Bug Fixes
+
+* bump FileCurator from 4.0.73 to 4.0.74 in the dependencies group ([527c842](https://www.github.com/JaCraig/TaskMaster/commit/527c842383c216d2cc83b4791a39f82643398fcc))
+
+### Other
+
+* Merge pull request #136 from JaCraig/dependabot/github_actions/dependencies-45223d3826 ([a64dc39](https://www.github.com/JaCraig/TaskMaster/commit/a64dc3964dc40cf3cbb3084b097d81e6eb8658bc))
+* Merge pull request #137 from JaCraig/dependabot/nuget/dependencies-80771566af ([f29236b](https://www.github.com/JaCraig/TaskMaster/commit/f29236ba82a8ec8e4d86a0a018e55ec165eec721))
+* bump peaceiris/actions-gh-pages in the dependencies group ([f8d50b5](https://www.github.com/JaCraig/TaskMaster/commit/f8d50b53b567e937127f64dcc6b84efca8ee9089))
+
 <a name="4.0.114"></a>
 ## [4.0.114](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.114) (2024-04-02)
 
