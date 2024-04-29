@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.119"></a>
+## [4.0.119](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.119) (2024-04-29)
+
+### Bug Fixes
+
+* bump versionize from 1.22.0 to 1.23.0 in the dependencies group ([122222b](https://www.github.com/JaCraig/TaskMaster/commit/122222b32eb9b630f3e47a388eb8537cc03fe7a9))
+
+### Other
+
+* Merge pull request #142 from JaCraig/dependabot/github_actions/dependencies-67cf71b959 ([d24f4d3](https://www.github.com/JaCraig/TaskMaster/commit/d24f4d3774e03160be52e69e0cdcd6bde70b154b))
+* Merge pull request #143 from JaCraig/dependabot/nuget/dependencies-6d2d24f1fd ([6b99507](https://www.github.com/JaCraig/TaskMaster/commit/6b995079705102afa486477c58532f34b6248ee6))
+* bump dependabot/fetch-metadata in the dependencies group ([362ed51](https://www.github.com/JaCraig/TaskMaster/commit/362ed5192981f4b6d93307375b3eaf8d7ad0b280))
+
 <a name="4.0.118"></a>
 ## [4.0.118](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.118) (2024-04-16)
 
