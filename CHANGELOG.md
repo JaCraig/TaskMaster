@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.127"></a>
+## [4.0.127](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.127) (2024-05-09)
+
+### Bug Fixes
+
+* bump Monarch from 3.0.80 to 3.0.81 in the dependencies group ([870d01a](https://www.github.com/JaCraig/TaskMaster/commit/870d01acaa0fe50b192c7d9bfbf3d9289aeaa8b5))
+
+### Other
+
+* Merge pull request #152 from JaCraig/dependabot/nuget/dependencies-1802886763 ([4a7e67a](https://www.github.com/JaCraig/TaskMaster/commit/4a7e67a451b86fc0dd0621e200691c3519b4306f))
+
 <a name="4.0.126"></a>
 ## [4.0.126](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.126) (2024-05-08)
 
