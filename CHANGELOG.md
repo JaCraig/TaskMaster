@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.131"></a>
+## [4.0.131](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.131) (2024-05-30)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([5321f32](https://www.github.com/JaCraig/TaskMaster/commit/5321f32e58f1a272ad7dadd2664ea6a1da101a32))
+
+### Other
+
+* --- ([35e8848](https://www.github.com/JaCraig/TaskMaster/commit/35e8848b1743940d90f361795f26a06cda7beecf))
+* Merge pull request #156 from JaCraig/dependabot/nuget/dependencies-79776c15e3 ([6ec80db](https://www.github.com/JaCraig/TaskMaster/commit/6ec80db84929eeee4d3486a245cc0bd376e84a4c))
+* Merge pull request #157 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-d10d8338a5 ([fc13df3](https://www.github.com/JaCraig/TaskMaster/commit/fc13df34c6bd171f0ed25f8bc782f666d2e508a1))
+* Merge pull request #158 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-63bf006411 ([b42d271](https://www.github.com/JaCraig/TaskMaster/commit/b42d2712d352431e182115d13a95a65dbed4fa8d))
+* Merge pull request #159 from JaCraig/dependabot/nuget/dependencies-8ec20fa0a9 ([864830b](https://www.github.com/JaCraig/TaskMaster/commit/864830b658d5838b725c2c80710c116e9e5148bf))
+* bump Microsoft.NET.Test.Sdk ([c66eee6](https://www.github.com/JaCraig/TaskMaster/commit/c66eee6c9d38fbadcd2002393794172e4d25e7ff))
+* bump the dependencies group in /TaskMaster.Tests with 2 updates ([b559872](https://www.github.com/JaCraig/TaskMaster/commit/b559872785556b231a3106038c274a73a62036ed))
+
 <a name="4.0.130"></a>
 ## [4.0.130](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.130) (2024-05-20)
 
