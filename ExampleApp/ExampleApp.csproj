@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="4.0.87" />
+    <PackageReference Include="FileCurator" Version="4.0.88" />
     <PackageReference Include="SerialBox" Version="4.0.33" />
     <PackageReference Include="Serilog" Version="4.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
