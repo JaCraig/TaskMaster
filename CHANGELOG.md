@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.145"></a>
+## [4.0.145](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.145) (2024-07-11)
+
+### Bug Fixes
+
+* bump FileCurator from 4.0.95 to 4.0.96 in the dependencies group ([30cf954](https://www.github.com/JaCraig/TaskMaster/commit/30cf9549279b6d731e120817c7e20033cf62afb1))
+
+### Other
+
+* Merge pull request #173 from JaCraig/dependabot/github_actions/dependencies-c44bf69c3e ([b94c9c2](https://www.github.com/JaCraig/TaskMaster/commit/b94c9c27d79bbd49093838d89b4dfe4be948afc2))
+* Merge pull request #174 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-8e312df114 ([2cde029](https://www.github.com/JaCraig/TaskMaster/commit/2cde0297d00becaacbb3858772115aa7da167368))
+* Merge pull request #175 from JaCraig/dependabot/github_actions/dependencies-be62d4486d ([37f7f2f](https://www.github.com/JaCraig/TaskMaster/commit/37f7f2f0c2c51af1258bfeb647f1d9139acf46af))
+* Merge pull request #176 from JaCraig/dependabot/nuget/dependencies-f03ab6695b ([1e7dfe0](https://www.github.com/JaCraig/TaskMaster/commit/1e7dfe0a9b6958b995a96003f7a4e6868a5af3dc))
+* bump actions/setup-dotnet in the dependencies group ([dd96cb9](https://www.github.com/JaCraig/TaskMaster/commit/dd96cb96408165c4b841511f2faca32ad14c6a9e))
+* bump dependabot/fetch-metadata in the dependencies group ([fd3c7ed](https://www.github.com/JaCraig/TaskMaster/commit/fd3c7edbd6b2ffdb618cef642b0da95f002ca853))
+* bump the dependencies group in /TaskMaster.Tests with 2 updates ([f20fa9b](https://www.github.com/JaCraig/TaskMaster/commit/f20fa9bba038c0bf56c4c9e15df6abfca4e81ea5))
+
 <a name="4.0.144"></a>
 ## [4.0.144](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.144) (2024-07-02)
 
