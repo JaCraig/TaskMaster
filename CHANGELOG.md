@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.147"></a>
+## [4.0.147](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.147) (2024-07-25)
+
+### Bug Fixes
+
+* bump Serilog from 4.0.0 to 4.0.1 in the dependencies group ([6851577](https://www.github.com/JaCraig/TaskMaster/commit/68515776ca076a7dad0d05be0d75142a3cd29d65))
+
+### Other
+
+* Merge pull request #178 from JaCraig/dependabot/nuget/dependencies-2fb7930b1e ([e33df72](https://www.github.com/JaCraig/TaskMaster/commit/e33df72e2c74e6af6bded45ec57857522eb7f95b))
+
 <a name="4.0.146"></a>
 ## [4.0.146](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.146) (2024-07-12)
 
