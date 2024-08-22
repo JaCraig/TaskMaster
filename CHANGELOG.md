@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.157"></a>
+## [4.0.157](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.157) (2024-08-22)
+
+### Bug Fixes
+
+* bump Monarch from 3.0.98 to 3.0.99 in the dependencies group ([be55ce2](https://www.github.com/JaCraig/TaskMaster/commit/be55ce2f89b15edbbe5e73cd7ecec2831f46fa3b))
+
+### Other
+
+* Merge pull request #188 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-20452041bf ([584f66b](https://www.github.com/JaCraig/TaskMaster/commit/584f66b5b78731390ba98813492432505bd6c7a9))
+* Merge pull request #189 from JaCraig/dependabot/nuget/dependencies-cc65d28448 ([6688cdb](https://www.github.com/JaCraig/TaskMaster/commit/6688cdb54820fdc43b842a315d55bcdb3840d8d7))
+* bump Microsoft.NET.Test.Sdk ([0b4741a](https://www.github.com/JaCraig/TaskMaster/commit/0b4741a7a9fbaed1805d057bf608468b245b8b90))
+
 <a name="4.0.156"></a>
 ## [4.0.156](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.156) (2024-08-21)
 
