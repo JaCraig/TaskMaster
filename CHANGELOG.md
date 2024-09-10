@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.164"></a>
+## [4.0.164](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.164) (2024-09-10)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([640b9d9](https://www.github.com/JaCraig/TaskMaster/commit/640b9d9a326a39515f57fc5d447c71cfc7670071))
+
+### Other
+
+* Merge pull request #196 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-78c52a00e0 ([639b37f](https://www.github.com/JaCraig/TaskMaster/commit/639b37f0aafb0de40a02e29f6707771dcc0abfe0))
+* Merge pull request #197 from JaCraig/dependabot/nuget/dependencies-586554a85f ([1bcd0d9](https://www.github.com/JaCraig/TaskMaster/commit/1bcd0d9a3b177a288496c3fb9600a29def8891c6))
+* bump Microsoft.NET.Test.Sdk ([18b7b75](https://www.github.com/JaCraig/TaskMaster/commit/18b7b75c45a563cd97cd496bf6d5c7b2e7d9a9de))
+
 <a name="4.0.163"></a>
 ## [4.0.163](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.163) (2024-09-03)
 
