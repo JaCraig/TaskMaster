@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.167"></a>
+## [4.0.167](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.167) (2024-09-30)
+
+### Bug Fixes
+
+* bump Serilog from 4.0.1 to 4.0.2 in the dependencies group ([4cb52df](https://www.github.com/JaCraig/TaskMaster/commit/4cb52df8139749e112dc93b1d4f4fba29a32cdbc))
+
+### Other
+
+* Merge pull request #201 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-799ab3113c ([d5d64ab](https://www.github.com/JaCraig/TaskMaster/commit/d5d64abacad0e0a34f235ef60f722fafc830bc3c))
+* Merge pull request #202 from JaCraig/dependabot/nuget/dependencies-10a555cfe1 ([54b18ab](https://www.github.com/JaCraig/TaskMaster/commit/54b18abd10422746597f695840b85194482963bb))
+* bump xunit in /TaskMaster.Tests in the dependencies group ([8b1e9a9](https://www.github.com/JaCraig/TaskMaster/commit/8b1e9a9cf3a4af7440cfc87f0c999c80184fa523))
+
 <a name="4.0.166"></a>
 ## [4.0.166](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.166) (2024-09-24)
 
