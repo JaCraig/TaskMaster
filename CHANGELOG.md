@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.169"></a>
+## [4.0.169](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.169) (2024-10-02)
+
+### Bug Fixes
+
+* bump FileCurator from 4.1.2 to 4.1.3 in the dependencies group ([827e5ad](https://www.github.com/JaCraig/TaskMaster/commit/827e5ad772fd883cb82ae211e9bc3b7635d4eb91))
+
+### Other
+
+* Merge pull request #204 from JaCraig/dependabot/nuget/dependencies-03ecc9d99b ([c0a158c](https://www.github.com/JaCraig/TaskMaster/commit/c0a158cd6a766d41e6c6140a93a7d223babc38fc))
+
 <a name="4.0.168"></a>
 ## [4.0.168](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.168) (2024-10-01)
 
