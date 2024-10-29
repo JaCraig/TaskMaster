@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.175"></a>
+## [4.0.175](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.175) (2024-10-29)
+
+### Bug Fixes
+
+* bump Serilog from 4.0.2 to 4.1.0 in the dependencies group ([a5f0647](https://www.github.com/JaCraig/TaskMaster/commit/a5f06478f36101155382d69274890ae8c76bb524))
+* bump versionize from 1.27.0 to 2.0.0 in the dependencies group ([9d595d7](https://www.github.com/JaCraig/TaskMaster/commit/9d595d76f2c75840670cce731dcc1a097cb15aad))
+* bump versionize from 2.0.0 to 2.1.0 in the dependencies group ([c257a79](https://www.github.com/JaCraig/TaskMaster/commit/c257a79866fae7cf5c54986d5344cefdd5282fb2))
+
+### Other
+
+* Merge pull request #210 from JaCraig/dependabot/nuget/dependencies-9c36df7c76 ([a5e2a51](https://www.github.com/JaCraig/TaskMaster/commit/a5e2a516807839e6b4357c488efdd31041d62bc9))
+* Merge pull request #211 from JaCraig/dependabot/nuget/dependencies-3894128c1d ([070d4c7](https://www.github.com/JaCraig/TaskMaster/commit/070d4c77885f20ac1e7db19e4aa5316cd80e72d0))
+* Merge pull request #212 from JaCraig/dependabot/nuget/dependencies-0d36011a90 ([e88ade3](https://www.github.com/JaCraig/TaskMaster/commit/e88ade3bc2211d3443c80be90fc1d477cb3de49a))
+* Merge pull request #213 from JaCraig/dependabot/github_actions/dependencies-18190d55f2 ([f35f381](https://www.github.com/JaCraig/TaskMaster/commit/f35f381f502aed0125adec9998771208a4260389))
+* bump actions/setup-dotnet in the dependencies group ([7596b88](https://www.github.com/JaCraig/TaskMaster/commit/7596b88dec6c0f3d2fe91c246bc63d03860946fe))
+* Refactor versionize command in dotnet-publish.yml ([7c3fa68](https://www.github.com/JaCraig/TaskMaster/commit/7c3fa682fa2b4c2d917861539b9f959b9c09e2a6))
+
 <a name="4.0.174"></a>
 ## [4.0.174](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.174) (2024-10-15)
 
