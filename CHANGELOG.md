@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.179"></a>
+## [4.0.179](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.179) (2024-11-04)
+
+### Bug Fixes
+
+* bump versionize from 2.1.0 to 2.2.0 in the dependencies group ([7e020ab](https://www.github.com/JaCraig/TaskMaster/commit/7e020ab108446a9d33476cddc08ae6c12e079d43))
+
+### Other
+
+* Merge pull request #217 from JaCraig/dependabot/nuget/dependencies-a709802c01 ([28a04f5](https://www.github.com/JaCraig/TaskMaster/commit/28a04f51d687ebf601123507f833598824982bd6))
+
 <a name="4.0.178"></a>
 ## [4.0.178](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.178) (2024-11-01)
 
