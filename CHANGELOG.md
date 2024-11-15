@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.187"></a>
+## [4.0.187](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.187) (2024-11-15)
+
+### Bug Fixes
+
+* bump SerialBox from 4.0.43 to 4.0.44 in the dependencies group ([b870099](https://www.github.com/JaCraig/TaskMaster/commit/b87009953e1455ebffb420d04927c4b3b2865c23))
+
+### Other
+
+* Merge pull request #225 from JaCraig/dependabot/nuget/dependencies-340ba5dfaa ([152a7c6](https://www.github.com/JaCraig/TaskMaster/commit/152a7c694347fcc0db35ccd6b0cc97c1314bcb48))
+
 <a name="4.0.186"></a>
 ## [4.0.186](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.186) (2024-11-14)
 
