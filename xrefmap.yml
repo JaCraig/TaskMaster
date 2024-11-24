@@ -22,6 +22,15 @@ references:
   fullName.vb: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Canister.Interfaces.ICanisterConfiguration)
   nameWithType: RegistrationTaskMaster.RegisterTaskMaster(ICanisterConfiguration?)
   nameWithType.vb: RegistrationTaskMaster.RegisterTaskMaster(ICanisterConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: RegisterTaskMaster(IServiceCollection?)
+  href: api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html#Microsoft_Extensions_DependencyInjection_RegistrationTaskMaster_RegisterTaskMaster_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: RegisterTaskMaster(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: RegistrationTaskMaster.RegisterTaskMaster(IServiceCollection?)
+  nameWithType.vb: RegistrationTaskMaster.RegisterTaskMaster(IServiceCollection)
 - uid: Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.RegisterTaskMaster*
   name: RegisterTaskMaster
   href: api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html#Microsoft_Extensions_DependencyInjection_RegistrationTaskMaster_RegisterTaskMaster_
