@@ -4,7 +4,7 @@
     <Description>TaskMaster is a simple library used to manage sets of fire and forget tasks that need to run after specific dates/times.</Description>
     <AssemblyTitle>TaskMaster</AssemblyTitle>
     <Authors>James Craig</Authors>
-	  <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>TaskMaster</AssemblyName>
     <PackageId>TaskMaster</PackageId>
@@ -46,12 +46,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="4.1.13" />
+    <PackageReference Include="FileCurator" Version="5.0.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Monarch" Version="3.0.116" />
-    <PackageReference Include="SerialBox" Version="4.0.44" />
+    <PackageReference Include="Monarch" Version="4.0.0" />
+    <PackageReference Include="SerialBox" Version="5.0.2" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.4">
+	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>

@@ -11,8 +11,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using BigBook.Registration;
 using Canister.Interfaces;
+using SerialBox.Registration;
 using System.Reflection;
+using TaskMaster.Interfaces;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -33,6 +36,24 @@ namespace Microsoft.Extensions.DependencyInjection
                                ?.RegisterSerialBox()
                                ?.RegisterBigBookOfDataTypes()
                                ?.RegisterMonarch();
+        }
+
+        /// <summary>
+        /// Registers the TaskMaster services with the specified service collection.
+        /// </summary>
+        /// <param name="services">The service collection to add the services to.</param>
+        /// <returns>The service collection with the TaskMaster services added.</returns>
+        public static IServiceCollection? RegisterTaskMaster(this IServiceCollection? services)
+        {
+            if (services.Exists<TaskMaster.TaskMaster>())
+                return services;
+            return services?.AddAllTransient<ITask>()
+                ?.AddAllTransient<IDataManager>()
+                ?.AddTransient<TaskMaster.TaskMaster>()
+                ?.RegisterFileCurator()
+                ?.RegisterSerialBox()
+                ?.RegisterBigBookOfDataTypes()
+                ?.RegisterMonarch();
         }
     }
 }
