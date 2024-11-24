@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.0"></a>
+## [5.0.0](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.0) (2024-11-24)
+
+### Features
+
+* Update configs, target frameworks, and workflows ([699656d](https://www.github.com/JaCraig/TaskMaster/commit/699656daa0ebe5a4544bd5e96d53da916c1f49be))
+
+### Breaking Changes
+
+* Update configs, target frameworks, and workflows ([699656d](https://www.github.com/JaCraig/TaskMaster/commit/699656daa0ebe5a4544bd5e96d53da916c1f49be))
+
+### Other
+
+* Merge pull request #226 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-617062173c ([2678667](https://www.github.com/JaCraig/TaskMaster/commit/2678667b014151e5e833914b626854d0972cbb36))
+* bump Microsoft.NET.Test.Sdk ([07a6fb2](https://www.github.com/JaCraig/TaskMaster/commit/07a6fb2839507f2abc2fed86468e5d42c8715aa1))
+
 <a name="4.0.187"></a>
 ## [4.0.187](https://www.github.com/JaCraig/TaskMaster/releases/tag/v4.0.187) (2024-11-15)
 
