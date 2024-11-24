@@ -9,9 +9,16 @@ TaskMaster is a lightweight C# library that provides functionality for running t
 In order to use TaskMaster, you must wire it up first by adding it to your ServiceCollection:
 
 ```csharp
+serviceCollection.RegisterTaskMaster();
+```
+
+Or if you are using Canister, you can use the following code:
+
+```csharp
 serviceCollection.AddCanisterModules();
 ```
-Once Canister is configured, you can create a new instance of the TaskMaster service:
+
+Once it is configured, you can create a new instance of the TaskMaster service:
 
 ```csharp
 var Runner = services.GetService<TaskMaster>();
@@ -67,7 +74,7 @@ Install-Package TaskMaster
 
 To build the library, ensure you have the following minimum requirements:
 
-- Visual Studio 2017
+- Visual Studio 2022
 
 Clone the project repository, and you should be able to load the solution in Visual Studio and build it without any issues.
 
