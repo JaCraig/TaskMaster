@@ -77,9 +77,12 @@
 <p>TaskMaster is a lightweight C# library that provides functionality for running tasks based on specific criteria. It simplifies the process of setting up and executing tasks in your application.</p>
 <h2 id="basic-usage">Basic Usage</h2>
 <p>In order to use TaskMaster, you must wire it up first by adding it to your ServiceCollection:</p>
+<pre><code class="lang-csharp">serviceCollection.RegisterTaskMaster();
+</code></pre>
+<p>Or if you are using Canister, you can use the following code:</p>
 <pre><code class="lang-csharp">serviceCollection.AddCanisterModules();
 </code></pre>
-<p>Once Canister is configured, you can create a new instance of the TaskMaster service:</p>
+<p>Once it is configured, you can create a new instance of the TaskMaster service:</p>
 <pre><code class="lang-csharp">var Runner = services.GetService&lt;TaskMaster&gt;();
 Runner.Run(args);
 </code></pre>
@@ -119,7 +122,7 @@ public class HelloWorldTask : ITask
 <h2 id="build-process">Build Process</h2>
 <p>To build the library, ensure you have the following minimum requirements:</p>
 <ul>
-<li>Visual Studio 2017</li>
+<li>Visual Studio 2022</li>
 </ul>
 <p>Clone the project repository, and you should be able to load the solution in Visual Studio and build it without any issues.</p>
 <p>For any further assistance or information, please refer to the project documentation or reach out to the project contributors.</p>
