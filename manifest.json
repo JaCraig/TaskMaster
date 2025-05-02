@@ -18,7 +18,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster",
+      "Summary": "<p sourcefile=\"api/Microsoft.Extensions.DependencyInjection.RegistrationTaskMaster.yml\" sourcestartlinenumber=\"1\">Registration extension methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/TaskMaster.Commands.LastRunInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Commands.LastRunInfo",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Commands.LastRunInfo.yml\" sourcestartlinenumber=\"1\">Last run info</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/TaskMaster.Commands.RunTask.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Commands.RunTask",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Commands.RunTask.yml\" sourcestartlinenumber=\"1\">Runs a specific task</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/TaskMaster.Commands.TaskListing.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Commands.TaskListing",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Commands.TaskListing.yml\" sourcestartlinenumber=\"1\">Task listing</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/TaskMaster.Commands.TaskName.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Commands.TaskName",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Commands.TaskName.yml\" sourcestartlinenumber=\"1\">Task name input</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/TaskMaster.Commands.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Commands",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/TaskMaster.DataManager.DefaultDataManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.DataManager.DefaultDataManager",
+      "Summary": "<p sourcefile=\"api/TaskMaster.DataManager.DefaultDataManager.yml\" sourcestartlinenumber=\"1\">Default data manager</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/TaskMaster.DataManager.SimpleFileStore.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.DataManager.SimpleFileStore",
+      "Summary": "<p sourcefile=\"api/TaskMaster.DataManager.SimpleFileStore.yml\" sourcestartlinenumber=\"1\">Simple file store.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/TaskMaster.DataManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.DataManager",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunAlways.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunAlways",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunAlways.yml\" sourcestartlinenumber=\"1\">Runs every time it is called</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunDaily.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunDaily",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunDaily.yml\" sourcestartlinenumber=\"1\">Runs once daily</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -138,7 +186,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunHourly.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunHourly",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunHourly.yml\" sourcestartlinenumber=\"1\">Run hourly</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +200,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunMonthly.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunMonthly",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunMonthly.yml\" sourcestartlinenumber=\"1\">Runs a task monthly</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -158,7 +214,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunOnce.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunOnce",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunOnce.yml\" sourcestartlinenumber=\"1\">Runs the task one time</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +228,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunWeekly.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunWeekly",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunWeekly.yml\" sourcestartlinenumber=\"1\">Runs a trigger weekly</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -178,7 +242,11 @@
           "relative_path": "api/TaskMaster.Frequency.RunYearly.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency.RunYearly",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Frequency.RunYearly.yml\" sourcestartlinenumber=\"1\">Runs a task yearly</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -188,7 +256,11 @@
           "relative_path": "api/TaskMaster.Frequency.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Frequency",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -198,7 +270,11 @@
           "relative_path": "api/TaskMaster.Interfaces.IDataManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Interfaces.IDataManager",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Interfaces.IDataManager.yml\" sourcestartlinenumber=\"1\">Data manager</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -208,7 +284,11 @@
           "relative_path": "api/TaskMaster.Interfaces.IFrequency.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Interfaces.IFrequency",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Interfaces.IFrequency.yml\" sourcestartlinenumber=\"1\">Frequency interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +298,11 @@
           "relative_path": "api/TaskMaster.Interfaces.ITask.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Interfaces.ITask",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Interfaces.ITask.yml\" sourcestartlinenumber=\"1\">Task interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -228,7 +312,11 @@
           "relative_path": "api/TaskMaster.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -238,7 +326,11 @@
           "relative_path": "api/TaskMaster.Modules.Module.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Modules.Module",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Modules.Module.yml\" sourcestartlinenumber=\"1\">Task master module</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -248,7 +340,11 @@
           "relative_path": "api/TaskMaster.Modules.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Modules",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -258,7 +354,11 @@
           "relative_path": "api/TaskMaster.TaskMaster.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.TaskMaster",
+      "Summary": "<p sourcefile=\"api/TaskMaster.TaskMaster.yml\" sourcestartlinenumber=\"1\">Task master</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -268,7 +368,11 @@
           "relative_path": "api/TaskMaster.Triggers.Trigger.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Triggers.Trigger",
+      "Summary": "<p sourcefile=\"api/TaskMaster.Triggers.Trigger.yml\" sourcestartlinenumber=\"1\">Determines when a task is triggered</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -278,7 +382,11 @@
           "relative_path": "api/TaskMaster.Triggers.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster.Triggers",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -288,7 +396,11 @@
           "relative_path": "api/TaskMaster.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TaskMaster",
+      "Summary": null
     },
     {
       "type": "Conceptual",
