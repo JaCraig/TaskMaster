@@ -24,7 +24,7 @@ namespace TaskMaster.Tests.Triggers
         public async System.Threading.Tasks.Task RunAsync()
         {
             var TestObject = new Trigger(new TestTask(), null, null);
-            Assert.True(await TestObject.RunAsync().ConfigureAwait(false));
+            Assert.True(await TestObject.RunAsync());
         }
 
         private class TestTask : ITask
