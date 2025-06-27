@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.1) (2025-06-27)
+
+### Bug Fixes
+
+* **dependencies:** update package references and fix formatting ([5bb6ec0](https://www.github.com/JaCraig/TaskMaster/commit/5bb6ec05a020a9cab02406a5042425325323a40d))
+
+### Other
+
+* Merge pull request #227 from JaCraig/dependabot/nuget/ExampleApp/dependencies-23635e76c9 ([1f8627f](https://www.github.com/JaCraig/TaskMaster/commit/1f8627ff1d6663c7ff7227c663c2d401c9bdf2cb))
+* Merge pull request #228 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-0eb5dce03c ([40903ef](https://www.github.com/JaCraig/TaskMaster/commit/40903ef140060f86322ce3045cf900de69b64c74))
+* Merge pull request #229 from JaCraig/dependabot/nuget/ExampleApp/dependencies-d26ec50e0c ([572e356](https://www.github.com/JaCraig/TaskMaster/commit/572e356087786e454a9a33961b998cd53b1626a0))
+* Merge pull request #230 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-637ad84d5b ([8f7557a](https://www.github.com/JaCraig/TaskMaster/commit/8f7557a3e023d7297f501a5ae8f8ed11f5280daf))
+* Merge pull request #231 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-37a7915f86 ([25a5c04](https://www.github.com/JaCraig/TaskMaster/commit/25a5c04744dd2bbb5d45005e40f60fdb8a5c2411))
+* Merge pull request #232 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-dac939b906 ([2afa2bd](https://www.github.com/JaCraig/TaskMaster/commit/2afa2bdeb4e069841f4799b71836f1080b708ecb))
+* Merge pull request #233 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-955fcb2e58 ([6e9a699](https://www.github.com/JaCraig/TaskMaster/commit/6e9a69947d0e64527f3f97d04049bfde94e8cfd7))
+* Merge pull request #234 from JaCraig/dependabot/nuget/ExampleApp/dependencies-e5cd760a43 ([424646a](https://www.github.com/JaCraig/TaskMaster/commit/424646ae26a23c4b79fa96ad5e964d09e12bae4f))
+* Merge pull request #235 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-293c44675e ([e34d21f](https://www.github.com/JaCraig/TaskMaster/commit/e34d21f724d74dc538c0da3c47fa2f7f6db3da21))
+* Merge pull request #236 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-111a81e667 ([74bb308](https://www.github.com/JaCraig/TaskMaster/commit/74bb3087640575c2d920cce6300396364d9f7dbe))
+* Merge pull request #237 from JaCraig/dependabot/nuget/ExampleApp/dependencies-111a81e667 ([ca013f9](https://www.github.com/JaCraig/TaskMaster/commit/ca013f9897fab3402f516616c1d5d65c0b47091f))
+* Merge pull request #238 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-836e21bf11 ([f076bdd](https://www.github.com/JaCraig/TaskMaster/commit/f076bdd9c8530a17a85fb5628b09a432eff08b54))
+* Merge pull request #239 from JaCraig/dependabot/nuget/ExampleApp/dependencies-b23f8c52ef ([2f37e5c](https://www.github.com/JaCraig/TaskMaster/commit/2f37e5c7dc4ad2b0997d39b783e402d3c280a13a))
+* Merge pull request #240 from JaCraig/dependabot/nuget/ExampleApp/multi-932d969d44 ([376b1c2](https://www.github.com/JaCraig/TaskMaster/commit/376b1c242e6407a26166665dd84a86c490dba937))
+* Merge pull request #241 from JaCraig/dependabot/nuget/ExampleApp/Serilog-4.3.0 ([4b26bda](https://www.github.com/JaCraig/TaskMaster/commit/4b26bdaa60039feb5a83f73d78ed5e4865617868))
+* Merge pull request #242 from JaCraig/dependabot/nuget/ExampleApp/dependencies-64779689f7 ([ff54f46](https://www.github.com/JaCraig/TaskMaster/commit/ff54f460df2dd5e97b6503aee848d37556e78563))
+* Update Serilog to 4.3.0 ([a78f2a6](https://www.github.com/JaCraig/TaskMaster/commit/a78f2a62e27a6306d1c45331b9d15c99236dfdb0))
+* Update: ([7aa4c79](https://www.github.com/JaCraig/TaskMaster/commit/7aa4c79861cbd2bfb55fe957bf3b99e904a164de))
+* bump FileCurator in /ExampleApp in the dependencies group ([3f784f9](https://www.github.com/JaCraig/TaskMaster/commit/3f784f940d7c6b7666fb7c8cbf0d46017b65ca76))
+* bump FileCurator in /ExampleApp in the dependencies group ([aa1322a](https://www.github.com/JaCraig/TaskMaster/commit/aa1322abff37befdcf29b4f4a3ee916bfc64619f))
+* bump FileCurator in /TaskMaster.Tests in the dependencies group ([a5d177f](https://www.github.com/JaCraig/TaskMaster/commit/a5d177f4c02e9227636b4119d382c8bb712ab07a))
+* bump husky in /TaskMaster.Tests in the dependencies group ([1ab2770](https://www.github.com/JaCraig/TaskMaster/commit/1ab2770586745ebc122771f4357b6226563f8fa4))
+* bump Monarch in /ExampleApp in the dependencies group ([7e10059](https://www.github.com/JaCraig/TaskMaster/commit/7e100599f6c29835016c7a7ec07583a6b81a0b49))
+* bump Serilog in /ExampleApp in the dependencies group ([6e27c54](https://www.github.com/JaCraig/TaskMaster/commit/6e27c547b6e947e4c6467698140e31b70592e707))
+* bump the dependencies group in /ExampleApp with 2 updates ([c846c6d](https://www.github.com/JaCraig/TaskMaster/commit/c846c6d7bb0a54912c6d8fe40b85f5932debf8a5))
+* bump the dependencies group in /TaskMaster.Tests with 2 updates ([b7855bb](https://www.github.com/JaCraig/TaskMaster/commit/b7855bb21fb4f11764ce4ef41a4c2b7f9b3f2458))
+* bump the dependencies group in /TaskMaster.Tests with 2 updates ([932fd58](https://www.github.com/JaCraig/TaskMaster/commit/932fd588513ed9e5dc3a819ca1385c938ad6dbe7))
+* Bump the dependencies group with 1 update ([44e51a9](https://www.github.com/JaCraig/TaskMaster/commit/44e51a944e65afd2cc3d1f4245f807ae6a1496d6))
+* bump versionize in /TaskMaster.Tests in the dependencies group ([425c6d4](https://www.github.com/JaCraig/TaskMaster/commit/425c6d41d5c752b0fce1dc6dcfa34a7787d9dae8))
+* bump xunit in /TaskMaster.Tests in the dependencies group ([eeef985](https://www.github.com/JaCraig/TaskMaster/commit/eeef985aefccbe6b554722d51bec549a6e8e4df6))
+* bump xunit.runner.visualstudio ([b154856](https://www.github.com/JaCraig/TaskMaster/commit/b154856d275f19d2ba30ae64204e73f10325eac0))
+* bump xunit.runner.visualstudio ([5626039](https://www.github.com/JaCraig/TaskMaster/commit/5626039319328d44f0ad35e15848856d3c87479b))
+* Merge branch 'master' of https://github.com/JaCraig/TaskMaster ([52289cc](https://www.github.com/JaCraig/TaskMaster/commit/52289ccb9f90ee1314e3a8e69a525dcda9841111))
+* update husky and versionize tool versions to 0.7.1 and 2.3.0 respectively ([189c613](https://www.github.com/JaCraig/TaskMaster/commit/189c6134440a0dccf87b750090ab088576cd4d4e))
+* **docs:** Update README with usage instructions and minimum requirements ([ccac378](https://www.github.com/JaCraig/TaskMaster/commit/ccac3786ba939f6eed679aed783ce0512188f04e))
+
 <a name="5.0.0"></a>
 ## [5.0.0](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.0) (2024-11-24)
 
