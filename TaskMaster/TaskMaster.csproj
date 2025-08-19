@@ -46,7 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="5.1.0" />
+    <PackageReference Include="FileCurator" Version="5.1.1" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Monarch" Version="4.0.2" />
     <PackageReference Include="SerialBox" Version="5.0.6" />
