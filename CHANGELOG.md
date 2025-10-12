@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.5"></a>
+## [5.0.5](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.5) (2025-10-12)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([f1115fc](https://www.github.com/JaCraig/TaskMaster/commit/f1115fc18ac0499bcf8e80c52eb88f098d0d8c2d))
+
+### Other
+
+* Merge pull request #251 from JaCraig/dependabot/nuget/TaskMaster/dependencies-f83b48277c ([1242979](https://www.github.com/JaCraig/TaskMaster/commit/1242979a192796d940fa50d1d863f088fd7a70c2))
+* Merge pull request #252 from JaCraig/dependabot/nuget/TaskMaster/dependencies-f83b48277c ([5f0dc47](https://www.github.com/JaCraig/TaskMaster/commit/5f0dc47a7d3332fafbbf21d7ea5daabcd3ce4dcc))
+* Merge pull request #253 from JaCraig/dependabot/nuget/TaskMaster/dependencies-a3769a10a9 ([8638e1e](https://www.github.com/JaCraig/TaskMaster/commit/8638e1e6597b1ae6a9ac0fe713aa0e067216af34))
+* Merge pull request #254 from JaCraig/dependabot/nuget/TaskMaster/dependencies-a7a83e66c6 ([7eb64b0](https://www.github.com/JaCraig/TaskMaster/commit/7eb64b05ea74eafa35120b45a0e29d1340f06f2b))
+* Merge pull request #255 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-6aadeae1b1 ([7a5d774](https://www.github.com/JaCraig/TaskMaster/commit/7a5d774a1b93c8fcf2adb2ec438392ee2b6af867))
+* Merge pull request #256 from JaCraig/dependabot/nuget/TaskMaster/dependencies-01b64d3da2 ([7a386d3](https://www.github.com/JaCraig/TaskMaster/commit/7a386d3dd84073c9554ad0b15bad814e85554c32))
+* Merge pull request #258 from JaCraig/dependabot/nuget/TaskMaster/dependencies-abd88dae82 ([ec33a27](https://www.github.com/JaCraig/TaskMaster/commit/ec33a27b59b3e86e0b13ccd5c2b76874970e7d60))
+* Bump the dependencies group with 1 update ([aa9d886](https://www.github.com/JaCraig/TaskMaster/commit/aa9d886990c4d42394cfb48956a96fc8a9000c5f))
+* Bump the dependencies group with 1 update ([4543cee](https://www.github.com/JaCraig/TaskMaster/commit/4543cee1a229aaf1482176c6c0fd681cdca25901))
+* Bump the dependencies group with 1 update ([9abd1e9](https://www.github.com/JaCraig/TaskMaster/commit/9abd1e9939f8d79aa0813c647e434b5871772dae))
+* Bump the dependencies group with 1 update ([fa49052](https://www.github.com/JaCraig/TaskMaster/commit/fa49052dbfc1b08f8b5d0c2d52a3db706de8dca5))
+* Bump the dependencies group with 1 update ([18cf204](https://www.github.com/JaCraig/TaskMaster/commit/18cf204641524223f6d73b6d74ef53be625437eb))
+* Bump the dependencies group with 1 update ([7fe09e5](https://www.github.com/JaCraig/TaskMaster/commit/7fe09e5c88f0a5291cade88b577bc75087623640))
+
 <a name="5.0.4"></a>
 ## [5.0.4](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.4) (2025-08-19)
 
