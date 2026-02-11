@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.11"></a>
+## [5.0.11](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.11) (2026-02-11)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([b4809f9](https://www.github.com/JaCraig/TaskMaster/commit/b4809f933445eed1d06d6f1c7cee145eba44071a))
+
+### Other
+
+* Merge pull request #287 from JaCraig/dependabot/nuget/TaskMaster/dependencies-a80e1de660 ([1f3f0fa](https://www.github.com/JaCraig/TaskMaster/commit/1f3f0fa23ad4c6a3a51a316355ad6e71aaa83a1c))
+* Merge pull request #288 from JaCraig/dependabot/nuget/TaskMaster/dependencies-a80e1de660 ([d891410](https://www.github.com/JaCraig/TaskMaster/commit/d8914109f6c0f30591be48d3bc1b9e90b5854c34))
+* Merge pull request #289 from JaCraig/dependabot/nuget/ExampleApp/dependencies-929f44166e ([72e2ebc](https://www.github.com/JaCraig/TaskMaster/commit/72e2ebca58994876a21e54b911c51e970be6ef31))
+* Bump the dependencies group with 3 updates ([6f3323c](https://www.github.com/JaCraig/TaskMaster/commit/6f3323c0a8daf52b18a8e7b93b52fa8c007b4832))
+* Bump the dependencies group with 4 updates ([20f7feb](https://www.github.com/JaCraig/TaskMaster/commit/20f7feb88bac953b43e77b931ff0ced6b92cba16))
+
 <a name="5.0.10"></a>
 ## [5.0.10](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.10) (2026-02-05)
 
