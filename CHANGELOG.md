@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.0"></a>
+## [5.1.0](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.0) (2026-02-12)
+
+### Features
+
+* **project:** add net10.0 support and update FileCurator ([6a32021](https://www.github.com/JaCraig/TaskMaster/commit/6a32021a0511aa63b3af00e1ee2e46a2356f6f77))
+
 <a name="5.0.11"></a>
 ## [5.0.11](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.0.11) (2026-02-11)
 
