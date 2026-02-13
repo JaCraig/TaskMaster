@@ -46,10 +46,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FileCurator" Version="5.1.15" />
+    <PackageReference Include="FileCurator" Version="5.1.16" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Monarch" Version="4.0.6" />
-    <PackageReference Include="SerialBox" Version="5.0.10" />
+    <PackageReference Include="Monarch" Version="4.0.7" />
+    <PackageReference Include="SerialBox" Version="5.0.11" />
 	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.103" PrivateAssets="All" />
 	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.103">
 		  <PrivateAssets>all</PrivateAssets>
