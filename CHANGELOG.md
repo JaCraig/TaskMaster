@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.3"></a>
+## [5.1.3](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.3) (2026-03-06)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([03ed95e](https://www.github.com/JaCraig/TaskMaster/commit/03ed95ed31d5488481edb495a1de30c9eab7c6cb))
+
+### Other
+
+* Merge pull request #294 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-91c74de281 ([66dd63f](https://www.github.com/JaCraig/TaskMaster/commit/66dd63f6a9c093e53a3e7deec98721a20400273b))
+* Merge pull request #295 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-164813a1f6 ([327bb89](https://www.github.com/JaCraig/TaskMaster/commit/327bb89116c1d06137d318885544a7fcd7e91617))
+* Merge pull request #296 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-5154da677c ([ca62566](https://www.github.com/JaCraig/TaskMaster/commit/ca62566ee9013f9852cc2e7330f94a78ff1fff2b))
+* Merge pull request #297 from JaCraig/dependabot/nuget/TaskMaster/dependencies-756ede94b2 ([b0b265f](https://www.github.com/JaCraig/TaskMaster/commit/b0b265f839b3dee003000d7f2ba359569a7dbc1e))
+* Merge pull request #298 from JaCraig/dependabot/nuget/TaskMaster/dependencies-756ede94b2 ([fa0365e](https://www.github.com/JaCraig/TaskMaster/commit/fa0365e64e7d48a0d03fe5aab8a05274b79f70c3))
+* Bump the dependencies group with 1 update ([7a85d49](https://www.github.com/JaCraig/TaskMaster/commit/7a85d49fa772daf11a32f48fa7fd04df36510e34))
+* Bump the dependencies group with 1 update ([992e850](https://www.github.com/JaCraig/TaskMaster/commit/992e850c2380b02ae2eda9b200a74911537e966f))
+* Bump the dependencies group with 2 updates ([4bdfa11](https://www.github.com/JaCraig/TaskMaster/commit/4bdfa1141af3b5a06f0efb37dc12366ae23a5a9f))
+* Bump the dependencies group with 3 updates ([682ae1e](https://www.github.com/JaCraig/TaskMaster/commit/682ae1e373c1bcc640ba7bda16376236afffc253))
+
 <a name="5.1.2"></a>
 ## [5.1.2](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.2) (2026-02-16)
 
