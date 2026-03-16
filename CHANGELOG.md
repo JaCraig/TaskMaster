@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.6"></a>
+## [5.1.6](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.6) (2026-03-16)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([f823e19](https://www.github.com/JaCraig/TaskMaster/commit/f823e1950d21f717499fd00531a204690fbadfdc))
+
+### Other
+
+* Merge pull request #306 from JaCraig/dependabot/nuget/dot-config/dependencies-3c5f733c5a ([55e0823](https://www.github.com/JaCraig/TaskMaster/commit/55e08235be74bfb4e028f7fa14c335a8eed2be71))
+* Merge pull request #307 from JaCraig/dependabot/nuget/dot-config/dependencies-3c5f733c5a ([f620dca](https://www.github.com/JaCraig/TaskMaster/commit/f620dca5e3d8b7befb7983add75eb2d84200d0f4))
+* Merge pull request #308 from JaCraig/dependabot/nuget/dot-config/dependencies-3c5f733c5a ([a3e9ae8](https://www.github.com/JaCraig/TaskMaster/commit/a3e9ae87dcb205db5da4e6023ee6cb380ebead53))
+* Bump the dependencies group with 3 updates ([d996a3f](https://www.github.com/JaCraig/TaskMaster/commit/d996a3f38f2f4ae5bd96ac4a69be765e8c2b2971))
+* Bump the dependencies group with 3 updates ([05a66d1](https://www.github.com/JaCraig/TaskMaster/commit/05a66d10036ab4822d830dcbf57a2d15761fd2d9))
+
 <a name="5.1.5"></a>
 ## [5.1.5](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.5) (2026-03-13)
 
