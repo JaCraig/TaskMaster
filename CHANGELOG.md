@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.8"></a>
+## [5.1.8](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.8) (2026-03-31)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([c7b951b](https://www.github.com/JaCraig/TaskMaster/commit/c7b951be2264ae91fc4057511473dd156be073c8))
+
+### Other
+
+* Merge pull request #312 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-4bb5c90d9e ([c4fce11](https://www.github.com/JaCraig/TaskMaster/commit/c4fce11ffab6c8d6dcaea50e2656a563ce9f7ed3))
+* Merge pull request #313 from JaCraig/dependabot/nuget/TaskMaster/dependencies-22f526e3fe ([b86488c](https://www.github.com/JaCraig/TaskMaster/commit/b86488c1159a5175c0c91e6e545a369622ecfe5c))
+* Merge pull request #314 from JaCraig/dependabot/nuget/TaskMaster/dependencies-22f526e3fe ([0c8c124](https://www.github.com/JaCraig/TaskMaster/commit/0c8c124710371717ecc7a77860b50d48262eb97f))
+* Merge pull request #315 from JaCraig/dependabot/nuget/TaskMaster/dependencies-9eba65b8f2 ([a5aef26](https://www.github.com/JaCraig/TaskMaster/commit/a5aef2648967268376961a1d5ef9b9458bdbc6f9))
+* Bump the dependencies group with 2 updates ([c2b91df](https://www.github.com/JaCraig/TaskMaster/commit/c2b91dfd82f8372873ac1e65f0884e9cf91bfde0))
+* Bump the dependencies group with 2 updates ([a11c769](https://www.github.com/JaCraig/TaskMaster/commit/a11c769bc53731ae7c4cb6ca33cfd13b4f1ede91))
+* Bump the dependencies group with 2 updates ([a74b93a](https://www.github.com/JaCraig/TaskMaster/commit/a74b93a9e888a6983f068056af1dc646227b6b5a))
+* **dependabot:** update schedule for dependency updates ([fe80c5a](https://www.github.com/JaCraig/TaskMaster/commit/fe80c5addf0f2244058c8b87609324b7ebf4ffaf))
+* **tests:** update target frameworks in project file ([6dd0268](https://www.github.com/JaCraig/TaskMaster/commit/6dd0268c45973a94a5f3044555d12d379efe0a37))
+
 <a name="5.1.7"></a>
 ## [5.1.7](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.7) (2026-03-17)
 
