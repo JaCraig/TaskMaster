@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.10"></a>
+## [5.1.10](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.10) (2026-04-02)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([65a2c70](https://www.github.com/JaCraig/TaskMaster/commit/65a2c7027cbc5196a8c262d67a52f60d6598b4d2))
+
+### Other
+
+* Merge pull request #317 from JaCraig/dependabot/nuget/TaskMaster/dependencies-0ffea48643 ([56ed6a5](https://www.github.com/JaCraig/TaskMaster/commit/56ed6a57022f0defab6280e22b26614729eafa23))
+
 <a name="5.1.9"></a>
 ## [5.1.9](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.9) (2026-04-01)
 
