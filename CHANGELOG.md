@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.17"></a>
+## [5.1.17](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.17) (2026-04-21)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([d9c7d30](https://www.github.com/JaCraig/TaskMaster/commit/d9c7d3075add7215e4331f21f694626b25d55d04))
+
+### Other
+
+* Merge pull request #327 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-90c8c41740 ([53d14b5](https://www.github.com/JaCraig/TaskMaster/commit/53d14b5f4ce011aaa49f3ac20878feddc6de64d6))
+* Merge pull request #328 from JaCraig/dependabot/nuget/TaskMaster/dependencies-a8338d0941 ([78e121a](https://www.github.com/JaCraig/TaskMaster/commit/78e121aa69f2d60edd239f3e10b7563dde3c9431))
+* Bump coverlet.collector and coverlet.msbuild ([8f13681](https://www.github.com/JaCraig/TaskMaster/commit/8f13681e4d43d19856441ef63ed208ca598abb31))
+
 <a name="5.1.16"></a>
 ## [5.1.16](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.16) (2026-04-20)
 
