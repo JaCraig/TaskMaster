@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.21"></a>
+## [5.1.21](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.21) (2026-04-27)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([e535be9](https://www.github.com/JaCraig/TaskMaster/commit/e535be9160d4317dbad669604d161fba142468ce))
+
+### Other
+
+* Merge pull request #332 from JaCraig/dependabot/nuget/TaskMaster/dependencies-d9635f0457 ([a1c5683](https://www.github.com/JaCraig/TaskMaster/commit/a1c568383d87c0143bb013c0cb174b5452a107e4))
+* Merge pull request #333 from JaCraig/dependabot/nuget/TaskMaster/dependencies-d9635f0457 ([fea39de](https://www.github.com/JaCraig/TaskMaster/commit/fea39dee3cd3aa6554b7eea3fc450a63b65b5b92))
+* Refactor commit-lint.csx for improved message validation ([7b2cb62](https://www.github.com/JaCraig/TaskMaster/commit/7b2cb623e64d5f32765d60e5185417b45aa059cd))
+* Bump the dependencies group with 2 updates ([b2c5857](https://www.github.com/JaCraig/TaskMaster/commit/b2c5857f4d1af0e00d13699cff8c5a0a4209ae11))
+
 <a name="5.1.20"></a>
 ## [5.1.20](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.20) (2026-04-24)
 
