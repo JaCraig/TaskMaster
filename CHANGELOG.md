@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.28"></a>
+## [5.1.28](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.28) (2026-05-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([7939fa2](https://www.github.com/JaCraig/TaskMaster/commit/7939fa267c19b7b40beabeaffe4724d7e04f2053))
+
+### Other
+
+* Merge pull request #341 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-590534ff7a ([25406b3](https://www.github.com/JaCraig/TaskMaster/commit/25406b323a833eef4ce5c673ad0289666d10b29f))
+* Merge pull request #342 from JaCraig/dependabot/nuget/TaskMaster/dependencies-b736e23610 ([a5c597c](https://www.github.com/JaCraig/TaskMaster/commit/a5c597cf16554d79c1cbe0fef7398991239b7322))
+* Bump the dependencies group with 3 updates ([f73f0b1](https://www.github.com/JaCraig/TaskMaster/commit/f73f0b1aaf7d3b0d26c396a5520649f76120403a))
+* **copilot:** add instructions for commit message formatting ([68bef80](https://www.github.com/JaCraig/TaskMaster/commit/68bef80e4e0958b1bbedee71c7b1458f70f07801))
+
 <a name="5.1.27"></a>
 ## [5.1.27](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.27) (2026-05-15)
 
