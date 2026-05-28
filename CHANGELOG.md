@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.30"></a>
+## [5.1.30](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.30) (2026-05-28)
+
+### Bug Fixes
+
+* **workflows:** remove unnecessary secrets from YAML files ([804c56a](https://www.github.com/JaCraig/TaskMaster/commit/804c56a3113dd76e28b650cd4b2a7abe097c0a49))
+
 <a name="5.1.29"></a>
 ## [5.1.29](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.29) (2026-05-21)
 
