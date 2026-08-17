@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.31"></a>
+## [5.1.31](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.31) (2026-08-17)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([d4078d6](https://www.github.com/JaCraig/TaskMaster/commit/d4078d6b9b8f476868c77e45c9e71041547d3378))
+* Bump the dependencies group with 1 update ([e6dcd96](https://www.github.com/JaCraig/TaskMaster/commit/e6dcd9678170bae5d8e985a3643dd4d61bfee1dd))
+* Bump the dependencies group with 2 updates ([5fe3d89](https://www.github.com/JaCraig/TaskMaster/commit/5fe3d89f4175245dfb77f0eef5ae4a03508d366f))
+* Bump the dependencies group with 2 updates ([798a646](https://www.github.com/JaCraig/TaskMaster/commit/798a64664d289a0f66ae0e776346a7b7956c579e))
+* Bump the dependencies group with 3 updates ([fb4a8b3](https://www.github.com/JaCraig/TaskMaster/commit/fb4a8b3665a18770e86b498288df4bbbc35274f0))
+
+### Other
+
+* Merge pull request #344 from JaCraig/dependabot/nuget/TaskMaster/dependencies-2d852fd755 ([df24299](https://www.github.com/JaCraig/TaskMaster/commit/df2429953644656b1e2c2fda5af3b3811cb9591e))
+* Merge pull request #345 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-041891a2d4 ([48882d3](https://www.github.com/JaCraig/TaskMaster/commit/48882d330dafebfc0c041b75bbc66027fc59f60f))
+* Merge pull request #346 from JaCraig/dependabot/nuget/TaskMaster/dependencies-991ee26f7c ([5bc02c1](https://www.github.com/JaCraig/TaskMaster/commit/5bc02c1d5e554a8eaffaaf2e36c4824fcafd50c2))
+* Merge pull request #347 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-407341980e ([3c64082](https://www.github.com/JaCraig/TaskMaster/commit/3c6408241c5033829f8691418ee3fe76b5c6c274))
+* Merge pull request #348 from JaCraig/dependabot/nuget/ExampleApp/dependencies-ef878ccc8f ([4294b2d](https://www.github.com/JaCraig/TaskMaster/commit/4294b2d08de61f958e80256a64ca1adb9fe161f1))
+* Merge pull request #349 from JaCraig/dependabot/nuget/TaskMaster/dependencies-5c1cd76f7e ([98c11e1](https://www.github.com/JaCraig/TaskMaster/commit/98c11e1fc0d0923b80a2146e99ebf26bb3d59a6b))
+* Merge pull request #350 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-4aa9edd91c ([6d1290d](https://www.github.com/JaCraig/TaskMaster/commit/6d1290d9ad16da4c5fe2c9f863d24e2e5cdffa94))
+* Merge pull request #351 from JaCraig/dependabot/nuget/dot-config/dependencies-d580172a4f ([be07a69](https://www.github.com/JaCraig/TaskMaster/commit/be07a69aa75cf720b0e89f1aba264e78f360e335))
+* Merge pull request #352 from JaCraig/dependabot/nuget/TaskMaster/dependencies-637020aa5a ([60b7bb8](https://www.github.com/JaCraig/TaskMaster/commit/60b7bb86caefd24b9f018795cb9b7b74934e7386))
+* Merge pull request #353 from JaCraig/dependabot/nuget/TaskMaster.Tests/dependencies-b5a8bd656f ([8bb72e8](https://www.github.com/JaCraig/TaskMaster/commit/8bb72e89699bb94c469be2d02fddb2f37bf4b134))
+* Bump the dependencies group with 1 update ([4f17bf4](https://www.github.com/JaCraig/TaskMaster/commit/4f17bf48c31e5376ddae1f6904eecb020311b485))
+* Bump the dependencies group with 1 update ([cd86a9f](https://www.github.com/JaCraig/TaskMaster/commit/cd86a9f1bd310cdd5466cf28a3af092ef219a185))
+* Bump the dependencies group with 1 update ([1edef96](https://www.github.com/JaCraig/TaskMaster/commit/1edef960598da760df84540443bd693ef2d622ef))
+* Bump the dependencies group with 1 update ([3f89a8e](https://www.github.com/JaCraig/TaskMaster/commit/3f89a8e98cef47c0b46e81efaaf53dadf9bae724))
+* Bump the dependencies group with 2 updates ([37ceb6d](https://www.github.com/JaCraig/TaskMaster/commit/37ceb6dff9231a38d51ae7bfe51b7d9f59536f24))
+
 <a name="5.1.30"></a>
 ## [5.1.30](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.30) (2026-05-28)
 
