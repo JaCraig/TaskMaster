@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="6.0.0"></a>
+## [6.0.0](https://www.github.com/JaCraig/TaskMaster/releases/tag/v6.0.0) (2026-11-15)
+
+### Features
+
+* **frameworks:** upgrade targets and dependencies ([75836f4](https://www.github.com/JaCraig/TaskMaster/commit/75836f49a109aa73405fa1bf455d75e3750576a1))
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([3889641](https://www.github.com/JaCraig/TaskMaster/commit/3889641a7eef8ce30d60293abaff873492a930cb))
+
+### Breaking Changes
+
+* **frameworks:** upgrade targets and dependencies ([75836f4](https://www.github.com/JaCraig/TaskMaster/commit/75836f49a109aa73405fa1bf455d75e3750576a1))
+
+### Other
+
+* Merge pull request #368 from JaCraig/dependabot/nuget/TaskMaster/dependencies-dfc4d4e1ba ([cd86f7e](https://www.github.com/JaCraig/TaskMaster/commit/cd86f7efe5bc1ea6529de240e749df8d1cc86eb0))
+* Merge pull request #369 from JaCraig/dependabot/nuget/TaskMaster/dependencies-dfc4d4e1ba ([809ff49](https://www.github.com/JaCraig/TaskMaster/commit/809ff49f54d8b655c744f99422d02b398d55647c))
+* Bump the dependencies group with 3 updates ([fef773b](https://www.github.com/JaCraig/TaskMaster/commit/fef773bb449a930f66ffa23390b5a6e01ebe5a34))
+
 <a name="5.1.32"></a>
 ## [5.1.32](https://www.github.com/JaCraig/TaskMaster/releases/tag/v5.1.32) (2026-11-08)
 
